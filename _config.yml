@@ -1,0 +1,8 @@
+# The public GitHub Pages site for mewleafs' projects: promo pages, privacy policies and anything
+# else a platform asks to be hosted at a public URL. GitHub Pages builds it with Jekyll from the
+# main branch, at https://mewleafs.github.io/.
+title: mewleafs
+description: Public pages for mewleafs' projects.
+theme: jekyll-theme-primer
+exclude:
+  - README.md
