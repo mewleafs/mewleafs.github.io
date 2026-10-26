@@ -32,10 +32,13 @@ Google Fonts when you add a font.
 
 To show chat, search it, keep a "to answer" list and recognise first-time chatters, Leafs Live
 stores the chat messages and events it reads (names, user IDs, messages, badges, cheers,
-Super Chats, subs, raids and memberships) in the profile's database. Messages are deleted after 90
-days by default; you can change that in Settings, or keep them forever. For each viewer it keeps a
-short record (name, user ID, first and last seen, message count and any note you write) until you
-delete the profile.
+Super Chats, subs, raids and memberships) in the profile's database. For each viewer it keeps a
+short record (name, user ID, first and last seen, message count and any note you write).
+
+- **Twitch:** messages are deleted after 90 days by default; you can change that in Settings, or
+  keep them forever. Viewer records stay until you delete the profile.
+- **YouTube:** messages and viewer records are deleted 30 days after they were last seen, or sooner
+  if your Settings say so. A viewer who chats again is seen again.
 
 **If you chat on a channel that uses Leafs Live:** your public chat messages are read through
 Twitch's or YouTube's official API and kept only on that streamer's PC, as described here. They're
@@ -63,10 +66,17 @@ own Google client or, if you choose, your own.
   and never moderates chat.
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays. It
   isn't used for advertising, sold or shared with anyone else.
-- **Where it's kept:** in the profile's database on your PC, as described above.
-- **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google and deletes
-  it from your PC. You can also remove the access at any time on Google's
-  [third-party access page](https://myaccount.google.com/connections).
+- **Where it's kept:** in the profile's database on your PC, for at most 30 days, as described
+  above. Your channel's name and picture are fetched again every week.
+- **Agreeing:** the Accounts screen and the first-run setup say that connecting YouTube agrees to
+  the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
+  Policy.
+- **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
+  from your PC, and deletes the profile's YouTube chat history and YouTube viewer records (for a bot
+  account, its name on the known bots list). You can also remove the access at any time on Google's
+  [third-party access page](https://myaccount.google.com/connections); Leafs Live then can't sign
+  in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
+  doesn't touch what YouTube itself keeps.
 
 Leafs Live's use and transfer of information received from Google APIs adheres to the
 [Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy),
