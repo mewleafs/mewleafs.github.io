@@ -93,7 +93,11 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   to list your channel's rewards, so you can pick which ones to thank or show on stream;
 - `channel:read:hype_train`, to hear when a hype train starts, reaches a new level and ends;
 - `bits:read`, to hear the bits spent in your channel; the app uses only the bits spent on
-  Power-ups (cheers already come through the chat).
+  Power-ups (cheers already come through the chat);
+- `channel:manage:redemptions`, used only when you turn on pausing rewards in alert control: to
+  pause on Twitch the channel points rewards Leafs Live's Twitch app created (Twitch lets an app
+  change only the rewards it created) while alert control is paused or stopped, and to unpause them
+  when you press Play.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
@@ -106,7 +110,9 @@ app runs, never saved (a reward you pick is saved by its ID and title). It posts
 you turn on (every type is off until you do), a thank-you message in your chat when someone
 follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
 train starts, reaches a new level or ends, as your bot account when you have one, else your
-streamer account. It
+streamer account. When you turn on pausing rewards in alert control, it asks Twitch for the
+rewards it may change, pauses those that are on when you press Pause or Stop and unpauses them when
+you press Play; the IDs of the rewards it paused are kept in the profile's database until then. It
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
 held message, switch a chat mode, press the raid shield or type a chat command in the message box
 (such as `/ban`, `/slow` or `/raid`), or when a message matches a moderation rule you turned on

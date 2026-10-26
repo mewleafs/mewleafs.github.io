@@ -22,8 +22,11 @@ a Jewels gift, become a member or gift memberships on YouTube: each type is off 
 on, with your own messages and variables, amount tiers, a minimum, rewards picked from your
 channel's list with messages of their own, and one line for a burst of them, sent as your bot
 account when you have one. The same alerts play on stream in an Alerts widget, one at a time, with your own
-text, picture, GIF or video and sound from your PC, and you can pause, skip or replay them from the
-app or the dock. A simulator makes fake chat messages, follows, subs, raids, Super Chats, bans,
+text, picture, GIF or video and sound from your PC, and you can skip or replay them from the app or
+the dock. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
+everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
+the thank-you messages and the channel points rewards Leafs Live's Twitch app created, which it
+pauses on Twitch itself. A simulator makes fake chat messages, follows, subs, raids, Super Chats, bans,
 AutoMod holds and more, one at a time or as saved sequences, so you can try your alerts, overlays
 and rules without a stream: they happen in simulated chats, nothing of them is saved, and the lines
 they would send to chat are only shown unless you choose to really send them. The interface works
