@@ -26,6 +26,10 @@ Google Fonts when you add a font.
   profile folder.
 - **Overlays and the dock** are served only to your own PC (`127.0.0.1`), for OBS. They never get
   your sign-ins.
+- **Simulated events** (the app's simulator, to try alerts and overlays) are made on your PC, in
+  simulated chats, and are never saved. Nothing about them reaches Twitch or YouTube, except that
+  while you turn on *Really send to chat* the chat messages they lead to (such as thank-yous) go to
+  your real chat. Moderation in a simulated chat is never sent.
 - **Logs and diagnostics** stay on your PC. *Save diagnostics…* writes a text file only when you ask
   for it, without sign-ins or chat history, and it's up to you whether to share it.
 
