@@ -59,12 +59,13 @@ by ArenaNet or NCSOFT. Guild Wars 2 names, images and data belong to ArenaNet, L
 
 The extension doesn't knowingly collect data from anyone, including children under 13.
 
-## Changes
+## This page
 
-Changes to this policy are published on this page with a new date.
+This policy describes GW2 Armoury as it is today. The date at the top is the last time it was
+checked against the extension.
 
 ## Contact
 
-Questions: use the support email on the extension's Twitch page.
+Questions: email [mewleaf1@gmail.com](mailto:mewleaf1@gmail.com).
 
 {% include gw2-notice.html %}

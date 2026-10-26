@@ -1,0 +1,42 @@
+---
+title: "Leafs Live: terms of use"
+permalink: /leafs-live/terms/
+---
+
+# Leafs Live: terms of use
+
+*Last updated: 25 October 2026*
+
+These terms cover the Leafs Live desktop app. By using it, you agree to them.
+
+## The app
+
+Leafs Live is provided as it is, without warranties of any kind. It's built to keep overlays on air
+when something fails, but chat can be late or missing and messages can fail to send. To the extent
+the law allows, the developer isn't liable for any loss or damage from using the app.
+
+## Your accounts and your stream
+
+- You choose which Twitch and YouTube accounts to connect, and you're responsible for the messages
+  you send from them.
+- You keep following the terms and community rules of the platforms you stream on, including
+  their limits on bots and automated messages.
+- Your rules, overlays and settings are yours. The developer claims no rights to them and never
+  receives them.
+
+## YouTube and Twitch
+
+Leafs Live uses YouTube API Services. By connecting YouTube you agree to the
+[YouTube Terms of Service](https://www.youtube.com/t/terms), and Google's use of your data follows
+the [Google Privacy Policy](https://policies.google.com/privacy). Twitch's
+[terms of service](https://www.twitch.tv/p/legal/terms-of-service/) apply to your Twitch accounts.
+What Leafs Live reads and sends is described in the [privacy policy](../privacy/).
+
+## This page
+
+These terms describe Leafs Live as it is today. The date at the top is the last time they were
+checked against the app.
+
+## Contact
+
+Questions: email [mewleaf1@gmail.com](mailto:mewleaf1@gmail.com).

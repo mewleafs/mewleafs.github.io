@@ -10,5 +10,6 @@ and legends) in a panel, on the video and in the Twitch mobile app, in English, 
 French and Chinese.
 
 - [Privacy policy](privacy/)
+- [Terms of use](terms/)
 
 {% include gw2-notice.html %}
