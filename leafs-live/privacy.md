@@ -5,11 +5,11 @@ permalink: /leafs-live/privacy/
 
 # Leafs Live: privacy policy
 
-*Last updated: 25 October 2026*
+*Last updated: 26 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
-streamer's replies, carries out the moderation actions the streamer clicks, and shows chat on OBS
-overlays. This page explains what data it handles and where that data goes.
+streamer's replies, carries out the moderation actions the streamer clicks and the chat commands
+the streamer types, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
@@ -57,12 +57,23 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `moderator:read:blocked_terms`, `moderator:read:chat_settings`, `moderator:read:unban_requests`,
   `moderator:read:warnings`, `moderator:read:moderators` and `moderator:read:vips`, which Twitch
   requires to tell the app who took each moderation action in your chat (Leafs Live uses only that
-  part).
+  part);
+- `moderator:manage:chat_settings`, to turn slow mode, followers-only, subscribers-only,
+  emote-only or unique chat on or off when you type the command (`/slow`, `/followers`…);
+- `moderator:manage:announcements`, `moderator:manage:shoutouts` and `moderator:manage:warnings`,
+  to post an announcement, shout out a channel or warn a viewer when you type `/announce`,
+  `/shoutout` or `/warn`;
+- `channel:manage:moderators`, `channel:manage:vips` and `channel:manage:raids`, to add or remove a
+  moderator or a VIP and to start or cancel a raid when you type `/mod`, `/vip`, `/raid` or their
+  opposites;
+- `channel:manage:broadcast`, used only to add a stream marker when you type `/marker`.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events and moderation actions, and whether your stream goes online. It posts only the messages you
-send, and it moderates only when you click Delete, Timeout, Ban or Unban, always as your streamer
-account. See Twitch's [privacy notice](https://www.twitch.tv/p/legal/privacy-notice/).
+send, and it moderates or changes your chat only when you click Delete, Timeout, Ban or Unban or
+type a chat command in the message box (such as `/ban`, `/slow` or `/raid`), always as your
+streamer account. To find someone a command names who hasn't written in your chat, it looks their
+name up on Twitch. See Twitch's [privacy notice](https://www.twitch.tv/p/legal/privacy-notice/).
 
 ## YouTube
 
@@ -74,9 +85,11 @@ own Google client or, if you choose, your own.
 - **What it reads:** your channel's ID, handle, name and picture; your live and upcoming streams,
   to find their chats; and those chats' messages and events, including the senders' channel names,
   pictures and badges. For a stream link you paste, the video's title and live details.
-- **What it writes:** only the chat messages you send, and the moderation you click in your own
-  chat: deleting a message, and timing out, banning or unbanning a viewer (as your streamer
-  account). It never uploads, edits or deletes videos, and never moderates on its own.
+- **What it writes:** only the chat messages you send, and the moderation you click or type in
+  your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
+  removing a moderator of the chat (`/mod`, `/unmod`; to remove one it first reads the chat's list
+  of moderators), always as your streamer account. It never uploads, edits or deletes videos, and
+  never moderates on its own.
 - **Bans:** to be able to lift a ban later, it keeps the ID YouTube gives each ban it makes, with
   the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays. It
