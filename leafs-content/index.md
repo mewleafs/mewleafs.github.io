@@ -7,8 +7,8 @@ permalink: /leafs-content/
 
 A desktop app for Windows that takes a YouTube video from idea to export: a board of ideas,
 structure and script writing, recording with a teleprompter, a timeline editor, thumbnails and
-other images, and the description and chapters for YouTube. The interface works in English and
-Spanish, and each video can be in either language.
+other images, and the title, tags, chapters and hashtags for YouTube, each ready to copy. The
+interface works in English and Spanish, and each video can be in either language.
 
 AI helps at every step through the official Claude Code or Codex command-line tools, signed in with
 your own subscription. The AI only proposes changes: you accept or reject each one. It never
