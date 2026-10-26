@@ -76,12 +76,16 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   opposites;
 - `channel:manage:broadcast`, used only to add a stream marker when you type `/marker`;
 - `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
-  and to allow or deny one when you click Allow or Deny.
+  and to allow or deny one when you click Allow or Deny;
+- `moderator:read:followers`, used only to show on a viewer's card since when they've followed your
+  channel.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
-the messages AutoMod holds for review, and whether your stream goes online. Held messages are kept
-only in memory while the app runs, never saved. It posts only the messages you send, and it
+the messages AutoMod holds for review, and whether your stream goes online. When you open a
+viewer's card it asks Twitch when that account was made and since when it has followed your
+channel, to show them there. Held messages, account dates and follow dates are kept only in memory
+while the app runs, never saved. It posts only the messages you send, and it
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
 held message, switch a chat mode, press the raid shield or type a chat command in the message box
 (such as `/ban`, `/slow` or `/raid`), or when a message matches a moderation rule you turned on
