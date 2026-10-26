@@ -54,6 +54,10 @@ but nothing changes until you accept it. Your scratchpad notes are never given t
   first video export downloads a headless Chrome browser used for rendering.
 - **Pictures from the web:** when you paste a link, or accept pictures the AI found, the app
   downloads them from those websites. It only connects to public internet addresses.
+- **Update check:** once a day the app reads
+  [`latest.json`](https://mewleafs.github.io/leafs-content/latest.json) on this site (GitHub Pages)
+  to see whether a newer version is out. It downloads or installs nothing, and sends nothing with
+  the request.
 
 Like any download, the servers involved can see your IP address. No personal data is sent with
 these downloads.
