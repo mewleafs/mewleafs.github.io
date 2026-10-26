@@ -56,9 +56,10 @@ these downloads.
 
 ## YouTube (optional)
 
-Leafs Content uses YouTube API Services. You connect YouTube in Settings with your own Google
-OAuth client, which you create in Google Cloud; Leafs Content doesn't ship one. It asks for two
-read-only permissions: `youtube.readonly` and `yt-analytics.readonly`.
+Leafs Content uses YouTube API Services. You connect YouTube in Settings by signing in with Google
+in your browser; the app uses its own Google OAuth client, so there's nothing to set up. It asks
+for two read-only permissions: `youtube.readonly` and `yt-analytics.readonly`. The requests go
+straight from your PC to Google; they don't pass through any Leafs server.
 
 - **What it reads:** your channel's name, and for the published videos you link in the app: title,
   publish date and length, views, watch time, average view duration, audience retention, likes,
