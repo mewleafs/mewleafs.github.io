@@ -20,7 +20,8 @@ Google Fonts when you add a font.
 
 - **Each profile** is a folder you choose. Its database holds the accounts you connected (login,
   display name, picture link and permissions, never passwords or tokens), your rules with their
-  blocked words and allowed links, overlays, fonts and pictures, and the chat history (below).
+  blocked words and allowed links, overlays with their fonts, pictures, videos and sounds, and the
+  chat history (below).
 - **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
   profile folder.
 - **Overlays and the dock** are served only to your own PC (`127.0.0.1`), for OBS. They never get
@@ -146,7 +147,9 @@ including the Limited Use requirements. See also the
 
 Your overlays and the dock show viewers' pictures, emotes and badges from Twitch's and YouTube's
 image servers. When you add a Google font, the app downloads it once from Google Fonts. Like any
-download, those servers can see your IP address.
+download, those servers can see your IP address. The pictures, videos and sounds you add for alerts
+are copied into the profile folder, and your overlays load them from your PC; they're sent nowhere,
+unless you export a template, which then carries them in its file.
 
 ## Children
 
