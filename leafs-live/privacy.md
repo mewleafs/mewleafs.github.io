@@ -59,7 +59,11 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   requires to tell the app who took each moderation action in your chat (Leafs Live uses only that
   part);
 - `moderator:manage:chat_settings`, to turn slow mode, followers-only, subscribers-only,
-  emote-only or unique chat on or off when you type the command (`/slow`, `/followers`…);
+  emote-only or unique chat on or off when you type the command (`/slow`, `/followers`…), switch it
+  in the chat's Modes menu or press the raid shield;
+- `moderator:manage:shield_mode`, to see whether Twitch's Shield mode is on and to turn it on or
+  off when you type `/shield` or `/shieldoff`, switch it in the Modes menu or press a raid shield
+  set to use it;
 - `moderator:manage:announcements`, `moderator:manage:shoutouts` and `moderator:manage:warnings`,
   to post an announcement, shout out a channel or warn a viewer when you type `/announce`,
   `/shoutout` or `/warn`;
@@ -69,10 +73,12 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `channel:manage:broadcast`, used only to add a stream marker when you type `/marker`.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
-events and moderation actions, and whether your stream goes online. It posts only the messages you
-send, and it moderates or changes your chat only when you click Delete, Timeout, Ban or Unban or
-type a chat command in the message box (such as `/ban`, `/slow` or `/raid`), always as your
-streamer account. To find someone a command names who hasn't written in your chat, it looks their
+events, chat modes (slow mode, followers-only and the rest, and Shield mode) and moderation actions,
+and whether your stream goes online. It posts only the messages you send, and it moderates or
+changes your chat only when you click Delete, Timeout, Ban or Unban, switch a chat mode, press the
+raid shield or type a chat command in the message box (such as `/ban`, `/slow` or `/raid`), always
+as your streamer account. The raid shield's choices, and which modes it turned on so it can turn
+them back off, are kept in the profile's database. To find someone a command names who hasn't written in your chat, it looks their
 name up on Twitch. See Twitch's [privacy notice](https://www.twitch.tv/p/legal/privacy-notice/).
 
 ## YouTube

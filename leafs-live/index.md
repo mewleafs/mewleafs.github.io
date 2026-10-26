@@ -7,8 +7,10 @@ permalink: /leafs-live/
 
 A desktop app for Windows for live streamers. It reads your Twitch and YouTube chats in one place,
 lets you answer from either account, lets you delete messages and time out, ban or unban viewers
-from the same feed, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), and
-drives customizable OBS overlays (chat, featured message) and an OBS dock
+from the same feed, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
+each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
+shield button that turns on the protections you picked and back off, and drives customizable OBS
+overlays (chat, featured message) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages. The
 interface works in English and Spanish.
 
