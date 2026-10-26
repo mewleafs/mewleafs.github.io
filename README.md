@@ -10,8 +10,9 @@ https://mewleafs.github.io/.
 One folder per app, with its pages under it:
 
 ```text
-_config.yml              site title and theme
+_config.yml              site title, theme and the sitemap plugin
 index.md                 https://mewleafs.github.io/ (links to every app)
+robots.txt               lets crawlers in, points them to /sitemap.xml (built from every page)
 _includes/               snippets shared by pages, e.g. gw2-notice.html
 leafs-content/           Leafs Content (desktop app)
   index.md               /leafs-content/          home page

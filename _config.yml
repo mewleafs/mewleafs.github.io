@@ -4,5 +4,15 @@
 title: mewleafs
 description: Public pages for mewleafs' projects.
 theme: jekyll-theme-primer
+url: https://mewleafs.github.io
+# Builds /sitemap.xml from every page (robots.txt points crawlers to it).
+plugins:
+  - jekyll-sitemap
+defaults:
+  # The Google Search Console verification file isn't a page to index.
+  - scope:
+      path: google3cbb730d942e6986.html
+    values:
+      sitemap: false
 exclude:
   - README.md
