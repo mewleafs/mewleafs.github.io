@@ -72,14 +72,17 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `channel:manage:moderators`, `channel:manage:vips` and `channel:manage:raids`, to add or remove a
   moderator or a VIP and to start or cancel a raid when you type `/mod`, `/vip`, `/raid` or their
   opposites;
-- `channel:manage:broadcast`, used only to add a stream marker when you type `/marker`.
+- `channel:manage:broadcast`, used only to add a stream marker when you type `/marker`;
+- `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
+  and to allow or deny one when you click Allow or Deny.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
-events, chat modes (slow mode, followers-only and the rest, and Shield mode) and moderation actions,
-and whether your stream goes online. It posts only the messages you send, and it moderates or
-changes your chat only when you click Delete, Timeout, Ban or Unban, switch a chat mode, press the
-raid shield or type a chat command in the message box (such as `/ban`, `/slow` or `/raid`), always
-as your streamer account. The raid shield's choices, and which modes it turned on so it can turn
+events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
+the messages AutoMod holds for review, and whether your stream goes online. Held messages are kept
+only in memory while the app runs, never saved. It posts only the messages you send, and it
+moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
+held message, switch a chat mode, press the raid shield or type a chat command in the message box
+(such as `/ban`, `/slow` or `/raid`), always as your streamer account. The raid shield's choices, and which modes it turned on so it can turn
 them back off, are kept in the profile's database. To find someone a command names who hasn't written in your chat, it looks their
 name up on Twitch. See Twitch's [privacy notice](https://www.twitch.tv/p/legal/privacy-notice/).
 
