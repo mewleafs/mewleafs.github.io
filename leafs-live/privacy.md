@@ -8,8 +8,8 @@ permalink: /leafs-live/privacy/
 *Last updated: 25 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
-streamer's replies and shows chat on OBS overlays. This page explains what data it handles and where
-that data goes.
+streamer's replies, carries out the moderation actions the streamer clicks, and shows chat on OBS
+overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
@@ -32,8 +32,10 @@ Google Fonts when you add a font.
 
 To show chat, search it, keep a "to answer" list and recognise first-time chatters, Leafs Live
 stores the chat messages and events it reads (names, user IDs, messages, badges, cheers,
-Super Chats, subs, raids and memberships) in the profile's database. For each viewer it keeps a
-short record (name, user ID, first and last seen, message count and any note you write).
+Super Chats, subs, raids and memberships) in the profile's database, with the moderation that
+happened in your chat (deleted messages and who deleted them, timeouts and bans, and their reason).
+For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
+note you write).
 
 - **Twitch:** messages are deleted after 90 days by default; you can change that in Settings, or
   keep them forever. Viewer records stay until you delete the profile.
@@ -46,11 +48,21 @@ never sent to the developer.
 
 ## Twitch
 
-You sign in with Twitch's device code login. Leafs Live asks for `user:read:chat` (to read your
-channel's chat) and `user:write:chat` (to send the messages you write); a bot account gets only
-`user:write:chat`. It reads your channel's chat messages and chat events, and whether your stream
-goes online. It posts only the messages you send.
-See Twitch's [privacy notice](https://www.twitch.tv/p/legal/privacy-notice/).
+You sign in with Twitch's device code login. For your streamer account Leafs Live asks for:
+
+- `user:read:chat` (to read your channel's chat) and `user:write:chat` (to send the messages you
+  write);
+- `moderator:manage:chat_messages` and `moderator:manage:banned_users`, to delete a message, time
+  out, ban or unban a viewer when you click it;
+- `moderator:read:blocked_terms`, `moderator:read:chat_settings`, `moderator:read:unban_requests`,
+  `moderator:read:warnings`, `moderator:read:moderators` and `moderator:read:vips`, which Twitch
+  requires to tell the app who took each moderation action in your chat (Leafs Live uses only that
+  part).
+
+A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
+events and moderation actions, and whether your stream goes online. It posts only the messages you
+send, and it moderates only when you click Delete, Timeout, Ban or Unban, always as your streamer
+account. See Twitch's [privacy notice](https://www.twitch.tv/p/legal/privacy-notice/).
 
 ## YouTube
 
@@ -58,12 +70,15 @@ Leafs Live uses YouTube API Services. You sign in with Google in your browser, u
 own Google client or, if you choose, your own.
 
 - **Permissions:** `youtube.readonly` for your streamer account. `youtube.force-ssl` only if you
-  choose *Allow sending*, and for a bot account, which only sends.
+  choose *Allow sending* (it lets you send and moderate), and for a bot account, which only sends.
 - **What it reads:** your channel's ID, handle, name and picture; your live and upcoming streams,
   to find their chats; and those chats' messages and events, including the senders' channel names,
   pictures and badges. For a stream link you paste, the video's title and live details.
-- **What it writes:** only the chat messages you send. It never uploads, edits or deletes videos,
-  and never moderates chat.
+- **What it writes:** only the chat messages you send, and the moderation you click in your own
+  chat: deleting a message, and timing out, banning or unbanning a viewer (as your streamer
+  account). It never uploads, edits or deletes videos, and never moderates on its own.
+- **Bans:** to be able to lift a ban later, it keeps the ID YouTube gives each ban it makes, with
+  the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays. It
   isn't used for advertising, sold or shared with anyone else.
 - **Where it's kept:** in the profile's database on your PC, for at most 30 days, as described

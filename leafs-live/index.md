@@ -6,9 +6,10 @@ permalink: /leafs-live/
 # Leafs Live
 
 A desktop app for Windows for live streamers. It reads your Twitch and YouTube chats in one place,
-lets you answer from either account, and drives customizable OBS overlays (chat, featured message)
-and an OBS dock from a server that runs only on your PC. Simple rules can hide, dim, highlight or
-tag messages. The interface works in English and Spanish.
+lets you answer from either account, lets you delete messages and time out, ban or unban viewers
+from the same feed, and drives customizable OBS overlays (chat, featured message) and an OBS dock
+from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages. The
+interface works in English and Spanish.
 
 Everything runs on your streaming PC. There's no Leafs account and no Leafs server: the app talks
 only to Twitch and YouTube for the accounts you connect, and to Google Fonts when you add a font.
@@ -18,8 +19,9 @@ only to Twitch and YouTube for the accounts you connect, and to Google Fonts whe
 Connecting YouTube is optional. If you connect it, Leafs Live asks Google for `youtube.readonly`
 to find your live streams and read their chat. Only if you choose to send messages to YouTube chat
 (*Allow sending*, or a bot account) does it also ask for `youtube.force-ssl`, which it uses only to
-post the messages you write. It never uploads, edits or deletes videos, and it never moderates
-chat. Details are in the [privacy policy](privacy/).
+post the messages you write and to carry out the moderation you click in your own chat (deleting a
+message, timing out, banning or unbanning a viewer). It never uploads, edits or deletes videos, and
+it never moderates on its own. Details are in the [privacy policy](privacy/).
 
 - [Privacy policy](privacy/)
 - [Terms of use](terms/)

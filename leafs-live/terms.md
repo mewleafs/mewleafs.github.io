@@ -18,7 +18,7 @@ the law allows, the developer isn't liable for any loss or damage from using the
 ## Your accounts and your stream
 
 - You choose which Twitch and YouTube accounts to connect, and you're responsible for the messages
-  you send from them.
+  you send from them and the moderation actions you take with them.
 - You keep following the terms and community rules of the platforms you stream on, including
   their limits on bots and automated messages.
 - Your rules, overlays and settings are yours. The developer claims no rights to them and never
@@ -30,7 +30,7 @@ Leafs Live uses YouTube API Services. By connecting YouTube you agree to the
 [YouTube Terms of Service](https://www.youtube.com/t/terms), and Google's use of your data follows
 the [Google Privacy Policy](https://policies.google.com/privacy). Twitch's
 [terms of service](https://www.twitch.tv/p/legal/terms-of-service/) apply to your Twitch accounts.
-What Leafs Live reads and sends is described in the [privacy policy](../privacy/).
+What Leafs Live reads, sends and moderates is described in the [privacy policy](../privacy/).
 
 ## This page
 
