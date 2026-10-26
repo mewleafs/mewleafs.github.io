@@ -16,10 +16,12 @@ from a server that runs only on your PC. Simple rules can hide, dim, highlight o
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
 moderators or your bots. Alerts thank viewers in chat when they follow, subscribe, gift subs,
-cheer or raid on Twitch, or send a Super Chat, a Super Sticker, a Jewels gift, become a member or
-gift memberships on YouTube: each type is off until you turn it on, with your own messages and
-variables, amount tiers, a minimum, and one line for a burst of them, sent as your bot account
-when you have one. The same alerts play on stream in an Alerts widget, one at a time, with your own
+cheer, raid, redeem a channel points reward or use a Power-up on Twitch, cheer on Twitch hype
+trains as they start, level up and end, and thank viewers who send a Super Chat, a Super Sticker,
+a Jewels gift, become a member or gift memberships on YouTube: each type is off until you turn it
+on, with your own messages and variables, amount tiers, a minimum, rewards picked from your
+channel's list with messages of their own, and one line for a burst of them, sent as your bot
+account when you have one. The same alerts play on stream in an Alerts widget, one at a time, with your own
 text, picture, GIF or video and sound from your PC, and you can pause, skip or replay them from the
 app or the dock. The interface works in English and Spanish.
 

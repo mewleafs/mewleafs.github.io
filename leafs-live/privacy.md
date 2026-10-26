@@ -36,10 +36,11 @@ stores the chat messages and events it reads (names, user IDs, messages, badges,
 Super Chats, subs, raids and memberships) in the profile's database, with a log of the moderation
 that happened in your chat (deleted messages, timeouts, bans, warnings, lifted ones and cleared
 chats: who did it, you, a moderator or one of your rules, to whom, the reason, and the message it
-was about), and a list of alert events (Twitch follows, subs, gifted subs, cheers and raids;
-YouTube Super Chats, Super Stickers, memberships, gifted memberships and Jewels gifts: who, what,
-how much, and the thank-you message sent for it, if any), which also keeps each one from being
-thanked twice.
+was about), and a list of alert events (Twitch follows, subs, gifted subs, cheers, raids, channel
+points redemptions with the reward and what the viewer typed with it, hype trains with their level,
+points and top contributors, and bits spent on Power-ups; YouTube Super Chats, Super Stickers,
+memberships, gifted memberships and Jewels gifts: who, what, how much, and the thank-you message
+sent for it, if any), which also keeps each one from being thanked twice.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
@@ -83,16 +84,24 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
   and to allow or deny one when you click Allow or Deny;
 - `moderator:read:followers`, to show on a viewer's card since when they've followed your channel,
-  and to hear new follows so the app can thank them in chat when you turn that on.
+  and to hear new follows so the app can thank them in chat when you turn that on;
+- `channel:read:redemptions`, to hear when a viewer redeems one of your channel points rewards and
+  to list your channel's rewards, so you can pick which ones to thank or show on stream;
+- `channel:read:hype_train`, to hear when a hype train starts, reaches a new level and ends;
+- `bits:read`, to hear the bits spent in your channel; the app uses only the bits spent on
+  Power-ups (cheers already come through the chat).
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
-the messages AutoMod holds for review, new follows, and whether your stream goes online. When you open a
-viewer's card it asks Twitch when that account was made and since when it has followed your
-channel, to show them there. Held messages, account dates and follow dates are kept only in memory
-while the app runs, never saved. It posts only the messages you send and, for the alert types
+the messages AutoMod holds for review, new follows, channel points redemptions, hype trains, bits
+spent on Power-ups, and whether your stream goes online. When you open a viewer's card it asks
+Twitch when that account was made and since when it has followed your channel, to show them there,
+and when you set up channel points alerts it asks for your channel's list of rewards. Held
+messages, account dates, follow dates and the list of rewards are kept only in memory while the
+app runs, never saved (a reward you pick is saved by its ID and title). It posts only the messages you send and, for the alert types
 you turn on (every type is off until you do), a thank-you message in your chat when someone
-follows, subscribes, gifts subs, cheers or raids, as your bot account when you have one, else your
+follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
+train starts, reaches a new level or ends, as your bot account when you have one, else your
 streamer account. It
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
 held message, switch a chat mode, press the raid shield or type a chat command in the message box
