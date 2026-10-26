@@ -5,7 +5,7 @@ permalink: /leafs-content/terms/
 
 # Leafs Content: terms of use
 
-*Last updated: 25 October 2026*
+*Last updated: 26 October 2026*
 
 These terms cover the Leafs Content desktop app. By using it, you agree to them.
 
@@ -21,6 +21,12 @@ Your ideas, scripts, footage, edits, thumbnails and everything else in your work
 The developer claims no rights to them and never receives them. You're responsible for having the
 rights to the footage, music, pictures and fonts you use, including pictures the app downloads from
 the web for you.
+
+The app comes with icons from [Lucide](https://lucide.dev) (ISC licence) and stickers from
+[Twemoji](https://github.com/jdecked/twemoji) (CC BY 4.0). You can use both in your designs.
+Twemoji's licence asks for a credit wherever you publish a design that uses its stickers: "Twemoji
+by Twitter, Inc and other contributors, CC BY 4.0". For a video, the Export tab can add it to the
+image credits.
 
 ## AI
 
