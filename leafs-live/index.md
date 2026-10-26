@@ -15,7 +15,11 @@ overlays (chat, featured message) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
-moderators or your bots. The interface works in English and Spanish.
+moderators or your bots. Alerts thank viewers in chat when they follow, subscribe, gift subs,
+cheer or raid on Twitch, or send a Super Chat, a Super Sticker, a Jewels gift, become a member or
+gift memberships on YouTube: each type is off until you turn it on, with your own messages and
+variables, amount tiers, a minimum, and one line for a burst of them, sent as your bot account
+when you have one. The interface works in English and Spanish.
 
 Everything runs on your streaming PC. There's no Leafs account and no Leafs server: the app talks
 only to Twitch and YouTube for the accounts you connect, and to Google Fonts when you add a font.
@@ -25,7 +29,7 @@ only to Twitch and YouTube for the accounts you connect, and to Google Fonts whe
 Connecting YouTube is optional. If you connect it, Leafs Live asks Google for `youtube.readonly`
 to find your live streams and read their chat. Only if you choose to send messages to YouTube chat
 (*Allow sending*, or a bot account) does it also ask for `youtube.force-ssl`, which it uses only to
-post the messages you write and to carry out the moderation you click or type in your own chat
+post the messages you write and the thank-you messages you turn on, and to carry out the moderation you click or type in your own chat
 (deleting a message, timing out, banning or unbanning a viewer, adding or removing a chat
 moderator) or that a moderation rule you turned on does (deleting a message, timing out its
 author). It never uploads, edits or deletes videos, and it moderates only when you do or one of

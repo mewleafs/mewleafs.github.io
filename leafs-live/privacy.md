@@ -8,7 +8,7 @@ permalink: /leafs-live/privacy/
 *Last updated: 26 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
-streamer's replies, carries out the moderation actions the streamer clicks, the chat commands
+streamer's replies and the thank-you messages the streamer turns on, carries out the moderation actions the streamer clicks, the chat commands
 the streamer types and the moderation rules the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
@@ -35,13 +35,17 @@ stores the chat messages and events it reads (names, user IDs, messages, badges,
 Super Chats, subs, raids and memberships) in the profile's database, with a log of the moderation
 that happened in your chat (deleted messages, timeouts, bans, warnings, lifted ones and cleared
 chats: who did it, you, a moderator or one of your rules, to whom, the reason, and the message it
-was about).
+was about), and a list of alert events (Twitch follows, subs, gifted subs, cheers and raids;
+YouTube Super Chats, Super Stickers, memberships, gifted memberships and Jewels gifts: who, what,
+how much, and the thank-you message sent for it, if any), which also keeps each one from being
+thanked twice.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
-- **Twitch:** messages and moderation log entries are deleted after 90 days by default; you can
-  change that in Settings, or keep them forever. Viewer records stay until you delete the profile.
-- **YouTube:** messages and moderation log entries are deleted after 30 days, and viewer records
+- **Twitch:** messages, moderation log entries and alert events are deleted after 90 days by
+  default; you can change that in Settings, or keep them forever. Viewer records stay until you
+  delete the profile.
+- **YouTube:** messages, moderation log entries and alert events are deleted after 30 days, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -77,15 +81,18 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `channel:manage:broadcast`, used only to add a stream marker when you type `/marker`;
 - `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
   and to allow or deny one when you click Allow or Deny;
-- `moderator:read:followers`, used only to show on a viewer's card since when they've followed your
-  channel.
+- `moderator:read:followers`, to show on a viewer's card since when they've followed your channel,
+  and to hear new follows so the app can thank them in chat when you turn that on.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
-the messages AutoMod holds for review, and whether your stream goes online. When you open a
+the messages AutoMod holds for review, new follows, and whether your stream goes online. When you open a
 viewer's card it asks Twitch when that account was made and since when it has followed your
 channel, to show them there. Held messages, account dates and follow dates are kept only in memory
-while the app runs, never saved. It posts only the messages you send, and it
+while the app runs, never saved. It posts only the messages you send and, for the alert types
+you turn on (every type is off until you do), a thank-you message in your chat when someone
+follows, subscribes, gifts subs, cheers or raids, as your bot account when you have one, else your
+streamer account. It
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
 held message, switch a chat mode, press the raid shield or type a chat command in the message box
 (such as `/ban`, `/slow` or `/raid`), or when a message matches a moderation rule you turned on
@@ -105,8 +112,10 @@ own Google client or, if you choose, your own.
 - **What it reads:** your channel's ID, handle, name and picture; your live and upcoming streams,
   to find their chats; and those chats' messages and events, including the senders' channel names,
   pictures and badges. For a stream link you paste, the video's title and live details.
-- **What it writes:** only the chat messages you send, and the moderation you click or type in
-  your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
+- **What it writes:** only the chat messages you send; for the alert types you turn on (every
+  type is off until you do), a thank-you message in your chat for a Super Chat, Super Sticker, new
+  member, membership milestone, gifted memberships or Jewels gift, as your bot account when you
+  have one, else your streamer account; and the moderation you click or type in your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
   removing a moderator of the chat (`/mod`, `/unmod`; to remove one it first reads the chat's list
   of moderators), plus deleting a message or timing out its author when it matches a moderation
   rule you turned on, always as your streamer account. It never uploads, edits or deletes videos,
@@ -121,7 +130,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries and YouTube
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events and YouTube
   viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
