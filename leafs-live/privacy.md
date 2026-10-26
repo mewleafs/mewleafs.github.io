@@ -8,8 +8,8 @@ permalink: /leafs-live/privacy/
 *Last updated: 26 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
-streamer's replies, carries out the moderation actions the streamer clicks and the chat commands
-the streamer types, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
+streamer's replies, carries out the moderation actions the streamer clicks, the chat commands
+the streamer types and the moderation rules the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
@@ -19,8 +19,8 @@ Google Fonts when you add a font.
 ## On your PC
 
 - **Each profile** is a folder you choose. Its database holds the accounts you connected (login,
-  display name, picture link and permissions, never passwords or tokens), your rules, overlays,
-  fonts and pictures, and the chat history (below).
+  display name, picture link and permissions, never passwords or tokens), your rules with their
+  blocked words and allowed links, overlays, fonts and pictures, and the chat history (below).
 - **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
   profile folder.
 - **Overlays and the dock** are served only to your own PC (`127.0.0.1`), for OBS. They never get
@@ -33,8 +33,9 @@ Google Fonts when you add a font.
 To show chat, search it, keep a "to answer" list and recognise first-time chatters, Leafs Live
 stores the chat messages and events it reads (names, user IDs, messages, badges, cheers,
 Super Chats, subs, raids and memberships) in the profile's database, with a log of the moderation
-that happened in your chat (deleted messages, timeouts, bans, lifted ones and cleared chats: who
-did it, to whom, the reason, and the message it was about).
+that happened in your chat (deleted messages, timeouts, bans, warnings, lifted ones and cleared
+chats: who did it, you, a moderator or one of your rules, to whom, the reason, and the message it
+was about).
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
@@ -55,7 +56,8 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `user:read:chat` (to read your channel's chat) and `user:write:chat` (to send the messages you
   write);
 - `moderator:manage:chat_messages` and `moderator:manage:banned_users`, to delete a message, time
-  out, ban or unban a viewer when you click it;
+  out, ban or unban a viewer when you click it, and to delete a message or time out its author
+  when it matches a rule you set up to do that;
 - `moderator:read:blocked_terms`, `moderator:read:chat_settings`, `moderator:read:unban_requests`,
   `moderator:read:warnings`, `moderator:read:moderators` and `moderator:read:vips`, which Twitch
   requires to tell the app who took each moderation action in your chat (Leafs Live uses only that
@@ -68,7 +70,7 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   set to use it;
 - `moderator:manage:announcements`, `moderator:manage:shoutouts` and `moderator:manage:warnings`,
   to post an announcement, shout out a channel or warn a viewer when you type `/announce`,
-  `/shoutout` or `/warn`;
+  `/shoutout` or `/warn`, or warn a viewer whose message matches a rule you set up to do that;
 - `channel:manage:moderators`, `channel:manage:vips` and `channel:manage:raids`, to add or remove a
   moderator or a VIP and to start or cancel a raid when you type `/mod`, `/vip`, `/raid` or their
   opposites;
@@ -82,7 +84,10 @@ the messages AutoMod holds for review, and whether your stream goes online. Held
 only in memory while the app runs, never saved. It posts only the messages you send, and it
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
 held message, switch a chat mode, press the raid shield or type a chat command in the message box
-(such as `/ban`, `/slow` or `/raid`), always as your streamer account. The raid shield's choices, and which modes it turned on so it can turn
+(such as `/ban`, `/slow` or `/raid`), or when a message matches a moderation rule you turned on
+(to delete it, time its author out or warn them), always as your streamer account. Moderation
+rules are off until you turn them on, act once when a message arrives, and never act on you, your
+moderators, your own accounts or known bots, nor on VIPs and members unless you choose so. The raid shield's choices, and which modes it turned on so it can turn
 them back off, are kept in the profile's database. To find someone a command names who hasn't written in your chat, it looks their
 name up on Twitch. See Twitch's [privacy notice](https://www.twitch.tv/p/legal/privacy-notice/).
 
@@ -99,8 +104,9 @@ own Google client or, if you choose, your own.
 - **What it writes:** only the chat messages you send, and the moderation you click or type in
   your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
   removing a moderator of the chat (`/mod`, `/unmod`; to remove one it first reads the chat's list
-  of moderators), always as your streamer account. It never uploads, edits or deletes videos, and
-  never moderates on its own.
+  of moderators), plus deleting a message or timing out its author when it matches a moderation
+  rule you turned on, always as your streamer account. It never uploads, edits or deletes videos,
+  and moderates only when you do or one of your rules does.
 - **Bans:** to be able to lift a ban later, it keeps the ID YouTube gives each ban it makes, with
   the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays. It
