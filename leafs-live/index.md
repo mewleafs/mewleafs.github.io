@@ -87,8 +87,11 @@ the thank-you messages and the channel points rewards Leafs Live's Twitch app cr
 pauses on Twitch itself. A simulator makes fake chat messages, follows, subs, raids, Super Chats, bans,
 AutoMod holds and more, one at a time or as saved sequences, so you can try your alerts, overlays
 and rules without a stream: they happen in simulated chats, nothing of them is saved, and the lines
-they would send to chat are only shown unless you choose to really send them. The interface works
-in English and Spanish.
+they would send to chat are only shown unless you choose to really send them. Remote control, off
+until you turn it on, lets a Stream Deck, Bitfocus Companion, AutoHotkey or a script play, pause,
+stop, skip or replay alerts, turn reader mode's pages and switch between the live chat and reader
+mode, by calling a URL on your PC with a key only you have; Settings lists every action with its
+URL ready to copy and a manual to save. The interface works in English and Spanish.
 
 Everything runs on your streaming PC. There's no Leafs account and no Leafs server: the app talks
 only to Twitch and YouTube for the accounts you connect, and to Google Fonts when you add a font.
