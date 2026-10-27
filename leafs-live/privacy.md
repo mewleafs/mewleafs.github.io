@@ -88,8 +88,9 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   when it matches a rule you set up to do that;
 - `moderator:read:blocked_terms`, `moderator:read:chat_settings`, `moderator:read:unban_requests`,
   `moderator:read:warnings`, `moderator:read:moderators` and `moderator:read:vips`, which Twitch
-  requires to tell the app who took each moderation action in your chat (Leafs Live uses only that
-  part);
+  requires to tell the app who took each moderation action in your chat; Leafs Live also uses
+  `moderator:read:blocked_terms` to list your channel's blocked terms and
+  `moderator:read:unban_requests` to list and hear the unban requests viewers send;
 - `moderator:manage:chat_settings`, to turn slow mode, followers-only, subscribers-only,
   emote-only or unique chat on or off when you type the command (`/slow`, `/followers`…), switch it
   in the chat's Modes menu or press the raid shield;
@@ -108,6 +109,12 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   when you press *Update the stream* or apply a stream info preset;
 - `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
   and to allow or deny one when you click Allow or Deny;
+- `moderator:manage:automod_settings`, to show your AutoMod levels and change them when you save
+  them in Moderation;
+- `moderator:manage:blocked_terms`, to add a term to your channel's blocked terms or remove one
+  when you do it in Moderation, or copy your Leafs Live blocked words there;
+- `moderator:manage:unban_requests`, to approve or deny an unban request, with the note you write,
+  when you click Approve or Deny;
 - `moderator:read:followers`, to show on a viewer's card since when they've followed your channel,
   to answer the `!followage` viewer command, and to hear new follows so the app can thank them in
   chat when you turn that on;
@@ -125,7 +132,8 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
-the messages AutoMod holds for review, new follows, channel points redemptions, hype trains, bits
+the messages AutoMod holds for review, unban requests (who sent them, when and what they wrote)
+and when one is answered or taken back, new follows, channel points redemptions, hype trains, bits
 spent on Power-ups, and whether your stream is live, since when, and when it goes online or offline. When you open a viewer's card it asks
 Twitch when that account was made and since when it has followed your channel, to show them there,
 and when you set up channel points alerts it asks for your channel's list of rewards. When a
@@ -138,7 +146,9 @@ settings, and for the redemptions waiting on the rewards Leafs Live created (who
 when and what they typed); it hears when one of those is completed or refunded on Twitch. When you
 open Stream info, it asks Twitch for your channel's title, category, tags,
 language, content classification labels and branded content, and searches Twitch's categories by
-the name you type. Held messages, account dates, follow dates, the title, the category, the
+the name you type. When you open Moderation, it asks Twitch for your AutoMod levels, your
+channel's blocked terms and the unban requests waiting for an answer. Held messages, unban
+requests, the AutoMod levels, the blocked terms, account dates, follow dates, the title, the category, the
 stream info Twitch gives, the list of rewards and the waiting redemptions are kept only in memory while the app runs, never
 saved (a reward you pick is saved by its ID and title; a stream info preset you save keeps what you
 put in it, in the profile's database). It posts only the messages you send; once you turn viewer commands on (they're off
@@ -156,7 +166,10 @@ follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power
 train starts, reaches a new level or ends, as your bot account when you have one, else your
 streamer account. It makes, changes, pauses, turns on or off or deletes a channel points reward
 only when you do it in Channel points, and completes or refunds a redemption only when you click
-Complete or Refund, always as your streamer account. When you turn on pausing rewards in alert control, it asks Twitch for the
+Complete or Refund, always as your streamer account. It changes your AutoMod levels, adds or
+removes a blocked term, and approves or denies an unban request only when you do it in Moderation,
+always as your streamer account; a blocked term you copy into Leafs Live joins the profile's
+blocked words in its database. When you turn on pausing rewards in alert control, it asks Twitch for the
 rewards it may change, pauses those that are on when you press Pause or Stop and unpauses them when
 you press Play; the IDs of the rewards it paused are kept in the profile's database until then. It
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a

@@ -72,7 +72,11 @@ rewards in the app and the dock: make one with its cost, prompt, color, limits p
 viewer, cooldown and whether it skips the queue, then pause it, turn it off, edit it or delete it;
 what viewers redeem waits in a queue to complete or refund, one at a time or all of a reward at
 once. Rewards made on twitch.tv are listed too, and can be recreated in Leafs Live to manage them
-from there. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
+from there. Moderation shows your Twitch channel's moderation settings in the app and the dock:
+the unban requests banned viewers send, to approve or deny with a note, counted on the dock's
+button; AutoMod's level, one for everything or one per category; and Twitch's blocked terms next
+to Leafs Live's own blocked words, to add, remove and copy from one list to the other. One Play /
+Pause / Stop control, in the app's header and the dock's, holds or drops
 everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
 the thank-you messages and the channel points rewards Leafs Live's Twitch app created, which it
 pauses on Twitch itself. A simulator makes fake chat messages, follows, subs, raids, Super Chats, bans,
