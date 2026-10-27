@@ -11,7 +11,7 @@ from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, 
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
 shield button that turns on the protections you picked and back off, and drives customizable OBS
-overlays (chat, featured message, alerts, chat race, poll) and an OBS dock
+overlays (chat, featured message, alerts, chat race, poll, giveaway) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
@@ -42,7 +42,17 @@ answer, voted by typing an option's number or text (or `!vote`), one vote per ac
 platform, with a time or until you end it, who can vote, the result live on stream or only at the
 end (Twitch and YouTube shown apart if you like) and, if you choose, a line in chat when it starts
 and ends; you start, end or cancel them from the app or the dock, save polls to run again and see
-past ones with their results. Stream ideas keep a list of things to do on stream (ideas, topics, things to
+past ones with their results. Giveaways also run in both chats at once: viewers enter with a
+keyword like `!join`, a name that matches a pattern (such as a Guild Wars 2 account name, kept as
+their entry) or any message, one entry per account, and a name counts once; subscribers and
+members get more chances (×2 unless you change it), and you can limit it to some platforms, to
+subscribers or higher, to Twitch followers or Twitch accounts of a certain age, and leave
+moderators out. You close the entries (or they close at their time), draw a winner weighted by
+those chances, reroll, and can ask the winner to answer in chat within a time; the giveaway shows
+on stream with its prize, how to enter, the time left, a shuffle of names and the winner, and,
+if you choose, lines in chat when it opens, before it closes and for the winner. Past giveaways
+keep their winners and a draw log with each draw's seed and entries, so a draw can be checked.
+Stream ideas keep a list of things to do on stream (ideas, topics, things to
 react to or read), each with a note, a kind, links to open or copy and an optional day from which
 it's important: important ones come first, and the dock's button counts them with a small bounce
 when one comes due; search, filter by kind, drag to reorder, tick them done. They're in the app and

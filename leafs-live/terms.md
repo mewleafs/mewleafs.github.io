@@ -18,7 +18,7 @@ the law allows, the developer isn't liable for any loss or damage from using the
 ## Your accounts and your stream
 
 - You choose which Twitch and YouTube accounts to connect, and you're responsible for the messages
-  you send from them, the thank-you messages, viewer commands and timed messages you turn on, the polls you run, and the moderation
+  you send from them, the thank-you messages, viewer commands and timed messages you turn on, the polls and giveaways you run, and the moderation
   actions, chat commands and moderation rules you run with them.
 - You keep following the terms and community rules of the platforms you stream on, including
   their limits on bots and automated messages.

@@ -9,7 +9,7 @@ permalink: /leafs-live/privacy/
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
-commands the streamer turns on, the timed messages the streamer turns on and the lines of the polls the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
+commands the streamer turns on, the timed messages the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
 the streamer types and the moderation rules the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
@@ -22,7 +22,7 @@ Google Fonts when you add a font.
 - **Each profile** is a folder you choose. Its database holds the accounts you connected (login,
   display name, picture link and permissions, never passwords or tokens), your rules with their
   blocked words and allowed links, your viewer commands with their counters and how many times
-  each was used, your timed messages, your saved polls, your stream ideas (with their notes, links and days), overlays
+  each was used, your timed messages, your saved polls and giveaways, your stream ideas (with their notes, links and days), overlays
   with their fonts, pictures, videos and sounds, and the chat history (below). A stream idea's link
   opens in your own web browser when you click *Open*; the app itself doesn't visit it.
 - **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
@@ -58,13 +58,18 @@ For polls, it keeps each poll you run (its question, options and settings, when 
 result: each option's votes from each platform, and for an open answer the answers viewers wrote)
 and each viewer's vote in it: their name, user ID, what they voted and when. A poll you cancel is
 deleted with its votes.
+For giveaways, it keeps each giveaway you run (its prize and settings, when it opened, closed and
+ended) with each viewer's entry: their name, user ID, what they entered (such as a Guild Wars 2
+account name), their chances and when; and each draw, with the random seed it used, every entry
+it drew from and the winner, so the draw can be checked again. A giveaway you cancel is deleted
+with its entries.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
-- **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes and stream times are deleted after 90 days by
+- **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes, giveaways with their entries and stream times are deleted after 90 days by
   default; you can change that in Settings, or keep them forever. Viewer records stay until you
   delete the profile.
-- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in) and stream times are deleted after 30 days, and viewer records
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -122,7 +127,9 @@ Twitch when that account was made and since when it has followed your channel, t
 and when you set up channel points alerts it asks for your channel's list of rewards. When a
 viewer command's answer or a timed message needs them, it asks Twitch for your stream's title and category, or when
 the viewer who typed it (or the one they name) made their account and since when they've followed
-your channel. Held messages, account dates, follow dates, the title, the category and the list of
+your channel. When a giveaway you run takes only followers or accounts of a certain age, it asks
+Twitch, as each viewer enters, when their account was made and since when they've followed your
+channel. Held messages, account dates, follow dates, the title, the category and the list of
 rewards are kept only in memory while the app runs, never saved (a reward you pick is saved by its
 ID and title). It posts only the messages you send; once you turn viewer commands on (they're off
 until you do), the answer to a command a viewer types in your chat, in that chat, for the commands
@@ -131,7 +138,9 @@ by default, when you have one), with a shoutout as your streamer account for a c
 that; once you turn timed messages on (they're off until you do), your timed messages in your live
 chat, as the account each one sends as (your bot account by default, when you have one); for a
 poll you start with its chat lines on, a line when it starts and one when it ends, as your bot
-account when you have one; and, for the alert types
+account when you have one; for a giveaway you start with its chat lines on, a line when it opens,
+one a minute before it closes and one for each winner drawn, as your bot account when you have
+one; and, for the alert types
 you turn on (every type is off until you do), a thank-you message in your chat when someone
 follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
 train starts, reaches a new level or ends, as your bot account when you have one, else your
@@ -164,7 +173,9 @@ own Google client or, if you choose, your own.
   timed messages on (they're off until you do), your timed messages in your live chats, none once
   the day's quota has few messages left, as the account each one sends as (your bot account by
   default, when you have one); for a poll you start with its chat lines on, a line when it starts
-  and one when it ends, as your bot account when you have one; for the alert types you turn on (every
+  and one when it ends, as your bot account when you have one; for a giveaway you start with its
+  chat lines on, a line when it opens, one a minute before it closes and one for each winner
+  drawn, as your bot account when you have one; for the alert types you turn on (every
   type is off until you do), a thank-you message in your chat for a Super Chat, Super Sticker, new
   member, membership milestone, gifted memberships or Jewels gift, as your bot account when you
   have one, else your streamer account; and the moderation you click or type in your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
@@ -182,7 +193,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), stream times and YouTube
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times and YouTube
   viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
