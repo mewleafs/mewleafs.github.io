@@ -62,7 +62,12 @@ Stream ideas keep a list of things to do on stream (ideas, topics, things to
 react to or read), each with a note, a kind, links to open or copy and an optional day from which
 it's important: important ones come first, and the dock's button counts them with a small bounce
 when one comes due; search, filter by kind, drag to reorder, tick them done. They're in the app and
-the dock, never on stream. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
+the dock, never on stream. Stream info sets your stream's details on both platforms from one
+form, in the app and the dock: a title shared by both or one for each, Twitch's category (search
+by name), tags, language, content classification labels and branded content, and the YouTube
+broadcast's description, category, visibility, made for kids and a thumbnail from your pictures,
+for the live broadcast, an upcoming one or a new one you schedule on a stream key; save it as a
+preset ("Guild Wars 2 night") to apply again with one click. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
 everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
 the thank-you messages and the channel points rewards Leafs Live's Twitch app created, which it
 pauses on Twitch itself. A simulator makes fake chat messages, follows, subs, raids, Super Chats, bans,
@@ -83,8 +88,11 @@ post the messages you write, the thank-you messages you turn on, the answers to 
 commands you turn on and the timed messages you turn on, and to carry out the moderation you click or type in your own chat
 (deleting a message, timing out, banning or unbanning a viewer, adding or removing a chat
 moderator) or that a moderation rule you turned on does (deleting a message, timing out its
-author). It never uploads, edits or deletes videos, and it moderates only when you do or one of
-your rules does. Details are in the [privacy policy](privacy/).
+author). It never uploads or deletes videos, and it moderates only when you do or one of
+your rules does. With the same permission it changes your live or upcoming broadcast's title,
+description, category, visibility, audience setting and thumbnail, and schedules a new broadcast,
+only when you press *Update the stream* or apply a stream info preset. Details are in the
+[privacy policy](privacy/).
 
 - [Privacy policy](privacy/)
 - [Terms of use](terms/)

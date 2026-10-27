@@ -103,7 +103,9 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `channel:manage:moderators`, `channel:manage:vips` and `channel:manage:raids`, to add or remove a
   moderator or a VIP and to start or cancel a raid when you type `/mod`, `/vip`, `/raid` or their
   opposites;
-- `channel:manage:broadcast`, used only to add a stream marker when you type `/marker`;
+- `channel:manage:broadcast`, to add a stream marker when you type `/marker`, and to set your
+  stream's title, category, tags, language, content classification labels and branded content
+  when you press *Update the stream* or apply a stream info preset;
 - `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
   and to allow or deny one when you click Allow or Deny;
 - `moderator:read:followers`, to show on a viewer's card since when they've followed your channel,
@@ -129,9 +131,12 @@ viewer command's answer or a timed message needs them, it asks Twitch for your s
 the viewer who typed it (or the one they name) made their account and since when they've followed
 your channel. When a giveaway you run takes only followers or accounts of a certain age, it asks
 Twitch, as each viewer enters, when their account was made and since when they've followed your
-channel. Held messages, account dates, follow dates, the title, the category and the list of
-rewards are kept only in memory while the app runs, never saved (a reward you pick is saved by its
-ID and title). It posts only the messages you send; once you turn viewer commands on (they're off
+channel. When you open Stream info, it asks Twitch for your channel's title, category, tags,
+language, content classification labels and branded content, and searches Twitch's categories by
+the name you type. Held messages, account dates, follow dates, the title, the category, the
+stream info Twitch gives and the list of rewards are kept only in memory while the app runs, never
+saved (a reward you pick is saved by its ID and title; a stream info preset you save keeps what you
+put in it, in the profile's database). It posts only the messages you send; once you turn viewer commands on (they're off
 until you do), the answer to a command a viewer types in your chat, in that chat, for the commands
 that are on and the viewers each one allows, as the account the command sends as (your bot account
 by default, when you have one), with a shoutout as your streamer account for a command set to do
@@ -162,10 +167,16 @@ Leafs Live uses YouTube API Services. You sign in with Google in your browser, u
 own Google client or, if you choose, your own.
 
 - **Permissions:** `youtube.readonly` for your streamer account. `youtube.force-ssl` only if you
-  choose *Allow sending* (it lets you send and moderate), and for a bot account, which only sends.
+  choose *Allow sending* (it lets you send, moderate and change your broadcasts), and for a bot
+  account, which only sends.
 - **What it reads:** your channel's ID, handle, name and picture; your live and upcoming streams,
   to find their chats and when each one went live; and those chats' messages and events, including the senders' channel names,
-  pictures and badges. For a stream link you paste, the video's title and live details.
+  pictures and badges. For a stream link you paste, the video's title and live details. When you
+  open Stream info, your live and upcoming broadcasts' titles, descriptions, categories,
+  visibility, audience setting (made for kids or not), scheduled times and the stream key each is
+  bound to, and YouTube's list of video categories; when you schedule a broadcast, the names of
+  your channel's stream keys (never the keys themselves). These are kept only in memory while the
+  app runs.
 - **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
   off until you do), the answer to a command a viewer types in your chat, in that chat, at most one
   per chat in the time you set, and none once the day's quota has few messages left, as the
@@ -181,12 +192,18 @@ own Google client or, if you choose, your own.
   have one, else your streamer account; and the moderation you click or type in your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
   removing a moderator of the chat (`/mod`, `/unmod`; to remove one it first reads the chat's list
   of moderators), plus deleting a message or timing out its author when it matches a moderation
-  rule you turned on, always as your streamer account. It never uploads, edits or deletes videos,
-  and moderates only when you do or one of your rules does.
+  rule you turned on, always as your streamer account; and, when you press *Update the stream* or
+  apply a stream info preset, the title, description, category, visibility and audience setting of
+  the live or upcoming broadcast you picked (for the category, through the broadcast's video when
+  the broadcast itself doesn't take it), its thumbnail when you pick a picture from the profile's
+  library, and a new scheduled broadcast bound to the stream key you choose, as your streamer
+  account. It never uploads or deletes videos, changes your broadcasts only when you press
+  *Update the stream* or apply a preset, and moderates only when you do or one of your rules does.
 - **Bans:** to be able to lift a ban later, it keeps the ID YouTube gives each ban it makes, with
   the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
-- **How it's used:** only to show and answer your chat in the app, the dock and your overlays. It
-  isn't used for advertising, sold or shared with anyone else.
+- **How it's used:** only to show and answer your chat in the app, the dock and your overlays,
+  and to show and change your broadcasts' details in the app and the dock. It isn't used for
+  advertising, sold or shared with anyone else.
 - **Where it's kept:** in the profile's database on your PC, for at most 30 days, as described
   above. Your channel's name and picture are fetched again every week.
 - **Agreeing:** the Accounts screen and the first-run setup say that connecting YouTube agrees to
@@ -208,10 +225,12 @@ including the Limited Use requirements. See also the
 ## Pictures and fonts
 
 Your overlays and the dock show viewers' pictures, emotes and badges from Twitch's and YouTube's
-image servers. When you add a Google font, the app downloads it once from Google Fonts. Like any
+image servers, and Stream info shows the box art of the Twitch categories you search for from
+Twitch's. When you add a Google font, the app downloads it once from Google Fonts. Like any
 download, those servers can see your IP address. The pictures, videos and sounds you add for alerts
 are copied into the profile folder, and your overlays load them from your PC; they're sent nowhere,
-unless you export a template, which then carries them in its file.
+unless you export a template, which then carries them in its file, or you pick one as a YouTube
+broadcast's thumbnail, which uploads it to YouTube.
 
 ## Children
 
