@@ -42,14 +42,14 @@ while getting ready. Polls run in both chats at once: one choice, several choice
 answer, voted by typing an option's number or text (or `!vote`), one vote per account on each
 platform, with a time or until you end it, who can vote, the result live on stream or only at the
 end (Twitch and YouTube shown apart if you like) and, if you choose, a line in chat when it starts
-and ends; you start, end or cancel them from the app or the dock, save polls to run again and see
-past ones with their results. Giveaways also run in both chats at once: viewers enter with a
+and ends; you make, start, end or cancel them from the app or the dock, save polls to run again
+and see past ones with their results in the app. Giveaways also run in both chats at once: viewers enter with a
 keyword like `!join`, a name that matches a pattern (such as a Guild Wars 2 account name, kept as
 their entry) or any message, one entry per account, and a name counts once; subscribers and
 members get more chances (×2 unless you change it), and you can limit it to some platforms, to
 subscribers or higher, to Twitch followers or Twitch accounts of a certain age, and leave
-moderators out. You close the entries (or they close at their time), draw a winner weighted by
-those chances, reroll, and can ask the winner to answer in chat within a time; the giveaway shows
+moderators out. You make and start giveaways from the app or the dock, close the entries (or they
+close at their time), draw a winner weighted by those chances, reroll, and can ask the winner to answer in chat within a time; the giveaway shows
 on stream with its prize, how to enter, the time left, a shuffle of names and the winner, and,
 if you choose, lines in chat when it opens, before it closes and for the winner. Past giveaways
 keep their winners and a draw log with each draw's seed and entries, so a draw can be checked.
