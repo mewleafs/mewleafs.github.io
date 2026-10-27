@@ -27,7 +27,10 @@ account when you have one. Viewer commands answer what viewers type in either ch
 `!uptime`, `!followage`, `!lurk`, `!so @friend`, `!8ball`, a `!deaths` counter…) in that chat, once
 you turn them on: every command can be edited, turned off or deleted, with your own replies and
 variables, who can use it, cooldowns and a gentler pace on YouTube to spare its daily quota, and
-you can add your own. The same alerts play on stream in an Alerts widget, one at a time, with your own
+you can add your own. Timed messages post your lines (your Discord, your socials, a reminder of
+the commands…) in each of your live chats every few minutes, taking turns in your order, once you
+turn them on, and only after enough viewers have written since the last one, so a quiet chat isn't
+spammed. The same alerts play on stream in an Alerts widget, one at a time, with your own
 text, picture, GIF or video and sound from your PC, and you can skip or replay them from the app or
 the dock. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
 everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
@@ -46,8 +49,8 @@ only to Twitch and YouTube for the accounts you connect, and to Google Fonts whe
 Connecting YouTube is optional. If you connect it, Leafs Live asks Google for `youtube.readonly`
 to find your live streams and read their chat. Only if you choose to send messages to YouTube chat
 (*Allow sending*, or a bot account) does it also ask for `youtube.force-ssl`, which it uses only to
-post the messages you write, the thank-you messages you turn on and the answers to the viewer
-commands you turn on, and to carry out the moderation you click or type in your own chat
+post the messages you write, the thank-you messages you turn on, the answers to the viewer
+commands you turn on and the timed messages you turn on, and to carry out the moderation you click or type in your own chat
 (deleting a message, timing out, banning or unbanning a viewer, adding or removing a chat
 moderator) or that a moderation rule you turned on does (deleting a message, timing out its
 author). It never uploads, edits or deletes videos, and it moderates only when you do or one of
