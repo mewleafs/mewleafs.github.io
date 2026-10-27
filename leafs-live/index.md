@@ -11,7 +11,7 @@ from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, 
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
 shield button that turns on the protections you picked and back off, and drives customizable OBS
-overlays (chat, featured message, alerts) and an OBS dock
+overlays (chat, featured message, alerts, chat race) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
@@ -32,7 +32,12 @@ the commands…) in each of your live chats every few minutes, taking turns in y
 turn them on, and only after enough viewers have written since the last one, so a quiet chat isn't
 spammed. The same alerts play on stream in an Alerts widget, one at a time, with your own
 text, picture, GIF or video and sound from your PC, and you can skip or replay them from the app or
-the dock. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
+the dock. A chat race shows who got to your stream first: each viewer's first message, follow,
+sub, redeem or other support takes the next place, gold, silver and bronze first, on stream as a
+leaderboard, a ticker or one arrival at a time, with an all-time board of who came first most
+often; it starts with each stream (or when you start it), leaves out your own accounts and known
+bots, and lists everyone in the app and the dock with a *Said hi* tick, so you can greet each one
+while getting ready. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
 everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
 the thank-you messages and the channel points rewards Leafs Live's Twitch app created, which it
 pauses on Twitch itself. A simulator makes fake chat messages, follows, subs, raids, Super Chats, bans,

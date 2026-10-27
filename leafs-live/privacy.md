@@ -49,13 +49,17 @@ points and top contributors, and bits spent on Power-ups; YouTube Super Chats, S
 memberships, gifted memberships and Jewels gifts: who, what, how much, and the thank-you message
 sent for it, if any), which also keeps each one from being thanked twice. To group the chat by
 stream, it also keeps when each of your streams was live on each platform (its start and end).
+For the chat race (who got to your stream first), it keeps each race and each viewer's place in
+it: their name, user ID, picture link, name color, badges, what brought them in (a message, a
+follow, a sub, a Super Chat…), the chat, when, and whether you ticked them off as greeted; the
+counts of first places and streams in a row are worked out from those races.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
-- **Twitch:** messages, moderation log entries, alert events and stream times are deleted after 90 days by
+- **Twitch:** messages, moderation log entries, alert events, chat race places and stream times are deleted after 90 days by
   default; you can change that in Settings, or keep them forever. Viewer records stay until you
   delete the profile.
-- **YouTube:** messages, moderation log entries, alert events and stream times are deleted after 30 days, and viewer records
+- **YouTube:** messages, moderation log entries, alert events, chat race places and stream times are deleted after 30 days, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -170,7 +174,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, stream times and YouTube
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, stream times and YouTube
   viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
