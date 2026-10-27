@@ -18,7 +18,10 @@ links, shouting in capitals, too many emotes, the same text again), never touchi
 moderators or your bots. Reader mode shows the chat in pages, in the app and the dock, so you
 read every message in order: a page moves on only when you press Next, it counts what you haven't
 read yet, and it skips the messages your rules dim and the names you tell it to skip (such as bots)
-but never a follow, sub, raid or other alert. Alerts thank viewers in chat when they follow, subscribe, gift subs,
+but never a follow, sub, raid or other alert. Important mode pages the same way through only
+what mustn't be missed (follows, subs, cheers, raids, Super Chats, memberships, hype trains,
+first-time chatters and the channel points rewards you pick), with its own count always in view
+in the app and the dock. Alerts thank viewers in chat when they follow, subscribe, gift subs,
 cheer, raid, redeem a channel points reward or use a Power-up on Twitch, cheer on Twitch hype
 trains as they start, level up and end, and thank viewers who send a Super Chat, a Super Sticker,
 a Jewels gift, become a member or gift memberships on YouTube: each type is off until you turn it
@@ -89,8 +92,8 @@ AutoMod holds and more, one at a time or as saved sequences, so you can try your
 and rules without a stream: they happen in simulated chats, nothing of them is saved, and the lines
 they would send to chat are only shown unless you choose to really send them. Remote control, off
 until you turn it on, lets a Stream Deck, Bitfocus Companion, AutoHotkey or a script play, pause,
-stop, skip or replay alerts, turn reader mode's pages and switch between the live chat and reader
-mode, by calling a URL on your PC with a key only you have; Settings lists every action with its
+stop, skip or replay alerts, turn reader and important mode's pages and switch between the live
+chat, reader mode and important mode, by calling a URL on your PC with a key only you have; Settings lists every action with its
 URL ready to copy and a manual to save. The interface works in English and Spanish.
 
 Everything runs on your streaming PC. There's no Leafs account and no Leafs server: the app talks

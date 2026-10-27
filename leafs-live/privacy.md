@@ -43,7 +43,8 @@ Google Fonts when you add a font.
 
 ## Chat history and viewers
 
-To show chat, search it, keep a "to answer" list, remember how far you read in reader mode and the names it skips, and
+To show chat, search it, keep a "to answer" list, remember how far you read in reader and important mode, the names reader mode skips and what
+important mode holds, and
 recognise first-time chatters, Leafs Live stores the chat messages and events it reads (names,
 user IDs, messages, badges, cheers, Super Chats, subs, raids and memberships) in the profile's database, with a log of the moderation
 that happened in your chat (deleted messages, timeouts, bans, warnings, lifted ones and cleared
