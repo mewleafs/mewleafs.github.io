@@ -31,8 +31,10 @@ Google Fonts when you add a font.
   your sign-ins.
 - **Remote control** is off until you turn it on. Then the app answers calls from your own PC
   (`127.0.0.1`) that carry its key, which is kept in the app's settings file on your PC; calls from
-  websites are refused. It never gives out your sign-ins, and the list of the latest calls it shows
-  in Settings is kept in memory only.
+  websites are refused. What an action does on Twitch or YouTube (a line in chat, a chat mode, a
+  stream marker, an ad, stream info) is sent by the app the same way as from its own buttons. It
+  never gives out your sign-ins, and the list of the latest calls it shows in Settings is kept in
+  memory only.
 - **Simulated events** (the app's simulator, to try alerts and overlays) are made on your PC, in
   simulated chats, and are never saved. Nothing about them reaches Twitch or YouTube, except that
   while you turn on *Really send to chat* the chat messages they lead to (such as thank-yous) go to

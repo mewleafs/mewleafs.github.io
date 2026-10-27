@@ -93,10 +93,15 @@ pauses on Twitch itself. A simulator makes fake chat messages, follows, subs, ra
 AutoMod holds and more, one at a time or as saved sequences, so you can try your alerts, overlays
 and rules without a stream: they happen in simulated chats, nothing of them is saved, and the lines
 they would send to chat are only shown unless you choose to really send them. Remote control, off
-until you turn it on, lets a Stream Deck, Bitfocus Companion, AutoHotkey or a script play, pause,
-stop, skip or replay alerts, turn reader and important mode's pages and switch between the live
-chat, reader mode and important mode, by calling a URL on your PC with a key only you have; Settings lists every action with its
-URL ready to copy and a manual to save. The interface works in English and Spanish.
+until you turn it on, lets a Stream Deck, Bitfocus Companion, AutoHotkey or a script work the
+stream by calling a URL on your PC with a key only you have: play, pause, stop, skip or replay
+alerts; turn reader and important mode's pages and switch between the live chat, reader mode and
+important mode; take the featured message off; start and end the stream session and the chat race;
+start, end and show saved polls; open, close, draw and finish saved giveaways; roll and stop the
+credits; snooze or run Twitch ads; turn Twitch's slow, emote-only, followers-only, subscribers-only
+and Shield modes on and off and put a stream marker; apply saved stream info; send a line to chat;
+turn timed messages and viewer commands on and off; and play simulator presets. Settings lists
+every action with its URL ready to copy and a manual to save. The interface works in English and Spanish.
 
 Everything runs on your streaming PC. There's no Leafs account and no Leafs server: the app talks
 only to Twitch and YouTube for the accounts you connect, and to Google Fonts when you add a font.
