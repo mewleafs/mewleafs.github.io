@@ -10,7 +10,7 @@ permalink: /leafs-live/privacy/
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
 commands the streamer turns on, the timed messages the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
-the streamer types and the moderation rules the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
+the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
@@ -116,10 +116,12 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `channel:read:hype_train`, to hear when a hype train starts, reaches a new level and ends;
 - `bits:read`, to hear the bits spent in your channel; the app uses only the bits spent on
   Power-ups (cheers already come through the chat);
-- `channel:manage:redemptions`, used only when you turn on pausing rewards in alert control: to
-  pause on Twitch the channel points rewards Leafs Live's Twitch app created (Twitch lets an app
-  change only the rewards it created) while alert control is paused or stopped, and to unpause them
-  when you press Play.
+- `channel:manage:redemptions`, to make, change, pause, turn off and delete the channel points
+  rewards you set up in Leafs Live, to list what viewers redeemed on them and complete or refund
+  those redemptions when you click Complete or Refund (Twitch lets an app change only the rewards
+  it created, and only their redemptions), and, when you turn on pausing rewards in alert control,
+  to pause those rewards while alert control is paused or stopped and unpause them when you press
+  Play.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
@@ -131,10 +133,13 @@ viewer command's answer or a timed message needs them, it asks Twitch for your s
 the viewer who typed it (or the one they name) made their account and since when they've followed
 your channel. When a giveaway you run takes only followers or accounts of a certain age, it asks
 Twitch, as each viewer enters, when their account was made and since when they've followed your
-channel. When you open Stream info, it asks Twitch for your channel's title, category, tags,
+channel. When you open Channel points, it asks Twitch for your channel's rewards with their
+settings, and for the redemptions waiting on the rewards Leafs Live created (who redeemed them,
+when and what they typed); it hears when one of those is completed or refunded on Twitch. When you
+open Stream info, it asks Twitch for your channel's title, category, tags,
 language, content classification labels and branded content, and searches Twitch's categories by
 the name you type. Held messages, account dates, follow dates, the title, the category, the
-stream info Twitch gives and the list of rewards are kept only in memory while the app runs, never
+stream info Twitch gives, the list of rewards and the waiting redemptions are kept only in memory while the app runs, never
 saved (a reward you pick is saved by its ID and title; a stream info preset you save keeps what you
 put in it, in the profile's database). It posts only the messages you send; once you turn viewer commands on (they're off
 until you do), the answer to a command a viewer types in your chat, in that chat, for the commands
@@ -149,7 +154,9 @@ one; and, for the alert types
 you turn on (every type is off until you do), a thank-you message in your chat when someone
 follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
 train starts, reaches a new level or ends, as your bot account when you have one, else your
-streamer account. When you turn on pausing rewards in alert control, it asks Twitch for the
+streamer account. It makes, changes, pauses, turns on or off or deletes a channel points reward
+only when you do it in Channel points, and completes or refunds a redemption only when you click
+Complete or Refund, always as your streamer account. When you turn on pausing rewards in alert control, it asks Twitch for the
 rewards it may change, pauses those that are on when you press Pause or Stop and unpauses them when
 you press Play; the IDs of the rewards it paused are kept in the profile's database until then. It
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
