@@ -78,7 +78,16 @@ what viewers redeem waits in a queue to complete or refund, one at a time or all
 once. Rewards made on twitch.tv are listed too, and can be recreated in Leafs Live to manage them
 from there. Each reward also says how its redemptions show in the chat: grouped in one row that
 counts them and who redeemed them (so a spammed reward doesn't bury the messages), a row each so
-what viewers typed can be read, or not in the chat at all. Moderation shows your Twitch channel's moderation settings in the app and the dock:
+what viewers typed can be read, or not in the chat at all. VIP Stamps, off until you turn it on,
+is a passport on Twitch: viewers get one stamp per stream by redeeming the reward you pick, and
+those who reach your amount in a month are made Twitch VIPs for the next month, which they keep by
+reaching it again; it never touches the VIPs you gave on twitch.tv, never makes a moderator a VIP,
+and permanent VIPs you choose never lose it. The month change happens by itself, with a report of
+who gained and lost VIP and why, a vacation mode where nobody loses it, an increase that starts
+next month and an optional line in chat naming the new VIPs. Each stamp shows on stream as the
+viewer's passport with this stream's icon pressing in, reaching the amount plays a celebration, a
+VIP's first activity in a stream plays a welcome and sends a welcome line, and `!passport` (off
+until you turn it on) tells a viewer how many stamps they have. Moderation shows your Twitch channel's moderation settings in the app and the dock:
 the unban requests banned viewers send, to approve or deny with a note, counted on the dock's
 button; AutoMod's level, one for everything or one per category; and Twitch's blocked terms next
 to Leafs Live's own blocked words, to add, remove and copy from one list to the other. Twitch

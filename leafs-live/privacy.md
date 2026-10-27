@@ -10,7 +10,7 @@ permalink: /leafs-live/privacy/
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
 commands the streamer turns on, the timed messages the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
-the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
+the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
@@ -70,6 +70,11 @@ ended) with each viewer's entry: their name, user ID, what they entered (such as
 account name), their chances and when; and each draw, with the random seed it used, every entry
 it drew from and the winner, so the draw can be checked again. A giveaway you cancel is deleted
 with its entries.
+For VIP Stamps (Twitch only), it keeps each stamp a viewer got (their name, user ID, the stream,
+the month and when), each stream's stamp icon, the viewers it made VIP or you made permanent VIPs
+(name, user ID, the month they're VIP for and whether the app gave it), who was welcomed in each
+stream, and a report of each month change (who gained, kept or lost VIP, with their stamps). These
+stay until you delete the profile.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
@@ -110,7 +115,8 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   allow its users to, or warn a viewer whose message matches a rule you set up to do that;
 - `channel:manage:moderators`, `channel:manage:vips` and `channel:manage:raids`, to add or remove a
   moderator or a VIP and to start or cancel a raid when you type `/mod`, `/vip`, `/raid` or their
-  opposites;
+  opposites, and, once you turn VIP Stamps on, to read your channel's moderators and VIPs and to
+  add or remove the VIPs it gives at each month change and the permanent VIPs you add;
 - `channel:manage:broadcast`, to add a stream marker when you type `/marker`, and to set your
   stream's title, category, tags, language, content classification labels and branded content
   when you press *Update the stream* or apply a stream info preset;
@@ -152,7 +158,9 @@ viewer command's answer or a timed message needs them, it asks Twitch for your s
 the viewer who typed it (or the one they name) made their account and since when they've followed
 your channel. When a giveaway you run takes only followers or accounts of a certain age, it asks
 Twitch, as each viewer enters, when their account was made and since when they've followed your
-channel. When you open Channel points, it asks Twitch for your channel's rewards with their
+channel. Once you turn VIP Stamps on, at each month change, when you preview one and when you
+add a permanent VIP, it asks Twitch for your channel's moderators and VIPs (kept only in memory),
+and to add a permanent VIP by name it looks the name up on Twitch. When you open Channel points, it asks Twitch for your channel's rewards with their
 settings, and for the redemptions waiting on the rewards Leafs Live created (who redeemed them,
 when and what they typed); it hears when one of those is completed or refunded on Twitch. When you
 open Stream info, it asks Twitch for your channel's title, category, tags,
@@ -174,13 +182,22 @@ chat, as the account each one sends as (your bot account by default, when you ha
 poll you start with its chat lines on, a line when it starts and one when it ends, as your bot
 account when you have one; for a giveaway you start with its chat lines on, a line when it opens,
 one a minute before it closes and one for each winner drawn, as your bot account when you have
-one; and, for the alert types
+one; for the alert types
 you turn on (every type is off until you do), a thank-you message in your chat when someone
 follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
 train starts, reaches a new level or ends, as your bot account when you have one, else your
-streamer account. It makes, changes, pauses, turns on or off or deletes a channel points reward
+streamer account; and once you turn VIP Stamps on, a welcome line when one of its VIPs first
+shows up in a stream (its alert type is on with VIP Stamps; you can turn it off), the thank-you
+messages for a stamp or a reached goal when you turn those on, and, if you choose, a line naming
+the new VIPs after a month change, as your bot account when you have one. At each month change
+VIP Stamps makes Twitch VIPs of the viewers who reached your amount and takes VIP away from the
+viewers it made VIP who didn't, unless it's on vacation; it never takes VIP from someone you made
+VIP on twitch.tv or a permanent VIP, and never makes a moderator a VIP. It makes a permanent VIP
+you add a VIP right away, and takes that VIP away only when you remove them and choose so. It makes, changes, pauses, turns on or off or deletes a channel points reward
 only when you do it in Channel points, and completes or refunds a redemption only when you click
-Complete or Refund, always as your streamer account. It changes your AutoMod levels, adds or
+Complete or Refund, always as your streamer account, except the reward you pick for VIP Stamps,
+when it's one Leafs Live created: a redemption that gives a stamp is completed, and one that
+doesn't (a second one in the same stream, or one with no stream) is refunded. It changes your AutoMod levels, adds or
 removes a blocked term, and approves or denies an unban request only when you do it in Moderation,
 always as your streamer account; a blocked term you copy into Leafs Live joins the profile's
 blocked words in its database. It snoozes or runs an ad only when you click Snooze or Run an ad, as your streamer account, and
