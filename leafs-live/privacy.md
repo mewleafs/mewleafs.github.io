@@ -22,8 +22,9 @@ Google Fonts when you add a font.
 - **Each profile** is a folder you choose. Its database holds the accounts you connected (login,
   display name, picture link and permissions, never passwords or tokens), your rules with their
   blocked words and allowed links, your viewer commands with their counters and how many times
-  each was used, your timed messages, overlays with their fonts, pictures, videos and sounds, and the
-  chat history (below).
+  each was used, your timed messages, your stream ideas (with their notes, links and days), overlays
+  with their fonts, pictures, videos and sounds, and the chat history (below). A stream idea's link
+  opens in your own web browser when you click *Open*; the app itself doesn't visit it.
 - **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
   profile folder.
 - **Overlays and the dock** are served only to your own PC (`127.0.0.1`), for OBS. They never get

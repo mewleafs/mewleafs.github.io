@@ -37,7 +37,11 @@ sub, redeem or other support takes the next place, gold, silver and bronze first
 leaderboard, a ticker or one arrival at a time, with an all-time board of who came first most
 often; it starts with each stream (or when you start it), leaves out your own accounts and known
 bots, and lists everyone in the app and the dock with a *Said hi* tick, so you can greet each one
-while getting ready. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
+while getting ready. Stream ideas keep a list of things to do on stream (ideas, topics, things to
+react to or read), each with a note, a kind, links to open or copy and an optional day from which
+it's important: important ones come first, and the dock's button counts them with a small bounce
+when one comes due; search, filter by kind, drag to reorder, tick them done. They're in the app and
+the dock, never on stream. One Play / Pause / Stop control, in the app's header and the dock's, holds or drops
 everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
 the thank-you messages and the channel points rewards Leafs Live's Twitch app created, which it
 pauses on Twitch itself. A simulator makes fake chat messages, follows, subs, raids, Super Chats, bans,
