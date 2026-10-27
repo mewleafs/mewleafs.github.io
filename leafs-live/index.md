@@ -11,7 +11,7 @@ from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, 
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
 shield button that turns on the protections you picked and back off, and drives customizable OBS
-overlays (chat, featured message, alerts, chat race) and an OBS dock
+overlays (chat, featured message, alerts, chat race, poll) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
@@ -37,7 +37,12 @@ sub, redeem or other support takes the next place, gold, silver and bronze first
 leaderboard, a ticker or one arrival at a time, with an all-time board of who came first most
 often; it starts with each stream (or when you start it), leaves out your own accounts and known
 bots, and lists everyone in the app and the dock with a *Said hi* tick, so you can greet each one
-while getting ready. Stream ideas keep a list of things to do on stream (ideas, topics, things to
+while getting ready. Polls run in both chats at once: one choice, several choices or an open
+answer, voted by typing an option's number or text (or `!vote`), one vote per account on each
+platform, with a time or until you end it, who can vote, the result live on stream or only at the
+end (Twitch and YouTube shown apart if you like) and, if you choose, a line in chat when it starts
+and ends; you start, end or cancel them from the app or the dock, save polls to run again and see
+past ones with their results. Stream ideas keep a list of things to do on stream (ideas, topics, things to
 react to or read), each with a note, a kind, links to open or copy and an optional day from which
 it's important: important ones come first, and the dock's button counts them with a small bounce
 when one comes due; search, filter by kind, drag to reorder, tick them done. They're in the app and

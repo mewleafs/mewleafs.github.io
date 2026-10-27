@@ -5,11 +5,11 @@ permalink: /leafs-live/privacy/
 
 # Leafs Live: privacy policy
 
-*Last updated: 26 October 2026*
+*Last updated: 27 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
-commands the streamer turns on and the timed messages the streamer turns on, carries out the moderation actions the streamer clicks, the chat commands
+commands the streamer turns on, the timed messages the streamer turns on and the lines of the polls the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
 the streamer types and the moderation rules the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
@@ -22,7 +22,7 @@ Google Fonts when you add a font.
 - **Each profile** is a folder you choose. Its database holds the accounts you connected (login,
   display name, picture link and permissions, never passwords or tokens), your rules with their
   blocked words and allowed links, your viewer commands with their counters and how many times
-  each was used, your timed messages, your stream ideas (with their notes, links and days), overlays
+  each was used, your timed messages, your saved polls, your stream ideas (with their notes, links and days), overlays
   with their fonts, pictures, videos and sounds, and the chat history (below). A stream idea's link
   opens in your own web browser when you click *Open*; the app itself doesn't visit it.
 - **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
@@ -54,13 +54,17 @@ For the chat race (who got to your stream first), it keeps each race and each vi
 it: their name, user ID, picture link, name color, badges, what brought them in (a message, a
 follow, a sub, a Super Chat…), the chat, when, and whether you ticked them off as greeted; the
 counts of first places and streams in a row are worked out from those races.
+For polls, it keeps each poll you run (its question, options and settings, when it ran and its
+result: each option's votes from each platform, and for an open answer the answers viewers wrote)
+and each viewer's vote in it: their name, user ID, what they voted and when. A poll you cancel is
+deleted with its votes.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
-- **Twitch:** messages, moderation log entries, alert events, chat race places and stream times are deleted after 90 days by
+- **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes and stream times are deleted after 90 days by
   default; you can change that in Settings, or keep them forever. Viewer records stay until you
   delete the profile.
-- **YouTube:** messages, moderation log entries, alert events, chat race places and stream times are deleted after 30 days, and viewer records
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in) and stream times are deleted after 30 days, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -125,7 +129,9 @@ until you do), the answer to a command a viewer types in your chat, in that chat
 that are on and the viewers each one allows, as the account the command sends as (your bot account
 by default, when you have one), with a shoutout as your streamer account for a command set to do
 that; once you turn timed messages on (they're off until you do), your timed messages in your live
-chat, as the account each one sends as (your bot account by default, when you have one); and, for the alert types
+chat, as the account each one sends as (your bot account by default, when you have one); for a
+poll you start with its chat lines on, a line when it starts and one when it ends, as your bot
+account when you have one; and, for the alert types
 you turn on (every type is off until you do), a thank-you message in your chat when someone
 follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
 train starts, reaches a new level or ends, as your bot account when you have one, else your
@@ -157,7 +163,8 @@ own Google client or, if you choose, your own.
   account the command sends as (your bot account by default, when you have one); once you turn
   timed messages on (they're off until you do), your timed messages in your live chats, none once
   the day's quota has few messages left, as the account each one sends as (your bot account by
-  default, when you have one); for the alert types you turn on (every
+  default, when you have one); for a poll you start with its chat lines on, a line when it starts
+  and one when it ends, as your bot account when you have one; for the alert types you turn on (every
   type is off until you do), a thank-you message in your chat for a Super Chat, Super Sticker, new
   member, membership milestone, gifted memberships or Jewels gift, as your bot account when you
   have one, else your streamer account; and the moderation you click or type in your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
@@ -175,7 +182,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, stream times and YouTube
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), stream times and YouTube
   viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
