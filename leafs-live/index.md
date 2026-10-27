@@ -16,8 +16,9 @@ from a server that runs only on your PC. Simple rules can hide, dim, highlight o
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
 moderators or your bots. Reader mode shows the chat in pages, in the app and the dock, so you
-read every message in order: a page moves on only when you press Next, and it skips the messages
-your rules dim but never a follow, sub, raid or other alert. Alerts thank viewers in chat when they follow, subscribe, gift subs,
+read every message in order: a page moves on only when you press Next, it counts what you haven't
+read yet, and it skips the messages your rules dim and the names you tell it to skip (such as bots)
+but never a follow, sub, raid or other alert. Alerts thank viewers in chat when they follow, subscribe, gift subs,
 cheer, raid, redeem a channel points reward or use a Power-up on Twitch, cheer on Twitch hype
 trains as they start, level up and end, and thank viewers who send a Super Chat, a Super Sticker,
 a Jewels gift, become a member or gift memberships on YouTube: each type is off until you turn it
