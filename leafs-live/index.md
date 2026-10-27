@@ -75,7 +75,11 @@ once. Rewards made on twitch.tv are listed too, and can be recreated in Leafs Li
 from there. Moderation shows your Twitch channel's moderation settings in the app and the dock:
 the unban requests banned viewers send, to approve or deny with a note, counted on the dock's
 button; AutoMod's level, one for everything or one per category; and Twitch's blocked terms next
-to Leafs Live's own blocked words, to add, remove and copy from one list to the other. One Play /
+to Leafs Live's own blocked words, to add, remove and copy from one list to the other. Twitch
+ads show in the Stream view, the app's header and the dock: when the next ad break comes, how
+long it is and the snoozes left, with Snooze and Run an ad. A heads-up shortly before an ad and
+while one runs offers Pause alerts and Tell chat, and alerts can pause by themselves for each ad
+break and play what waited after it. One Play /
 Pause / Stop control, in the app's header and the dock's, holds or drops
 everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
 the thank-you messages and the channel points rewards Leafs Live's Twitch app created, which it

@@ -128,13 +128,17 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   those redemptions when you click Complete or Refund (Twitch lets an app change only the rewards
   it created, and only their redemptions), and, when you turn on pausing rewards in alert control,
   to pause those rewards while alert control is paused or stopped and unpause them when you press
-  Play.
+  Play;
+- `channel:read:ads`, to show when your next ad break comes, how long it is and how many snoozes
+  you have left, and to hear when an ad break begins;
+- `channel:manage:ads`, to snooze the next ad when you click Snooze;
+- `channel:edit:commercial`, to run an ad when you click Run an ad.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
 the messages AutoMod holds for review, unban requests (who sent them, when and what they wrote)
 and when one is answered or taken back, new follows, channel points redemptions, hype trains, bits
-spent on Power-ups, and whether your stream is live, since when, and when it goes online or offline. When you open a viewer's card it asks
+spent on Power-ups, when an ad break begins, and whether your stream is live, since when, and when it goes online or offline. When you open a viewer's card it asks
 Twitch when that account was made and since when it has followed your channel, to show them there,
 and when you set up channel points alerts it asks for your channel's list of rewards. When a
 viewer command's answer or a timed message needs them, it asks Twitch for your stream's title and category, or when
@@ -147,8 +151,11 @@ when and what they typed); it hears when one of those is completed or refunded o
 open Stream info, it asks Twitch for your channel's title, category, tags,
 language, content classification labels and branded content, and searches Twitch's categories by
 the name you type. When you open Moderation, it asks Twitch for your AutoMod levels, your
-channel's blocked terms and the unban requests waiting for an answer. Held messages, unban
-requests, the AutoMod levels, the blocked terms, account dates, follow dates, the title, the category, the
+channel's blocked terms and the unban requests waiting for an answer. When your streamer account
+connects, when your stream goes live or offline, every few minutes while it's live, after an ad
+break, and when you open Stream info or the dock's ads, it asks Twitch for your channel's ad
+schedule (the next ad break, its length and the snoozes left). Held messages, unban
+requests, the AutoMod levels, the blocked terms, the ad schedule and ad breaks, account dates, follow dates, the title, the category, the
 stream info Twitch gives, the list of rewards and the waiting redemptions are kept only in memory while the app runs, never
 saved (a reward you pick is saved by its ID and title; a stream info preset you save keeps what you
 put in it, in the profile's database). It posts only the messages you send; once you turn viewer commands on (they're off
@@ -169,7 +176,10 @@ only when you do it in Channel points, and completes or refunds a redemption onl
 Complete or Refund, always as your streamer account. It changes your AutoMod levels, adds or
 removes a blocked term, and approves or denies an unban request only when you do it in Moderation,
 always as your streamer account; a blocked term you copy into Leafs Live joins the profile's
-blocked words in its database. When you turn on pausing rewards in alert control, it asks Twitch for the
+blocked words in its database. It snoozes or runs an ad only when you click Snooze or Run an ad, as your streamer account, and
+says an ad break is coming only when you click Tell chat: the line you set (or the default one)
+in your Twitch chat, as your bot account when you have one and choose so; your ads settings (the
+heads-up, pausing alerts during ad breaks and that line) are kept in the profile's database. When you turn on pausing rewards in alert control, it asks Twitch for the
 rewards it may change, pauses those that are on when you press Pause or Stop and unpauses them when
 you press Play; the IDs of the rewards it paused are kept in the profile's database until then. It
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a

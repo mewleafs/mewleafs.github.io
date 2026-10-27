@@ -21,7 +21,7 @@ the law allows, the developer isn't liable for any loss or damage from using the
   you send from them, the thank-you messages, viewer commands and timed messages you turn on, the polls and giveaways you run, the moderation
   actions, chat commands and moderation rules you run with them, and the stream details (titles,
   categories, tags, labels, branded content, thumbnails, visibility, made for kids) you set on
-  your channels with them.
+  your channels with them, and the ads you run or snooze.
 - You keep following the terms and community rules of the platforms you stream on, including
   their limits on bots and automated messages.
 - Your rules, overlays and settings are yours. The developer claims no rights to them and never
