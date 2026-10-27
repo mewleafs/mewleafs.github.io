@@ -5,15 +5,16 @@ permalink: /leafs-content/privacy/
 
 # Leafs Content: privacy policy
 
-*Last updated: 25 October 2026*
+*Last updated: 27 October 2026*
 
 Leafs Content is a desktop app for Windows for planning, writing, editing and preparing YouTube
 videos. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Content has no server of its own, no Leafs account, no analytics, no ads, no
 cookies and no tracking. The developer receives no data from it. Your work stays in a workspace folder on your PC.
-Data leaves your PC only for the AI features you use, the web searches and downloads they make, and,
-if you connect it, read-only YouTube data from Google.
+Data leaves your PC only for the AI features you use, the web searches and downloads they make, the
+link to OBS Studio if you point it at another computer, and, if you connect it, read-only YouTube
+data from Google.
 
 ## On your PC
 
@@ -27,6 +28,8 @@ if you connect it, read-only YouTube data from Google.
   app in its portable version.
 - **The YouTube sign-in**, if you connect YouTube, is kept in Windows Credential Manager, outside
   the workspace and its backups.
+- **The OBS password**, if you connect the app to OBS Studio, is kept in Windows Credential Manager
+  too, and OBS's host and port in the app's settings, outside the workspace.
 
 ## AI features
 
@@ -46,6 +49,16 @@ privacy policy apply, including whether it may use your conversations to train i
 let you turn that off (Claude: *Help improve Claude*; ChatGPT: *Improve the model for everyone*). The AI tools can also search the web
 and open web pages. They work only through Leafs Content's own tools: they can read and propose,
 but nothing changes until you accept it. Your scratchpad notes are never given to them.
+
+## OBS Studio (optional)
+
+To record B-roll while the script's voice plays, you can connect the app to OBS Studio's WebSocket
+server in Settings, at the host and port you enter (OBS on the same PC is `localhost`). While the
+connection is on, the app connects whenever OBS is running. It answers OBS's password challenge
+(the password itself is never sent), asks OBS once whether it's recording, and then only listens
+for OBS starting, pausing and stopping a recording. It never starts, stops or changes anything in
+OBS, and the recordings stay wherever OBS saves them. *Disconnect* in Settings ends the connection;
+*Remove* and *Connect again* delete the saved password.
 
 ## Downloads
 

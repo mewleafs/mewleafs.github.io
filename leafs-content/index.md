@@ -6,7 +6,8 @@ permalink: /leafs-content/
 # Leafs Content
 
 A desktop app for Windows that takes a YouTube video from idea to export: a board of ideas,
-structure and script writing, recording with a teleprompter, a timeline editor, thumbnails, other
+structure and script writing, recording with a teleprompter, B-roll recorded in OBS Studio while
+the script's voice plays, a timeline editor, thumbnails, other
 images and animations (GIFs, emotes, stickers and short videos for social media) that can also go
 into the edit, and the title, tags, chapters and hashtags for YouTube, each ready to copy. The
 interface works in English and Spanish, and each video can be in either language.
