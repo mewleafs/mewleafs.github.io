@@ -11,7 +11,7 @@ from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, 
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
 shield button that turns on the protections you picked and back off, and drives customizable OBS
-overlays (chat, featured message, alerts, chat race, poll, giveaway) and an OBS dock
+overlays (chat, featured message, alerts, chat race, poll, giveaway, credits) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
@@ -52,6 +52,12 @@ those chances, reroll, and can ask the winner to answer in chat within a time; t
 on stream with its prize, how to enter, the time left, a shuffle of names and the winner, and,
 if you choose, lines in chat when it opens, before it closes and for the winner. Past giveaways
 keep their winners and a draw log with each draw's seed and entries, so a draw can be checked.
+Credits roll at the end of a stream with everyone who supported it: Twitch subscribers (not gifted
+subs), gifters with their totals, bits, the hype train's top contributors and raids, YouTube
+members, gifted memberships, Super Chats and Stickers (names only) and Jewels, and if you like your
+moderators and top chatters; each section can be turned off, renamed and reordered, with your own
+title and end text, a speed or a total time, and a loop. You roll them from the app, the dock or
+the overlay editor; they never include follows.
 Stream ideas keep a list of things to do on stream (ideas, topics, things to
 react to or read), each with a note, a kind, links to open or copy and an optional day from which
 it's important: important ones come first, and the dock's button counts them with a small bounce
