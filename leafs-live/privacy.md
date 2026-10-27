@@ -44,14 +44,15 @@ was about), and a list of alert events (Twitch follows, subs, gifted subs, cheer
 points redemptions with the reward and what the viewer typed with it, hype trains with their level,
 points and top contributors, and bits spent on Power-ups; YouTube Super Chats, Super Stickers,
 memberships, gifted memberships and Jewels gifts: who, what, how much, and the thank-you message
-sent for it, if any), which also keeps each one from being thanked twice.
+sent for it, if any), which also keeps each one from being thanked twice. To group the chat by
+stream, it also keeps when each of your streams was live on each platform (its start and end).
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
-- **Twitch:** messages, moderation log entries and alert events are deleted after 90 days by
+- **Twitch:** messages, moderation log entries, alert events and stream times are deleted after 90 days by
   default; you can change that in Settings, or keep them forever. Viewer records stay until you
   delete the profile.
-- **YouTube:** messages, moderation log entries and alert events are deleted after 30 days, and viewer records
+- **YouTube:** messages, moderation log entries, alert events and stream times are deleted after 30 days, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -102,7 +103,7 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
 the messages AutoMod holds for review, new follows, channel points redemptions, hype trains, bits
-spent on Power-ups, and whether your stream goes online. When you open a viewer's card it asks
+spent on Power-ups, and whether your stream is live, since when, and when it goes online or offline. When you open a viewer's card it asks
 Twitch when that account was made and since when it has followed your channel, to show them there,
 and when you set up channel points alerts it asks for your channel's list of rewards. Held
 messages, account dates, follow dates and the list of rewards are kept only in memory while the
@@ -130,7 +131,7 @@ own Google client or, if you choose, your own.
 - **Permissions:** `youtube.readonly` for your streamer account. `youtube.force-ssl` only if you
   choose *Allow sending* (it lets you send and moderate), and for a bot account, which only sends.
 - **What it reads:** your channel's ID, handle, name and picture; your live and upcoming streams,
-  to find their chats; and those chats' messages and events, including the senders' channel names,
+  to find their chats and when each one went live; and those chats' messages and events, including the senders' channel names,
   pictures and badges. For a stream link you paste, the video's title and live details.
 - **What it writes:** only the chat messages you send; for the alert types you turn on (every
   type is off until you do), a thank-you message in your chat for a Super Chat, Super Sticker, new
@@ -150,7 +151,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events and YouTube
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, stream times and YouTube
   viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
