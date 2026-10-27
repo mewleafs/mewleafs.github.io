@@ -54,7 +54,9 @@ subscribers or higher, to Twitch followers or Twitch accounts of a certain age, 
 moderators out. You make and start giveaways from the app or the dock, close the entries (or they
 close at their time), draw a winner weighted by those chances, reroll, and can ask the winner to answer in chat within a time; the giveaway shows
 on stream with its prize, how to enter, the time left, a shuffle of names and the winner, and,
-if you choose, lines in chat when it opens, before it closes and for the winner. Past giveaways
+if you choose, lines in chat when it opens, before it closes and for the winner. Unless you turn
+it off, each viewer who enters is told in their chat that they're in, and one who tries again that
+they're in already (once), with several at a time sharing one line. Past giveaways
 keep their winners and a draw log with each draw's seed and entries, so a draw can be checked.
 Credits roll at the end of a stream with everyone who supported it: Twitch subscribers (not gifted
 subs), gifters with their totals, bits, the hype train's top contributors and raids, YouTube
