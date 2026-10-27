@@ -8,7 +8,8 @@ permalink: /leafs-live/privacy/
 *Last updated: 26 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
-streamer's replies and the thank-you messages the streamer turns on, carries out the moderation actions the streamer clicks, the chat commands
+streamer's replies, the thank-you messages the streamer turns on and the answers to the viewer
+commands the streamer turns on, carries out the moderation actions the streamer clicks, the chat commands
 the streamer types and the moderation rules the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
@@ -20,7 +21,8 @@ Google Fonts when you add a font.
 
 - **Each profile** is a folder you choose. Its database holds the accounts you connected (login,
   display name, picture link and permissions, never passwords or tokens), your rules with their
-  blocked words and allowed links, overlays with their fonts, pictures, videos and sounds, and the
+  blocked words and allowed links, your viewer commands with their counters and how many times
+  each was used, overlays with their fonts, pictures, videos and sounds, and the
   chat history (below).
 - **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
   profile folder.
@@ -29,7 +31,8 @@ Google Fonts when you add a font.
 - **Simulated events** (the app's simulator, to try alerts and overlays) are made on your PC, in
   simulated chats, and are never saved. Nothing about them reaches Twitch or YouTube, except that
   while you turn on *Really send to chat* the chat messages they lead to (such as thank-yous) go to
-  your real chat. Moderation in a simulated chat is never sent.
+  your real chat. Moderation in a simulated chat is never sent, and a counter a viewer command
+  changes there changes only in memory.
 - **Logs and diagnostics** stay on your PC. *Save diagnostics…* writes a text file only when you ask
   for it, without sign-ins or chat history, and it's up to you whether to share it.
 
@@ -81,7 +84,8 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   set to use it;
 - `moderator:manage:announcements`, `moderator:manage:shoutouts` and `moderator:manage:warnings`,
   to post an announcement, shout out a channel or warn a viewer when you type `/announce`,
-  `/shoutout` or `/warn`, or warn a viewer whose message matches a rule you set up to do that;
+  `/shoutout` or `/warn`, shout out the channel a viewer command such as `!so` names when you
+  allow its users to, or warn a viewer whose message matches a rule you set up to do that;
 - `channel:manage:moderators`, `channel:manage:vips` and `channel:manage:raids`, to add or remove a
   moderator or a VIP and to start or cancel a raid when you type `/mod`, `/vip`, `/raid` or their
   opposites;
@@ -89,7 +93,8 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
   and to allow or deny one when you click Allow or Deny;
 - `moderator:read:followers`, to show on a viewer's card since when they've followed your channel,
-  and to hear new follows so the app can thank them in chat when you turn that on;
+  to answer the `!followage` viewer command, and to hear new follows so the app can thank them in
+  chat when you turn that on;
 - `channel:read:redemptions`, to hear when a viewer redeems one of your channel points rewards and
   to list your channel's rewards, so you can pick which ones to thank or show on stream;
 - `channel:read:hype_train`, to hear when a hype train starts, reaches a new level and ends;
@@ -105,9 +110,16 @@ events, chat modes (slow mode, followers-only and the rest, and Shield mode), mo
 the messages AutoMod holds for review, new follows, channel points redemptions, hype trains, bits
 spent on Power-ups, and whether your stream is live, since when, and when it goes online or offline. When you open a viewer's card it asks
 Twitch when that account was made and since when it has followed your channel, to show them there,
-and when you set up channel points alerts it asks for your channel's list of rewards. Held
-messages, account dates, follow dates and the list of rewards are kept only in memory while the
-app runs, never saved (a reward you pick is saved by its ID and title). It posts only the messages you send and, for the alert types
+and when you set up channel points alerts it asks for your channel's list of rewards. When a
+viewer command's answer needs them, it asks Twitch for your stream's title and category, or when
+the viewer who typed it (or the one they name) made their account and since when they've followed
+your channel. Held messages, account dates, follow dates, the title, the category and the list of
+rewards are kept only in memory while the app runs, never saved (a reward you pick is saved by its
+ID and title). It posts only the messages you send; once you turn viewer commands on (they're off
+until you do), the answer to a command a viewer types in your chat, in that chat, for the commands
+that are on and the viewers each one allows, as the account the command sends as (your bot account
+by default, when you have one), with a shoutout as your streamer account for a command set to do
+that; and, for the alert types
 you turn on (every type is off until you do), a thank-you message in your chat when someone
 follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
 train starts, reaches a new level or ends, as your bot account when you have one, else your
@@ -133,7 +145,10 @@ own Google client or, if you choose, your own.
 - **What it reads:** your channel's ID, handle, name and picture; your live and upcoming streams,
   to find their chats and when each one went live; and those chats' messages and events, including the senders' channel names,
   pictures and badges. For a stream link you paste, the video's title and live details.
-- **What it writes:** only the chat messages you send; for the alert types you turn on (every
+- **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
+  off until you do), the answer to a command a viewer types in your chat, in that chat, at most one
+  per chat in the time you set, and none once the day's quota has few messages left, as the
+  account the command sends as (your bot account by default, when you have one); for the alert types you turn on (every
   type is off until you do), a thank-you message in your chat for a Super Chat, Super Sticker, new
   member, membership milestone, gifted memberships or Jewels gift, as your bot account when you
   have one, else your streamer account; and the moderation you click or type in your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or

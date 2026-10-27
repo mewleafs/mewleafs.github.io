@@ -18,8 +18,8 @@ the law allows, the developer isn't liable for any loss or damage from using the
 ## Your accounts and your stream
 
 - You choose which Twitch and YouTube accounts to connect, and you're responsible for the messages
-  you send from them, the thank-you messages you turn on, and the moderation actions, chat
-  commands and moderation rules you run with them.
+  you send from them, the thank-you messages and viewer commands you turn on, and the moderation
+  actions, chat commands and moderation rules you run with them.
 - You keep following the terms and community rules of the platforms you stream on, including
   their limits on bots and automated messages.
 - Your rules, overlays and settings are yours. The developer claims no rights to them and never
