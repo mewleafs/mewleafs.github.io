@@ -255,18 +255,22 @@ own Google client or, if you choose, your own.
 - **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
   off until you do), the answer to a command a viewer types in your chat, in that chat, with the
   answers asked for within a few seconds of each other sent together as one message, at most one
-  such message per chat in the time you set, and none once the day's quota has few messages left,
+  such message per chat in the time you set, and none once a quarter of the day's quota is left,
   as the account the command sends as (your bot account by default, when you have one); once you
   turn timed messages on (they're off until you do), your timed messages in your live chats, as
   often as you set for YouTube, none once
-  the day's quota has few messages left, as the account each one sends as (your bot account by
+  half of the day's quota is left, as the account each one sends as (your bot account by
   default, when you have one); for a poll you start with its chat lines on, a line when it starts
   and one when it ends, as your bot account when you have one; for a giveaway you start with its
   chat lines on, a line when it opens, one a minute before it closes and one for each winner
-  drawn, as your bot account when you have one; for the alert types you turn on (every
+  drawn, as your bot account when you have one, and, with its entry confirmations on, a line
+  telling the viewers who entered within a few seconds of each other that they're in (or in
+  already), none once a quarter of the day's quota is left, as your bot account when you have one,
+  else your streamer account; for the alert types you turn on (every
   type is off until you do), a thank-you message in your chat for a Super Chat, Super Sticker, new
-  member, membership milestone, gifted memberships or Jewels gift, as your bot account when you
-  have one, else your streamer account; and the moderation you click or type in your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
+  member, membership milestone, gifted memberships or Jewels gift, none sent by itself once a
+  quarter of the day's quota is left, as your bot account when you have one, else your streamer
+  account; and the moderation you click or type in your own chat: deleting a message, timing out, banning or unbanning a viewer, and adding or
   removing a moderator of the chat (`/mod`, `/unmod`; to remove one it first reads the chat's list
   of moderators), plus deleting a message or timing out its author when it matches a moderation
   rule you turned on, always as your streamer account; and, when you press *Update the stream* or
