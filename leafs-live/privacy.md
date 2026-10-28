@@ -5,29 +5,31 @@ permalink: /leafs-live/privacy/
 
 # Leafs Live: privacy policy
 
-*Last updated: 27 October 2026*
+*Last updated: 28 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
 commands the streamer turns on, the timed messages the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
-the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
+the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, posts the stream notifications the streamer sets up in their Discord server, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
-your PC. The app talks only to Twitch and Google (YouTube) for the accounts you connect, and to
-Google Fonts when you add a font.
+your PC. The app talks only to Twitch and Google (YouTube) for the accounts you connect, to Discord for
+the stream notifications you set up, and to Google Fonts when you add a font.
 
 ## On your PC
 
 - **Each profile** is a folder you choose. Its database holds the accounts you connected (login,
   display name, picture link and permissions, never passwords or tokens), your rules with their
   blocked words and allowed links, your viewer commands with their counters and how many times
-  each was used, your timed messages, your saved polls and giveaways, your stream ideas (with their notes, links and days), overlays
+  each was used, your timed messages, your saved polls and giveaways, your stream ideas (with their notes, links and days), your
+  Discord stream notifications (their messages, the roles they mention, what Discord said about
+  each webhook and the ID of each stream's message), overlays
   with their fonts, pictures, videos and sounds (with how loud each sound is, measured on your PC so
   they play at the same level), and the chat history (below). A stream idea's link
   opens in your own web browser when you click *Open*; the app itself doesn't visit it.
-- **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
-  profile folder.
+- **Sign-ins** (Twitch and Google tokens) and the **Discord webhooks** of your stream
+  notifications are kept in Windows Credential Manager, never in the profile folder.
 - **Overlays and the dock** are served only to your own PC (`127.0.0.1`), for OBS. They never get
   your sign-ins.
 - **Remote control** is off until you turn it on. Then the app answers calls from your own PC
@@ -184,7 +186,10 @@ connects, when your stream goes live or offline, every few minutes while it's li
 break, and when you open Stream info or the dock's ads, it asks Twitch for your channel's ad
 schedule (the next ad break, its length and the snoozes left). While your stream is live, every
 few minutes, it asks Twitch for the list of who is in your chat (their names and user IDs) and
-keeps that each of them was at that stream, for the viewer stats. Held messages, unban
+keeps that each of them was at that stream, for the viewer stats. Once a Discord stream
+notification is on, while your stream is live, it asks Twitch for your stream's title, category,
+viewer count and the category's box art each time the notification's message is posted or updated
+(and your channel's title and category when a stream ends after the app was restarted during it). Held messages, unban
 requests, the AutoMod levels, the blocked terms, the ad schedule and ad breaks, account dates, follow dates, the title, the category, the
 stream info Twitch gives, the list of rewards and the waiting redemptions are kept only in memory while the app runs, never
 saved (a reward you pick is saved by its ID and title; a stream info preset you save keeps what you
@@ -244,8 +249,9 @@ own Google client or, if you choose, your own.
   open Stream info, your live and upcoming broadcasts' titles, descriptions, categories,
   visibility, audience setting (made for kids or not), scheduled times and the stream key each is
   bound to, and YouTube's list of video categories; when you schedule a broadcast, the names of
-  your channel's stream keys (never the keys themselves). These are kept only in memory while the
-  app runs.
+  your channel's stream keys (never the keys themselves). Once a Discord stream notification is on,
+  while you're live on YouTube, your live broadcast's title and viewer count each time the
+  notification's message is posted or updated. These are kept only in memory while the app runs.
 - **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
   off until you do), the answer to a command a viewer types in your chat, in that chat, at most one
   per chat in the time you set, and none once the day's quota has few messages left, as the
@@ -291,6 +297,24 @@ Leafs Live's use and transfer of information received from Google APIs adheres t
 including the Limited Use requirements. See also the
 [Google Privacy Policy](https://policies.google.com/privacy) and the
 [YouTube Terms of Service](https://www.youtube.com/t/terms).
+
+## Discord
+
+Leafs Live posts to Discord only through the webhooks you paste into its Discord view, and only for
+the notifications you turn on. It needs no Discord account or login: a webhook's URL is what lets
+it post in one channel, so the app keeps it in Windows Credential Manager and never shows it on a
+page, in the log or in diagnostics. When you add a webhook, the app asks Discord for its name and
+its channel's and server's IDs. When one of the notification's platforms goes live, it posts the
+message you wrote, filled with your name and picture link, your stream's title, category, viewer
+counts and links, and the stream's picture, which the app downloads from Twitch's and YouTube's
+image servers and uploads with the message. Only the roles you picked are mentioned. While you're
+live it edits that message every so often (every 30 minutes unless you pick another time), and when
+the stream ends it edits, deletes, leaves or replaces it, as you picked. *Send a test* posts a test
+message, which you can delete from the app. Nothing about your viewers or your chat is sent to
+Discord. What's posted is in your Discord server, under
+[Discord's privacy policy](https://discord.com/privacy). Deleting a notification in Leafs Live
+forgets its webhook; messages already posted stay in Discord until you delete them there, and you
+can delete a webhook itself in Discord's channel settings at any time.
 
 ## Pictures and fonts
 

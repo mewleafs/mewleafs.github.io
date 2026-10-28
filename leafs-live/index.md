@@ -75,7 +75,14 @@ form, in the app and the dock: a title shared by both or one for each, Twitch's 
 by name), tags, language, content classification labels and branded content, and the YouTube
 broadcast's description, category, visibility, made for kids and a thumbnail from your pictures,
 for the live broadcast, an upcoming one or a new one you schedule on a stream key; save it as a
-preset ("Guild Wars 2 night") to apply again with one click. Channel points manages your Twitch
+preset ("Guild Wars 2 night") to apply again with one click. Discord notifications, off until
+you set one up, announce each stream in your Discord server through a webhook: one message per
+stream with the roles you pick mentioned where you put them, written in a visual editor or as
+Discord's JSON (with variables for the title, category, viewers, links, how long you've been live
+and more, and a preview in Discord's look), the stream's picture, updated every 30 minutes or as
+often as you choose while you're live, and edited, deleted, left or replaced by your ended message
+when the stream ends; several webhooks can post to several servers, and *Send a test* tries one.
+Channel points manages your Twitch
 rewards in the app and the dock: make one with its cost, prompt, color, limits per stream and per
 viewer, cooldown and whether it skips the queue, then pause it, turn it off, edit it or delete it;
 what viewers redeem waits in a queue to complete or refund, one at a time or all of a reward at
@@ -127,7 +134,8 @@ turn timed messages and viewer commands on and off; and play simulator presets. 
 every action with its URL ready to copy and a manual to save. The interface works in English and Spanish.
 
 Everything runs on your streaming PC. There's no Leafs account and no Leafs server: the app talks
-only to Twitch and YouTube for the accounts you connect, and to Google Fonts when you add a font.
+only to Twitch and YouTube for the accounts you connect, to Discord for the notifications you set
+up, and to Google Fonts when you add a font.
 
 ## Google and YouTube
 
