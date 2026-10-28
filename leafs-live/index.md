@@ -88,7 +88,8 @@ and permanent VIPs you choose never lose it. The month change happens by itself,
 who gained and lost VIP and why, a vacation mode where nobody loses it, an increase that starts
 next month and an optional line in chat naming the new VIPs. Each stamp shows on stream as the
 viewer's passport with this stream's icon pressing in, reaching the amount plays a celebration, a
-VIP's first activity in a stream plays a welcome and sends a welcome line, and `!passport` (off
+VIP's first activity in a stream plays a welcome, with a sound of their own when you give them
+one, and sends a welcome line, and `!passport` (off
 until you turn it on) tells a viewer how many stamps they have. Moderation shows your Twitch channel's moderation settings in the app and the dock:
 the unban requests banned viewers send, to approve or deny with a note, counted on the dock's
 button; AutoMod's level, one for everything or one per category; and Twitch's blocked terms next

@@ -73,8 +73,9 @@ with its entries.
 For VIP Stamps (Twitch only), it keeps each stamp a viewer got (their name, user ID, the stream,
 the month and when), each stream's stamp icon, the viewers it made VIP or you made permanent VIPs
 (name, user ID, the month they're VIP for and whether the app gave it), who was welcomed in each
-stream, and a report of each month change (who gained, kept or lost VIP, with their stamps). These
-stay until you delete the profile.
+stream, the welcome sound you give a VIP (their name, user ID, the sound from your library and
+whether their welcome is on), and a report of each month change (who gained, kept or lost VIP, with
+their stamps). These stay until you delete the profile.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
 note you write).
 
@@ -160,7 +161,8 @@ your channel. When a giveaway you run takes only followers or accounts of a cert
 Twitch, as each viewer enters, when their account was made and since when they've followed your
 channel. Once you turn VIP Stamps on, at each month change, when you preview one and when you
 add a permanent VIP, it asks Twitch for your channel's moderators and VIPs (kept only in memory),
-and to add a permanent VIP by name it looks the name up on Twitch. When you open Channel points, it asks Twitch for your channel's rewards with their
+and to add a permanent VIP, or a VIP's welcome sound, by a name the app hasn't seen it looks the
+name up on Twitch. When you open Channel points, it asks Twitch for your channel's rewards with their
 settings, and for the redemptions waiting on the rewards Leafs Live created (who redeemed them,
 when and what they typed); it hears when one of those is completed or refunded on Twitch. When you
 open Stream info, it asks Twitch for your channel's title, category, tags,
