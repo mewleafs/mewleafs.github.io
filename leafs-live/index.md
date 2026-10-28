@@ -35,9 +35,9 @@ you can add your own. Timed messages post your lines (your Discord, your socials
 the commands…) in each of your live chats every few minutes, taking turns in your order, once you
 turn them on, and only after enough viewers have written since the last one, so a quiet chat isn't
 spammed. The same alerts play on stream in an Alerts widget, one at a time, with your own
-text, picture, GIF or video and sound from your PC, set for each type (and each amount tier or
-channel points reward) in the Alerts view or for one overlay on its own, and you can skip or
-replay them from the app or the dock. Sounds play about as loud as each other, however loud their
+picture, GIF or video and sound from your PC, set for each type (and each amount tier or
+channel points reward) once for every overlay, in the Alerts view or the overlay editor, and each
+overlay's own text and look, and you can skip or replay them from the app or the dock. Sounds play about as loud as each other, however loud their
 files are: the app measures each one once and evens them out, with your volumes on top. A chat race shows who got to your stream first: each viewer's first message, follow,
 sub, redeem or other support takes the next place, gold, silver and bronze first, on stream as a
 leaderboard, a ticker or one arrival at a time, with an all-time board of who came first most
