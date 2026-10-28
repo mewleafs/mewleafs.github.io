@@ -187,7 +187,7 @@ break, and when you open Stream info or the dock's ads, it asks Twitch for your 
 schedule (the next ad break, its length and the snoozes left). While your stream is live, every
 few minutes, it asks Twitch for the list of who is in your chat (their names and user IDs) and
 keeps that each of them was at that stream, for the viewer stats. Once a Discord stream
-notification is on, while your stream is live, it asks Twitch for your stream's title, category,
+notification that posts for Twitch is on, while your stream is live, it asks Twitch for your stream's title, category,
 viewer count and the category's box art each time the notification's message is posted or updated
 (and your channel's title and category when a stream ends after the app was restarted during it). Held messages, unban
 requests, the AutoMod levels, the blocked terms, the ad schedule and ad breaks, account dates, follow dates, the title, the category, the
@@ -249,9 +249,9 @@ own Google client or, if you choose, your own.
   open Stream info, your live and upcoming broadcasts' titles, descriptions, categories,
   visibility, audience setting (made for kids or not), scheduled times and the stream key each is
   bound to, and YouTube's list of video categories; when you schedule a broadcast, the names of
-  your channel's stream keys (never the keys themselves). Once a Discord stream notification is on,
-  while you're live on YouTube, your live broadcast's title and viewer count each time the
-  notification's message is posted or updated. These are kept only in memory while the app runs.
+  your channel's stream keys (never the keys themselves). Once a Discord stream notification that posts
+  for YouTube is on, while you're live on YouTube, your live broadcast's title and viewer count each
+  time its message is posted or updated. These are kept only in memory while the app runs.
 - **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
   off until you do), the answer to a command a viewer types in your chat, in that chat, at most one
   per chat in the time you set, and none once the day's quota has few messages left, as the
