@@ -35,8 +35,10 @@ you can add your own. Timed messages post your lines (your Discord, your socials
 the commands…) in each of your live chats every few minutes, taking turns in your order, once you
 turn them on, and only after enough viewers have written since the last one, so a quiet chat isn't
 spammed. The same alerts play on stream in an Alerts widget, one at a time, with your own
-text, picture, GIF or video and sound from your PC, and you can skip or replay them from the app or
-the dock. A chat race shows who got to your stream first: each viewer's first message, follow,
+text, picture, GIF or video and sound from your PC, set for each type (and each amount tier or
+channel points reward) in the Alerts view or for one overlay on its own, and you can skip or
+replay them from the app or the dock. Sounds play about as loud as each other, however loud their
+files are: the app measures each one once and evens them out, with your volumes on top. A chat race shows who got to your stream first: each viewer's first message, follow,
 sub, redeem or other support takes the next place, gold, silver and bronze first, on stream as a
 leaderboard, a ticker or one arrival at a time, with an all-time board of who came first most
 often; it starts with each stream (or when you start it), leaves out your own accounts and known
@@ -88,8 +90,8 @@ and permanent VIPs you choose never lose it. The month change happens by itself,
 who gained and lost VIP and why, a vacation mode where nobody loses it, an increase that starts
 next month and an optional line in chat naming the new VIPs. Each stamp shows on stream as the
 viewer's passport with this stream's icon pressing in, reaching the amount plays a celebration, a
-VIP's first activity in a stream plays a welcome, with a sound of their own when you give them
-one, and sends a welcome line, and `!passport` (off
+VIP's first activity in a stream plays a welcome, with a sound of their own at a volume of its
+own when you give them one, and sends a welcome line, and `!passport` (off
 until you turn it on) tells a viewer how many stamps they have. Viewers lists everyone your chats
 have seen on Twitch and YouTube, searchable and sorted by when they last or first came, streams,
 messages or support: when each was last seen and in which stream, how many of the latest streams

@@ -23,7 +23,8 @@ Google Fonts when you add a font.
   display name, picture link and permissions, never passwords or tokens), your rules with their
   blocked words and allowed links, your viewer commands with their counters and how many times
   each was used, your timed messages, your saved polls and giveaways, your stream ideas (with their notes, links and days), overlays
-  with their fonts, pictures, videos and sounds, and the chat history (below). A stream idea's link
+  with their fonts, pictures, videos and sounds (with how loud each sound is, measured on your PC so
+  they play at the same level), and the chat history (below). A stream idea's link
   opens in your own web browser when you click *Open*; the app itself doesn't visit it.
 - **Sign-ins** (Twitch and Google tokens) are kept in Windows Credential Manager, never in the
   profile folder.
@@ -73,8 +74,8 @@ with its entries.
 For VIP Stamps (Twitch only), it keeps each stamp a viewer got (their name, user ID, the stream,
 the month and when), each stream's stamp icon, the viewers it made VIP or you made permanent VIPs
 (name, user ID, the month they're VIP for and whether the app gave it), who was welcomed in each
-stream, the welcome sound you give a VIP (their name, user ID, the sound from your library and
-whether their welcome is on), and a report of each month change (who gained, kept or lost VIP, with
+stream, the welcome sound you give a VIP (their name, user ID, the sound from your library, its
+volume and whether their welcome is on), and a report of each month change (who gained, kept or lost VIP, with
 their stamps). These stay until you delete the profile.
 For viewer stats, it keeps, for each viewer and each of your streams, when they were first and last
 there, when they first wrote or showed up with an alert in it (or that they were only in the chat,
