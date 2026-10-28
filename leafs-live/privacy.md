@@ -92,16 +92,19 @@ there, when they first wrote or showed up with an alert in it (or that they were
 watching), how many messages they sent and what brought them in, and what they gave in it: bits,
 subs and gift subs with their tier and months, Super Chats and Super Stickers in their own
 currency, memberships and gifted memberships, Jewels, channel points redemptions by reward and
-raids. These are kept apart from the chat history, so how often someone comes is still known after
+raids, and when they followed. These are kept apart from the chat history, so how often someone comes is still known after
 the messages are gone.
+For stream recaps, it keeps for each of your streams how many messages came each minute on each
+platform (counts, not the messages), the viewer counts it read while you were live, and the stream
+markers you made, the channels you raided and the ad breaks, with their times.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count, the
 first message they wrote in your chats, any note you write, and the other accounts you linked to
 them as the same person).
 
 - **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes, giveaways with their entries and stream times are deleted after 90 days by
-  default; you can change that in Settings, or keep them forever. Viewer records and viewer stats
-  stay until you delete the profile.
-- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats 30 days after the stream they're about, and viewer records
+  default; you can change that in Settings, or keep them forever. Viewer records, viewer stats and
+  stream recaps stay until you delete the profile.
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps 30 days after the stream they're about, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -194,7 +197,9 @@ connects, when your stream goes live or offline, every few minutes while it's li
 break, and when you open Stream info or the dock's ads, it asks Twitch for your channel's ad
 schedule (the next ad break, its length and the snoozes left). While your stream is live, every
 few minutes, it asks Twitch for the list of who is in your chat (their names and user IDs) and
-keeps that each of them was at that stream, for the viewer stats. Once a Discord stream
+keeps that each of them was at that stream, for the viewer stats. While your stream is live, every
+minute, it asks Twitch for your stream's viewer count and keeps it with that stream, for its
+recap. Once a Discord stream
 notification that posts for Twitch is on, while your stream is live, it asks Twitch for your stream's title, category,
 viewer count and the category's box art each time the notification's message is posted or updated
 (and your channel's title and category when a stream ends after the app was restarted during it). Held messages, unban
@@ -262,7 +267,10 @@ own Google client or, if you choose, your own.
   bound to, and YouTube's list of video categories; when you schedule a broadcast, the names of
   your channel's stream keys (never the keys themselves). Once a Discord stream notification that posts
   for YouTube is on, while you're live on YouTube, your live broadcast's title and viewer count each
-  time its message is posted or updated. These are kept only in memory while the app runs.
+  time its message is posted or updated. These are kept only in memory while the app runs. Once
+  you turn on YouTube viewer counts for stream recaps (Viewers → Settings; off until you do), while
+  you're live on YouTube, your live broadcast's viewer count every 5 minutes, kept with that stream
+  for 30 days.
 - **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
   off until you do), the answer to a command a viewer types in your chat, in that chat, with the
   answers asked for within a few seconds of each other sent together as one message, at most one
@@ -297,7 +305,7 @@ own Google client or, if you choose, your own.
   the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays,
   to show and change your broadcasts' details in the app and the dock, and for the viewer stats
-  the app shows you. It isn't used for
+  and stream recaps the app shows you. It isn't used for
   advertising, sold or shared with anyone else.
 - **Where it's kept:** in the profile's database on your PC, for at most 30 days, as described
   above. Your channel's name and picture are fetched again every week.
@@ -305,8 +313,8 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats and YouTube
-  viewer records (for a bot account, its name on the known bots list). You can also remove the
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats, YouTube's
+  part of stream recaps and YouTube viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
   doesn't touch what YouTube itself keeps.
@@ -328,9 +336,14 @@ message you wrote, filled with your name and picture link, your stream's title, 
 counts and links, and the stream's picture, which the app downloads from Twitch's and YouTube's
 image servers and uploads with the message. Only the roles you picked are mentioned. While you're
 live it edits that message every so often (every 30 minutes unless you pick another time), and when
-the stream ends it edits, deletes, leaves or replaces it, as you picked. *Send a test* posts a test
-message, which you can delete from the app. Nothing about your viewers or your chat is sent to
-Discord. What's posted is in your Discord server, under
+the stream ends it edits, deletes, leaves or replaces it, as you picked. For a notification whose
+stream recap you turn on (off until you do), when a stream ends it posts the recap message you
+wrote once, filled with that stream's numbers (messages, chatters, new and returning viewers,
+follows, subs, bits, memberships, Super Chats per currency, raids, peak viewers) and, where you put
+them, the names of the five Twitch viewers who wrote most and the chat race's Twitch podium; the
+recap page's *Post to Discord* posts it again. YouTube viewers' names never go to Discord.
+*Send a test* posts a test message, which you can delete from the app. Nothing else about your
+viewers or your chat is sent to Discord. What's posted is in your Discord server, under
 [Discord's privacy policy](https://discord.com/privacy). Deleting a notification in Leafs Live
 forgets its webhook; messages already posted stay in Discord until you delete them there, and you
 can delete a webhook itself in Discord's channel settings at any time.

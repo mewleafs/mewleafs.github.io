@@ -115,7 +115,14 @@ they came to and streams in a row, who only watched on Twitch, their messages, w
 arrive, their first message, what they gave (Super Chats in their own currency), their channel
 points, chat race places, polls and giveaways, with filters for this stream, new viewers,
 regulars, regulars who've gone missing and supporters, and a summary of each stream (chatters,
-new and returning viewers, messages per minute). The same stats are on each viewer's card in the
+new and returning viewers, messages per minute). Each stream has a recap: its numbers next to the
+average of your last streams, messages per minute on both platforms or each apart with the viewer
+counts, the busiest moments and what happened then (a raid, a burst of alerts, a marker) with the
+chat of that moment, the top chatters, the regulars who came and the ones who didn't, what came in
+(follows, subs and gift subs by tier, bits, memberships, Super Chats per currency, Jewels, raids in
+and out, channel points), the chat race's podium, polls, giveaways, ad breaks and markers. A banner
+offers it when a stream ends; export it as CSV, JSON or a picture to share, or post it to Discord.
+The same stats are on each viewer's card in the
 app and the dock, where you can link a person's Twitch and YouTube accounts as one, and a regular's
 first message after missing streams is marked Welcome back (rules and important mode can use it). Moderation shows your Twitch channel's moderation settings in the app and the dock:
 the unban requests banned viewers send, to approve or deny with a note, counted on the dock's
