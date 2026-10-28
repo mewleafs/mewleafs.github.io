@@ -95,10 +95,12 @@ those who reach your amount in a month are made Twitch VIPs for the next month, 
 reaching it again; it never touches the VIPs you gave on twitch.tv, never makes a moderator a VIP,
 and permanent VIPs you choose never lose it. The month change happens by itself, with a report of
 who gained and lost VIP and why, a vacation mode where nobody loses it, an increase that starts
-next month and an optional line in chat naming the new VIPs. Each stamp shows on stream as the
-viewer's passport with this stream's icon pressing in, reaching the amount plays a celebration, a
-VIP's first activity in a stream plays a welcome, with a sound of their own at a volume of its
-own when you give them one, and sends a welcome line, and `!passport` (off
+next month and an optional line in chat naming the new VIPs. Each stamp shows on stream with this
+stream's icon pressing in, in the look you pick: a slim ticket with the month's stamps in a row, a
+ticket where they're stops on a route to VIP, or the viewer's open passport, at the size each
+overlay sets. Reaching the amount plays a celebration, a VIP's first activity in a stream plays a
+welcome (on screen, or only its sound), with a sound of their own at a volume of its own when you
+give them one, and sends a welcome line, and `!passport` (off
 until you turn it on) tells a viewer how many stamps they have. Viewers lists everyone your chats
 have seen on Twitch and YouTube, searchable and sorted by when they last or first came, streams,
 messages or support: when each was last seen and in which stream, how many of the latest streams
