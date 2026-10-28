@@ -76,13 +76,21 @@ the month and when), each stream's stamp icon, the viewers it made VIP or you ma
 stream, the welcome sound you give a VIP (their name, user ID, the sound from your library and
 whether their welcome is on), and a report of each month change (who gained, kept or lost VIP, with
 their stamps). These stay until you delete the profile.
-For each viewer it keeps a short record (name, user ID, first and last seen, message count and any
-note you write).
+For viewer stats, it keeps, for each viewer and each of your streams, when they were first and last
+there, when they first wrote or showed up with an alert in it (or that they were only in the chat,
+watching), how many messages they sent and what brought them in, and what they gave in it: bits,
+subs and gift subs with their tier and months, Super Chats and Super Stickers in their own
+currency, memberships and gifted memberships, Jewels, channel points redemptions by reward and
+raids. These are kept apart from the chat history, so how often someone comes is still known after
+the messages are gone.
+For each viewer it keeps a short record (name, user ID, first and last seen, message count, the
+first message they wrote in your chats, any note you write, and the other accounts you linked to
+them as the same person).
 
 - **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes, giveaways with their entries and stream times are deleted after 90 days by
-  default; you can change that in Settings, or keep them forever. Viewer records stay until you
-  delete the profile.
-- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, and viewer records
+  default; you can change that in Settings, or keep them forever. Viewer records and viewer stats
+  stay until you delete the profile.
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats 30 days after the stream they're about, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -132,6 +140,8 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `moderator:read:followers`, to show on a viewer's card since when they've followed your channel,
   to answer the `!followage` viewer command, and to hear new follows so the app can thank them in
   chat when you turn that on;
+- `moderator:read:chatters`, to see who is in your chat while your stream is live, those who only
+  watch included, for the viewer stats;
 - `channel:read:redemptions`, to hear when a viewer redeems one of your channel points rewards and
   to list your channel's rewards, so you can pick which ones to thank or show on stream;
 - `channel:read:hype_train`, to hear when a hype train starts, reaches a new level and ends;
@@ -171,7 +181,9 @@ the name you type. When you open Moderation, it asks Twitch for your AutoMod lev
 channel's blocked terms and the unban requests waiting for an answer. When your streamer account
 connects, when your stream goes live or offline, every few minutes while it's live, after an ad
 break, and when you open Stream info or the dock's ads, it asks Twitch for your channel's ad
-schedule (the next ad break, its length and the snoozes left). Held messages, unban
+schedule (the next ad break, its length and the snoozes left). While your stream is live, every
+few minutes, it asks Twitch for the list of who is in your chat (their names and user IDs) and
+keeps that each of them was at that stream, for the viewer stats. Held messages, unban
 requests, the AutoMod levels, the blocked terms, the ad schedule and ad breaks, account dates, follow dates, the title, the category, the
 stream info Twitch gives, the list of rewards and the waiting redemptions are kept only in memory while the app runs, never
 saved (a reward you pick is saved by its ID and title; a stream info preset you save keeps what you
@@ -258,7 +270,8 @@ own Google client or, if you choose, your own.
 - **Bans:** to be able to lift a ban later, it keeps the ID YouTube gives each ban it makes, with
   the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays,
-  and to show and change your broadcasts' details in the app and the dock. It isn't used for
+  to show and change your broadcasts' details in the app and the dock, and for the viewer stats
+  the app shows you. It isn't used for
   advertising, sold or shared with anyone else.
 - **Where it's kept:** in the profile's database on your PC, for at most 30 days, as described
   above. Your channel's name and picture are fetched again every week.
@@ -266,7 +279,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times and YouTube
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats and YouTube
   viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live

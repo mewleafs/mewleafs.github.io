@@ -90,7 +90,16 @@ next month and an optional line in chat naming the new VIPs. Each stamp shows on
 viewer's passport with this stream's icon pressing in, reaching the amount plays a celebration, a
 VIP's first activity in a stream plays a welcome, with a sound of their own when you give them
 one, and sends a welcome line, and `!passport` (off
-until you turn it on) tells a viewer how many stamps they have. Moderation shows your Twitch channel's moderation settings in the app and the dock:
+until you turn it on) tells a viewer how many stamps they have. Viewers lists everyone your chats
+have seen on Twitch and YouTube, searchable and sorted by when they last or first came, streams,
+messages or support: when each was last seen and in which stream, how many of the latest streams
+they came to and streams in a row, who only watched on Twitch, their messages, when they usually
+arrive, their first message, what they gave (Super Chats in their own currency), their channel
+points, chat race places, polls and giveaways, with filters for this stream, new viewers,
+regulars, regulars who've gone missing and supporters, and a summary of each stream (chatters,
+new and returning viewers, messages per minute). The same stats are on each viewer's card in the
+app and the dock, where you can link a person's Twitch and YouTube accounts as one, and a regular's
+first message after missing streams is marked Welcome back (rules and important mode can use it). Moderation shows your Twitch channel's moderation settings in the app and the dock:
 the unban requests banned viewers send, to approve or deny with a note, counted on the dock's
 button; AutoMod's level, one for everything or one per category; and Twitch's blocked terms next
 to Leafs Live's own blocked words, to add, remove and copy from one list to the other. Twitch
