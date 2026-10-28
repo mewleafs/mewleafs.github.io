@@ -15,7 +15,8 @@ the streamer types and the moderation rules the streamer turns on, manages the T
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
 your PC. The app talks only to Twitch and Google (YouTube) for the accounts you connect, to Discord for
-the stream notifications you set up, and to Google Fonts when you add a font.
+the stream notifications you set up, to Google Fonts when you add a font, and to 7TV, BetterTTV and
+FrankerFaceZ for their emotes.
 
 ## On your PC
 
@@ -26,7 +27,8 @@ the stream notifications you set up, and to Google Fonts when you add a font.
   Discord stream notifications (their messages, the roles they mention, what Discord said about
   each webhook and the ID of each stream's message), overlays
   with their fonts, pictures, videos and sounds (with how loud each sound is, measured on your PC so
-  they play at the same level), and the chat history (below). A stream idea's link
+  they play at the same level), which third-party emote providers are on, and the chat history
+  (below). The profile folder also keeps the third-party emotes' pictures (below). A stream idea's link
   opens in your own web browser when you click *Open*; the app itself doesn't visit it.
 - **Sign-ins** (Twitch and Google tokens) and the **Discord webhooks** of your stream
   notifications are kept in Windows Credential Manager, never in the profile folder.
@@ -333,10 +335,26 @@ Discord. What's posted is in your Discord server, under
 forgets its webhook; messages already posted stay in Discord until you delete them there, and you
 can delete a webhook itself in Discord's channel settings at any time.
 
+## Third-party emotes
+
+So that 7TV, BetterTTV and FrankerFaceZ emotes show in the chat, the dock and your overlays, Leafs
+Live asks each of them for its emotes for everyone and for your Twitch channel's, by your Twitch
+channel's public user ID (no account or sign-in is used), when a profile opens, when you change your
+streamer accounts or press *Refresh*, and again every so often. 7TV also tells the app when your
+channel's emotes change, over a connection that stays open while the app runs. When you've linked
+your YouTube channel in your 7TV account, the app uses the emotes 7TV lists for it there; your
+YouTube channel's ID isn't sent. The emote lists are kept only in memory. Each emote's picture is
+downloaded once from that provider's image server and kept in the profile folder, so your overlays
+load it from your PC. Each provider has a switch in Settings → Chat, all on to begin with; one
+turned off isn't asked again. Like any download, those servers can see your IP address. Nothing
+about your viewers or your chat is sent to them. Their own privacy policies are on their sites:
+[7TV](https://7tv.app), [BetterTTV](https://betterttv.com) and
+[FrankerFaceZ](https://www.frankerfacez.com/privacy).
+
 ## Pictures and fonts
 
-Your overlays and the dock show viewers' pictures, emotes and badges from Twitch's and YouTube's
-image servers, and Stream info shows the box art of the Twitch categories you search for from
+Your overlays and the dock show viewers' pictures, Twitch's and YouTube's own emotes and badges
+from Twitch's and YouTube's image servers (third-party emotes come from your PC, above), and Stream info shows the box art of the Twitch categories you search for from
 Twitch's. When you add a Google font, the app downloads it once from Google Fonts. Like any
 download, those servers can see your IP address. The pictures, videos and sounds you add for alerts
 are copied into the profile folder, and your overlays load them from your PC; they're sent nowhere,

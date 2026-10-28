@@ -6,7 +6,8 @@ permalink: /leafs-live/
 # Leafs Live
 
 A desktop app for Windows for live streamers. It reads your Twitch and YouTube chats in one place,
-lets you answer from either account, lets you delete messages and time out, ban or unban viewers
+with 7TV, BetterTTV and FrankerFaceZ emotes drawn like Twitch's own (everyone's and your channel's,
+with an emote picker in the message box), lets you answer from either account, lets you delete messages and time out, ban or unban viewers
 from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, keeps a log of
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
