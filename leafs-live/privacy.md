@@ -267,10 +267,12 @@ own Google client or, if you choose, your own.
   bound to, and YouTube's list of video categories; when you schedule a broadcast, the names of
   your channel's stream keys (never the keys themselves). Once a Discord stream notification that posts
   for YouTube is on, while you're live on YouTube, your live broadcast's title and viewer count each
-  time its message is posted or updated. These are kept only in memory while the app runs. Once
-  you turn on YouTube viewer counts for stream recaps (Viewers → Settings; off until you do), while
-  you're live on YouTube, your live broadcast's viewer count every 5 minutes, kept with that stream
-  for 30 days.
+  time its message is posted or updated (the app's last look at it when that's at most a few
+  minutes old). These are kept only in memory while the app runs. Once you turn on YouTube stats
+  (the live stats' + menu, or Viewers → Settings; off until you do), while you're live on YouTube,
+  your live broadcast's viewer count, likes and views every 2 minutes, in one request: the viewer
+  count is kept with that stream for 30 days, for its recap, and the likes and views only in memory
+  while the app runs, for the live stats.
 - **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
   off until you do), the answer to a command a viewer types in your chat, in that chat, with the
   answers asked for within a few seconds of each other sent together as one message, at most one

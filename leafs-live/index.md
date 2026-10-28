@@ -122,6 +122,12 @@ chat of that moment, the top chatters, the regulars who came and the ones who di
 (follows, subs and gift subs by tier, bits, memberships, Super Chats per currency, Jewels, raids in
 and out, channel points), the chat race's podium, polls, giveaways, ad breaks and markers. A banner
 offers it when a stream ends; export it as CSV, JSON or a picture to share, or post it to Discord.
+While you're live, a strip under the header of the app and the dock shows the stream's numbers:
+viewers on both platforms added up with each one's and a trend arrow, the peak, how long you've
+been live, who's in the Twitch chat, messages per minute, chatters and new chatters, follows, subs
+and gift subs, bits, the hype train's level, the next ad, YouTube's likes and views (once you turn
+YouTube stats on), memberships and Super Chats per currency. A click hides a stat, + brings it
+back, and the strip folds to one button; nothing of it is shown on stream.
 The same stats are on each viewer's card in the
 app and the dock, where you can link a person's Twitch and YouTube accounts as one, and a regular's
 first message after missing streams is marked Welcome back (rules and important mode can use it). Moderation shows your Twitch channel's moderation settings in the app and the dock:
