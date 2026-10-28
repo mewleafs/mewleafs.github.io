@@ -253,10 +253,12 @@ own Google client or, if you choose, your own.
   for YouTube is on, while you're live on YouTube, your live broadcast's title and viewer count each
   time its message is posted or updated. These are kept only in memory while the app runs.
 - **What it writes:** only the chat messages you send; once you turn viewer commands on (they're
-  off until you do), the answer to a command a viewer types in your chat, in that chat, at most one
-  per chat in the time you set, and none once the day's quota has few messages left, as the
-  account the command sends as (your bot account by default, when you have one); once you turn
-  timed messages on (they're off until you do), your timed messages in your live chats, none once
+  off until you do), the answer to a command a viewer types in your chat, in that chat, with the
+  answers asked for within a few seconds of each other sent together as one message, at most one
+  such message per chat in the time you set, and none once the day's quota has few messages left,
+  as the account the command sends as (your bot account by default, when you have one); once you
+  turn timed messages on (they're off until you do), your timed messages in your live chats, as
+  often as you set for YouTube, none once
   the day's quota has few messages left, as the account each one sends as (your bot account by
   default, when you have one); for a poll you start with its chat lines on, a line when it starts
   and one when it ends, as your bot account when you have one; for a giveaway you start with its
