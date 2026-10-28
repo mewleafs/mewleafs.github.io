@@ -9,8 +9,8 @@ permalink: /leafs-live/privacy/
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
-commands the streamer turns on, the timed messages the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
-the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, posts the stream notifications the streamer sets up in their Discord server, and shows chat on OBS overlays. This page explains what data it handles and where that data goes.
+commands the streamer turns on, the timed messages and the now playing line the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
+the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, posts the stream notifications the streamer sets up in their Discord server, and shows chat and the song playing on the PC on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
@@ -43,6 +43,12 @@ the stream notifications you set up, and to Google Fonts when you add a font.
   while you turn on *Really send to chat* the chat messages they lead to (such as thank-yous) go to
   your real chat. Moderation in a simulated chat is never sent, and a counter a viewer command
   changes there changes only in memory.
+- **Now playing** reads what's playing from Windows' media controls on your PC (the app it plays
+  in, the title, artist and album, its cover, where it is, and whether it plays): only for the
+  Now playing view, the dock and your overlays, kept in memory, never saved, and sent nowhere.
+  The profile keeps which apps you picked and the names of the apps it has seen there. It reaches
+  your chat only when you turn its chat line on or a viewer uses a command that says it (`!song`),
+  sent like any other line. Its Play, Pause, Next and Previous buttons act on that app only.
 - **Logs and diagnostics** stay on your PC. *Save diagnostics…* writes a text file only when you ask
   for it, without sign-ins or chat history, and it's up to you whether to share it.
 
@@ -198,7 +204,10 @@ until you do), the answer to a command a viewer types in your chat, in that chat
 that are on and the viewers each one allows, as the account the command sends as (your bot account
 by default, when you have one), with a shoutout as your streamer account for a command set to do
 that; once you turn timed messages on (they're off until you do), your timed messages in your live
-chat, as the account each one sends as (your bot account by default, when you have one); for a
+chat, as the account each one sends as (your bot account by default, when you have one); once you
+turn the now playing line on (it's off until you do), a line naming each new track once it has
+played for the seconds you set, in your live chats, as the account you pick (your bot account by
+default, when you have one); for a
 poll you start with its chat lines on, a line when it starts and one when it ends, as your bot
 account when you have one; for a giveaway you start with its chat lines on, a line when it opens,
 one a minute before it closes and one for each winner drawn, as your bot account when you have
@@ -260,7 +269,9 @@ own Google client or, if you choose, your own.
   turn timed messages on (they're off until you do), your timed messages in your live chats, as
   often as you set for YouTube, none once
   half of the day's quota is left, as the account each one sends as (your bot account by
-  default, when you have one); for a poll you start with its chat lines on, a line when it starts
+  default, when you have one); once you turn the now playing line on (it's off until you do), a
+  line naming each new track once it has played for the seconds you set, none once half of the
+  day's quota is left, as the account you pick; for a poll you start with its chat lines on, a line when it starts
   and one when it ends, as your bot account when you have one; for a giveaway you start with its
   chat lines on, a line when it opens, one a minute before it closes and one for each winner
   drawn, as your bot account when you have one, and, with its entry confirmations on, a line

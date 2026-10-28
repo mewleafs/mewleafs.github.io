@@ -11,7 +11,7 @@ from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, 
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
 shield button that turns on the protections you picked and back off, and drives customizable OBS
-overlays (chat, featured message, alerts, chat race, poll, giveaway, credits) and an OBS dock
+overlays (chat, featured message, alerts, chat race, poll, giveaway, credits, now playing) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
@@ -82,6 +82,12 @@ Discord's JSON (with variables for the title, category, viewers, links, how long
 and more, and a preview in Discord's look), the stream's picture, updated every 30 minutes or as
 often as you choose while you're live, and edited, deleted, left or replaced by your ended message
 when the stream ends; several webhooks can post to several servers, and *Send a test* tries one.
+Now playing shows the song playing on your PC (Spotify, a browser, Apple Music or any app in
+Windows' media controls, with no login) on stream with its cover and a moving progress bar, and in
+the app and the dock with Previous, Play or Pause and Next for that app; it follows Windows'
+current app or only the apps you pick, so a video in the browser doesn't take over from your music.
+`!song` and the `{song}` variable say it in chat, and a line on each new track can too, once you
+turn it on.
 Channel points manages your Twitch
 rewards in the app and the dock: make one with its cost, prompt, color, limits per stream and per
 viewer, cooldown and whether it skips the queue, then pause it, turn it off, edit it or delete it;
@@ -130,7 +136,7 @@ stream by calling a URL on your PC with a key only you have: play, pause, stop, 
 alerts; turn reader and important mode's pages and switch between the live chat, reader mode and
 important mode; take the featured message off; start and end the stream session and the chat race;
 start, end and show saved polls; open, close, draw and finish saved giveaways; roll and stop the
-credits; snooze or run Twitch ads; turn Twitch's slow, emote-only, followers-only, subscribers-only
+credits; snooze or run Twitch ads; play, pause or skip what's playing; turn Twitch's slow, emote-only, followers-only, subscribers-only
 and Shield modes on and off and put a stream marker; apply saved stream info; send a line to chat;
 turn timed messages and viewer commands on and off; and play simulator presets. Settings lists
 every action with its URL ready to copy and a manual to save. The interface works in English and Spanish.
