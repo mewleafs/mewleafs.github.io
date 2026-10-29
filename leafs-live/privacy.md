@@ -106,15 +106,25 @@ For hype moments, it keeps for each of your streams the moments it found or you 
 one was, what made it (counts, such as how many laughed or how many gift subs came, and the text of
 a message many viewers copied, never who wrote), when each live platform's stream started and its
 video, so it can link to that point, whether you kept or dismissed it, the name you gave it, and
-the marker and clip made of it.
+the marker and clip made of it. With each stream it also keeps its Twitch stream's ID, its Twitch
+and YouTube videos' IDs and the viewers' Twitch clips of it (each clip's ID, when it was made, how
+long it is and where it is in the video, not who made it).
+For Leafs Content, when a stream ends (unless you turn stream packs off in the Viewers view's
+settings), and when you press *Export for Leafs Content* on its recap, it writes a **stream pack**
+file into the profile folder's `exports/streams`: when the stream was live on each platform with
+its videos' IDs and links, its hype moments you didn't dismiss (as above) with the text of the
+viewers' chat messages from 15 seconds before to 30 seconds after each one (no names or user IDs),
+the messages per minute, the markers, raids out and ad breaks, and the viewers' clips. The file
+stays on your PC and the app sends it nowhere; it's there for Leafs Content on the same PC to read.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count, the
 first message they wrote in your chats, any note you write, and the other accounts you linked to
 them as the same person).
 
 - **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes, giveaways with their entries and stream times are deleted after 90 days by
   default; you can change that in Settings, or keep them forever. Viewer records, viewer stats,
-  stream recaps, hype moments and word game rounds and points stay until you delete the profile.
-- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps and hype moments 30 days after the stream they're about, word game points 30 days after they were scored, and viewer records
+  stream recaps, hype moments and word game rounds and points stay until you delete the profile,
+  and stream pack files until you delete them.
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps, hype moments and stream pack files 30 days after the stream they're about (a stream pack with nothing else left is deleted), word game points 30 days after they were scored, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -220,8 +230,10 @@ bits), kept only in memory for ten minutes. While your stream is live, every
 minute, it asks Twitch for your stream's viewer count and keeps it with that stream, for its
 recap. While your stream is live, every 3 minutes, it asks Twitch for the clips made of it (when
 each was made, by which user ID, how long it is and where it is in the video) and for the
-stream's video, to find hype moments and link to them; the clips are kept only in memory, and
-the video's ID with the moments. Once a Discord stream
+stream's video, to find hype moments and link to them; when the stream ends, when you export it
+for Leafs Content and when you open its recap (at most every ten minutes), it asks again, for the
+clips made since. The clips are kept with the stream without who made them, and the video's ID
+with the stream and its moments. Once a Discord stream
 notification that posts for Twitch is on, while your stream is live, it asks Twitch for your stream's title, category,
 viewer count and the category's box art each time the notification's message is posted or updated
 (and your channel's title and category when a stream ends after the app was restarted during it). Held messages, unban
@@ -336,17 +348,18 @@ own Google client or, if you choose, your own.
 - **Bans:** to be able to lift a ban later, it keeps the ID YouTube gives each ban it makes, with
   the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays,
-  to show and change your broadcasts' details in the app and the dock, and for the viewer stats,
-  stream recaps and hype moments the app shows you. It isn't used for
+  to show and change your broadcasts' details in the app and the dock, for the viewer stats,
+  stream recaps and hype moments the app shows you, and for the stream packs it writes on your PC
+  for Leafs Content. It isn't used for
   advertising, sold or shared with anyone else.
-- **Where it's kept:** in the profile's database on your PC, for at most 30 days, as described
-  above. Your channel's name and picture are fetched again every week.
+- **Where it's kept:** in the profile's database and its stream pack files on your PC, for at
+  most 30 days, as described above. Your channel's name and picture are fetched again every week.
 - **Agreeing:** the Accounts screen and the first-run setup say that connecting YouTube agrees to
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
   from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats, word game points, YouTube's
-  part of stream recaps and hype moments and YouTube viewer records (for a bot account, its name on the known bots list). You can also remove the
+  part of stream recaps, hype moments and stream pack files and YouTube viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
   doesn't touch what YouTube itself keeps.

@@ -143,6 +143,11 @@ that off, and waits in the app and the dock to keep or dismiss. The recap lists 
 of that moment, makes a Twitch clip of one when you press Clip it, and writes them as chapters in
 the YouTube video's description when you press Add chapters, so the moments stay findable after
 Twitch's video is gone. Nothing about them is shown on stream.
+When a stream ends, Leafs Live writes its stream pack into the profile folder for Leafs Content
+(Leafs' app for making videos) to find shorts with: when it was live on each platform and its
+videos, the hype moments with their chat as text only, messages per minute, markers, ad breaks and
+viewers' Twitch clips, including the ones made after the stream. The two apps never need to be open
+together; YouTube's parts leave the file after 30 days.
 While you're live, a strip under the header of the app and the dock shows the stream's numbers:
 viewers on both platforms added up with each one's and a trend arrow, the peak, how long you've
 been live, who's in the Twitch chat, messages per minute, chatters and new chatters, follows, subs
