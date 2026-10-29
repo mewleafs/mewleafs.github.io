@@ -5,7 +5,7 @@ permalink: /leafs-content/privacy/
 
 # Leafs Content: privacy policy
 
-*Last updated: 27 October 2026*
+*Last updated: 29 October 2026*
 
 Leafs Content is a desktop app for Windows for planning, writing, editing and preparing YouTube
 videos. This page explains what data it handles and where that data goes.
@@ -21,9 +21,12 @@ data from Google.
 - **Your workspace** is a folder you choose. It holds your ideas, structures, scripts, timelines,
   thumbnails and images, the footage, pictures, music and other files you add to the library, their
   transcripts, research notes, your channel's intro and rules, settings and the YouTube data the
-  app has fetched (see below). You can back it up, move it or delete it like any other folder; the
+  app has fetched (see below). For a stream recording you add, it also holds the link to the stream
+  you type in, the loudness and other moments the app found in the recording, and the moments you
+  kept or passed, with the reasons you gave. You can back it up, move it or delete it like any other folder; the
   app's own backups leave the YouTube data out.
-- **Transcription, voice cleanup, background removal and spell check** run on your PC.
+- **Transcription, voice cleanup, background removal, spell check and finding the loud and lively
+  moments of a stream recording** run on your PC.
 - **App settings and caches** are kept in the app's data folder (`%LOCALAPPDATA%`), or next to the
   app in its portable version.
 - **The YouTube sign-in**, if you connect YouTube, is kept in Windows Credential Manager, outside
@@ -42,7 +45,9 @@ install and sign in to yourself:
 When you use an AI feature, the tool you picked receives what that task needs, for example the
 video's idea, structure and script, transcripts, descriptions of library files, frames of your
 edit, your channel's intro and rules, and, for tasks that compare ideas with your past videos, the
-titles and numbers of those videos. YouTube's numbers are included only if you turn on *Let AI
+titles and numbers of those videos. To find Shorts in a stream recording, it gets the recording's
+transcript in parts of about 25 minutes, the moments the app found in each part, frames of the
+recording, and the titles of the moments you kept or passed on your streams, with your reasons. YouTube's numbers are included only if you turn on *Let AI
 tasks use the YouTube numbers* (see below); otherwise the AI sees only numbers you typed in
 yourself. The tool sends it to its provider under your own account, and that provider's terms and
 privacy policy apply, including whether it may use your conversations to train its models: both
@@ -87,19 +92,27 @@ they don't pass through any Leafs server.
 - **What it reads:** your channel's name, and for each published video you link in the app: its
   channel, publish date and length (YouTube Data API), and views, average view duration, average
   percentage viewed, likes, comments and subscribers gained per time window (YouTube Analytics
-  API). It asks Google for those fields only, and never uploads, edits or deletes anything on
-  YouTube.
+  API). For a stream whose YouTube video you link, when you ask for it: that video's channel,
+  publish time and the time the live started (YouTube Data API), and its audience retention:
+  how much of the audience was watching at each point of the video, and how that compares with
+  similar videos (YouTube Analytics API), only for videos on your connected channel. It asks
+  Google for those fields only, never uploads, edits or deletes anything on YouTube, and never
+  downloads videos.
 - **How it's used:** to show those numbers in the app exactly as YouTube returns them, next to the
-  video they belong to; numbers you type in yourself are marked as yours. If you turn on *Let AI
+  video they belong to; numbers you type in yourself are marked as yours. A stream's retention is
+  drawn along the stream, and the time the live started is used once to suggest how far your
+  recording is from the stream's video, which you can apply or ignore. If you turn on *Let AI
   tasks use the YouTube numbers* (off until you choose; the first task that could use them asks),
   they're also sent to the AI tool you use with the tasks that compare ideas with your past videos
-  (see above). YouTube data isn't used for advertising, sold, or shared with anyone else.
+  and, for a stream, with the task that finds Shorts in it (see above). YouTube data isn't used for advertising, sold, or shared with anyone else.
 - **Where it's kept:** in your workspace's database on your PC, and never in the app's backups.
   Every refresh checks that each linked video still exists on your channel and updates its facts;
   a video that's gone loses its YouTube data.
 - **When it's deleted:** right away when you press *Delete YouTube data* or *Disconnect* in
   Settings, or when Google says the sign-in has expired or was revoked; and automatically when the
-  app hasn't been able to check the data with YouTube for 30 days. Deleting it in the app doesn't
+  app hasn't been able to check the data with YouTube for 30 days. A stream's retention is also
+  deleted 30 days after it was fetched unless you fetch it again, and when you change the stream's
+  link. Deleting it in the app doesn't
   change anything on YouTube. Numbers you typed in and your own notes stay.
 - **Revoking access:** *Disconnect* in Settings revokes the sign-in at Google and deletes it from
   your PC. You can also remove Leafs Content's access at any time on Google's
