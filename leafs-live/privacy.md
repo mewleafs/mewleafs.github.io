@@ -5,7 +5,7 @@ permalink: /leafs-live/privacy/
 
 # Leafs Live: privacy policy
 
-*Last updated: 28 October 2026*
+*Last updated: 29 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
@@ -81,6 +81,11 @@ ended) with each viewer's entry: their name, user ID, what they entered (such as
 account name), their chances and when; and each draw, with the random seed it used, every entry
 it drew from and the winner, so the draw can be checked again. A giveaway you cancel is deleted
 with its entries.
+For the word game, it keeps each round you play (its level, language, letters and words, its goal,
+when it ran and how it ended) and the points viewers scored in it: their name, user ID, the word they
+found (or the round's bonus), the points and when. The boards of this stream's and all-time points
+are worked out from those, with accounts you linked as one person counted together. These are kept
+apart from the chat history, like viewer stats. The word lists come with the app.
 For VIP Stamps (Twitch only), it keeps each stamp a viewer got (their name, user ID, the stream,
 the month and when), each stream's stamp icon, the viewers it made VIP or you made permanent VIPs
 (name, user ID, the month they're VIP for and whether the app gave it), who was welcomed in each
@@ -102,9 +107,9 @@ first message they wrote in your chats, any note you write, and the other accoun
 them as the same person).
 
 - **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes, giveaways with their entries and stream times are deleted after 90 days by
-  default; you can change that in Settings, or keep them forever. Viewer records, viewer stats and
-  stream recaps stay until you delete the profile.
-- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps 30 days after the stream they're about, and viewer records
+  default; you can change that in Settings, or keep them forever. Viewer records, viewer stats,
+  stream recaps and word game rounds and points stay until you delete the profile.
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps 30 days after the stream they're about, word game points 30 days after they were scored, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -322,7 +327,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats, YouTube's
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats, word game points, YouTube's
   part of stream recaps and YouTube viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live

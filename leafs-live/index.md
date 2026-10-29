@@ -12,7 +12,7 @@ from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, 
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
 shield button that turns on the protections you picked and back off, and drives customizable OBS
-overlays (chat, featured message, alerts, chat race, poll, giveaway, credits, now playing) and an OBS dock
+overlays (chat, featured message, alerts, chat race, poll, giveaway, credits, now playing, word game) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
@@ -63,6 +63,14 @@ if you choose, lines in chat when it opens, before it closes and for the winner.
 it off, each viewer who enters is told in their chat that they're in, and one who tries again that
 they're in already (once), with several at a time sharing one line. Past giveaways
 keep their winners and a draw log with each draw's seed and entries, so a draw can be checked.
+A word game for the whole chat runs in both chats at once: a round shows scrambled letters and an
+empty slot for every word they make (English or Spanish), viewers type the words they find, and the
+first to find one fills its slot with their name for everyone and scores its length, the word that
+uses every letter twice. Reaching the round's goal before the time runs out passes the level and
+gives everyone who found a word a bonus; rounds follow one another, with pause, skip, hints and a
+shuffle from the app or the dock, and boards of this stream's and all-time points (accounts you
+linked as one person count together). It shows on stream as its own widget, and the Chat widget can
+leave the guesses out. Nothing about it is posted to chat.
 Credits roll at the end of a stream with everyone who supports you, or only who supported that
 stream: Twitch subscribers (everyone subscribed now, not gifted subs), gifters with their totals,
 the month's bits (with Twitch's leaderboard of the month), YouTube members of the last month, gifted memberships,
@@ -153,8 +161,8 @@ until you turn it on, lets a Stream Deck, Bitfocus Companion, AutoHotkey or a sc
 stream by calling a URL on your PC with a key only you have: play, pause, stop, skip or replay
 alerts; turn reader and important mode's pages and switch between the live chat, reader mode and
 important mode; take the featured message off; start and end the stream session and the chat race;
-start, end and show saved polls; open, close, draw and finish saved giveaways; roll and stop the
-credits; snooze or run Twitch ads; play, pause or skip what's playing; turn Twitch's slow, emote-only, followers-only, subscribers-only
+start, end and show saved polls; open, close, draw and finish saved giveaways; start, pause,
+resume, skip, hint, shuffle and stop the word game; roll and stop the credits; snooze or run Twitch ads; play, pause or skip what's playing; turn Twitch's slow, emote-only, followers-only, subscribers-only
 and Shield modes on and off and put a stream marker; apply saved stream info; send a line to chat;
 turn timed messages and viewer commands on and off; and play simulator presets. Settings lists
 every action with its URL ready to copy and a manual to save. The interface works in English and Spanish.
