@@ -67,8 +67,9 @@ Credits roll at the end of a stream with everyone who supports you, or only who 
 stream: Twitch subscribers (everyone subscribed now, not gifted subs), gifters with their totals,
 bits (with Twitch's all-time leaderboard), YouTube members of the last month, gifted memberships,
 Super Chats and Stickers (names only) and Jewels, the stream's hype train top contributors and
-raids, and if you like the stream's moderators and top chatters; each section can be turned off, renamed and reordered, with your own
-title and end text, a speed or a total time, and a loop. You roll them from the app, the dock or
+raids, and if you like the stream's moderators and top chatters; subscribers and members can be
+grouped by their Twitch tier or YouTube membership level; each section can be turned off, renamed and reordered, with your own
+title and end text, a background, a speed or a total time, and a loop. You roll them from the app, the dock or
 the overlay editor; they never include follows.
 Stream ideas keep a list of things to do on stream (ideas, topics, things to
 react to or read), each with a note, a kind, links to open or copy and an optional day from which
