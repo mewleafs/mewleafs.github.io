@@ -22,8 +22,9 @@ data from Google.
   thumbnails and images, the footage, pictures, music and other files you add to the library, their
   transcripts, research notes, your channel's intro and rules, settings and the YouTube data the
   app has fetched (see below). For a stream recording you add, it also holds the link to the stream
-  you type in, the loudness and other moments the app found in the recording, and the moments you
-  kept or passed, with the reasons you gave. You can back it up, move it or delete it like any other folder; the
+  you type in, the loudness and other moments the app found in the recording, the moments you
+  kept or passed, with the reasons you gave, and, if you use it, a copy of the stream data Leafs
+  Live saved for that stream (see below). You can back it up, move it or delete it like any other folder; the
   app's own backups leave the YouTube data out.
 - **Transcription, voice cleanup, background removal, spell check and finding the loud and lively
   moments of a stream recording** run on your PC.
@@ -33,6 +34,8 @@ data from Google.
   the workspace and its backups.
 - **The OBS password**, if you connect the app to OBS Studio, is kept in Windows Credential Manager
   too, and OBS's host and port in the app's settings, outside the workspace.
+- **The Leafs Live folder**, if you choose one, is kept in the app's settings, outside the
+  workspace.
 
 ## AI features
 
@@ -47,7 +50,10 @@ video's idea, structure and script, transcripts, descriptions of library files, 
 edit, your channel's intro and rules, and, for tasks that compare ideas with your past videos, the
 titles and numbers of those videos. To find Shorts in a stream recording, it gets the recording's
 transcript in parts of about 25 minutes, the moments the app found in each part, frames of the
-recording, and the titles of the moments you kept or passed on your streams, with your reasons. YouTube's numbers are included only if you turn on *Let AI
+recording, the titles of the moments you kept or passed on your streams, with your reasons, and,
+if you use Leafs Live's data for that stream, its hype moments with the chat messages around each
+(the messages' text only, no names), the chat's messages per minute, your markers and the viewers'
+clips. YouTube's numbers are included only if you turn on *Let AI
 tasks use the YouTube numbers* (see below); otherwise the AI sees only numbers you typed in
 yourself. The tool sends it to its provider under your own account, and that provider's terms and
 privacy policy apply, including whether it may use your conversations to train its models: both
@@ -64,6 +70,27 @@ connection is on, the app connects whenever OBS is running. It answers OBS's pas
 for OBS starting, pausing and stopping a recording. It never starts, stops or changes anything in
 OBS, and the recordings stay wherever OBS saves them. *Disconnect* in Settings ends the connection;
 *Remove* and *Connect again* delete the saved password.
+
+## Leafs Live stream data (optional)
+
+Leafs Live, the developer's streaming app, saves a file for each stream when it ends, in its own
+profile folder on your PC. Leafs Content reads those files from that folder (the one Leafs Live's
+settings list, or one you choose in Settings → Connections) when it opens, when you add a stream
+or change its link, and when you open a stream's Harvest. It only reads them, never changes them, and nothing is sent
+anywhere to get them: the two apps never connect to each other. A file holds when the stream was
+live on Twitch and YouTube and the IDs of its videos there, the moments the chat got excited about
+with counts (messages, laughter, raids, gifts and the like) and the chat messages around each, as
+text only, without names, the chat's messages per minute, your Twitch markers, and the viewers'
+Twitch clips, without who made them.
+
+When a file matches a stream you added (its video is the stream's link, or the stream was live
+when your recording started), the stream's Harvest asks whether to use it. Only if you choose
+*Use it* is a copy kept with that stream in your workspace, and its moments shown along the stream
+and given to the AI as described above. *Stop using it* deletes the copy. The parts that came from
+YouTube (its chat messages and counts, Super Chats and memberships, and its times) are deleted from
+the copy once 30 days have passed since the stream started on YouTube (the next time the app looks
+for stream data), as Leafs Live deletes them from its own files, and the app's backups never carry
+them.
 
 ## Downloads
 

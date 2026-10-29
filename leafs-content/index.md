@@ -11,7 +11,8 @@ the script's voice plays, a timeline editor, thumbnails, other
 images and animations (GIFs, emotes, stickers and short videos for social media) that can also go
 into the edit, and the title, tags, chapters and hashtags for YouTube, each ready to copy. It also
 turns stream recordings into Shorts: you import a recording of a stream, the AI suggests moments
-from it, and only the ones you keep become Shorts. The interface works in English and Spanish, and
+from it, and only the ones you keep become Shorts. If you stream with Leafs Live, the moments its
+chat got excited about, your markers and the viewers' clips from that stream help find them. The interface works in English and Spanish, and
 each video can be in either language.
 
 AI helps at every step through the official Claude Code or Codex command-line tools, signed in with
