@@ -10,7 +10,7 @@ permalink: /leafs-live/privacy/
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
 commands the streamer turns on, the timed messages and the now playing line the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
-the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, posts the stream notifications the streamer sets up in their Discord server, and shows chat and the song playing on the PC on OBS overlays. This page explains what data it handles and where that data goes.
+the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, adds Twitch stream markers at the stream's hype moments (unless the streamer turns that off) and makes the Twitch clips and YouTube chapters of them the streamer asks for, posts the stream notifications the streamer sets up in their Discord server, and shows chat and the song playing on the PC on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
 tracking. The developer receives no data from it. Your accounts, chat history and overlays stay on
@@ -102,14 +102,19 @@ the messages are gone.
 For stream recaps, it keeps for each of your streams how many messages came each minute on each
 platform (counts, not the messages), the viewer counts it read while you were live, and the stream
 markers you made, the channels you raided and the ad breaks, with their times.
+For hype moments, it keeps for each of your streams the moments it found or you marked: when each
+one was, what made it (counts, such as how many laughed or how many gift subs came, and the text of
+a message many viewers copied, never who wrote), when each live platform's stream started and its
+video, so it can link to that point, whether you kept or dismissed it, the name you gave it, and
+the marker and clip made of it.
 For each viewer it keeps a short record (name, user ID, first and last seen, message count, the
 first message they wrote in your chats, any note you write, and the other accounts you linked to
 them as the same person).
 
 - **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes, giveaways with their entries and stream times are deleted after 90 days by
   default; you can change that in Settings, or keep them forever. Viewer records, viewer stats,
-  stream recaps and word game rounds and points stay until you delete the profile.
-- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps 30 days after the stream they're about, word game points 30 days after they were scored, and viewer records
+  stream recaps, hype moments and word game rounds and points stay until you delete the profile.
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps and hype moments 30 days after the stream they're about, word game points 30 days after they were scored, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -145,7 +150,8 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
   moderator or a VIP and to start or cancel a raid when you type `/mod`, `/vip`, `/raid` or their
   opposites, and, once you turn VIP Stamps on, to read your channel's moderators and VIPs and to
   add or remove the VIPs it gives at each month change and the permanent VIPs you add;
-- `channel:manage:broadcast`, to add a stream marker when you type `/marker`, and to set your
+- `channel:manage:broadcast`, to add a stream marker when you type `/marker` or mark a moment, and
+  at each hype moment the app finds while you're live (unless you turn those markers off), and to set your
   stream's title, category, tags, language, content classification labels and branded content
   when you press *Update the stream* or apply a stream info preset;
 - `moderator:manage:automod`, to see the messages Twitch's AutoMod holds for review in your chat
@@ -178,7 +184,9 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `channel:read:ads`, to show when your next ad break comes, how long it is and how many snoozes
   you have left, and to hear when an ad break begins;
 - `channel:manage:ads`, to snooze the next ad when you click Snooze;
-- `channel:edit:commercial`, to run an ad when you click Run an ad.
+- `channel:edit:commercial`, to run an ad when you click Run an ad;
+- `channel:manage:clips`, to make a clip of a hype moment from your stream's video when you click
+  Clip it.
 
 A bot account gets only `user:write:chat`. Leafs Live reads your channel's chat messages, chat
 events, chat modes (slow mode, followers-only and the rest, and Shield mode), moderation actions,
@@ -210,7 +218,10 @@ for everyone who supports you, it asks Twitch for your channel's subscribers (th
 IDs and who gifted a gifted sub) and its all-time bits leaderboard (the top 100 names and their
 bits), kept only in memory for ten minutes. While your stream is live, every
 minute, it asks Twitch for your stream's viewer count and keeps it with that stream, for its
-recap. Once a Discord stream
+recap. While your stream is live, every 3 minutes, it asks Twitch for the clips made of it (when
+each was made, by which user ID, how long it is and where it is in the video) and for the
+stream's video, to find hype moments and link to them; the clips are kept only in memory, and
+the video's ID with the moments. Once a Discord stream
 notification that posts for Twitch is on, while your stream is live, it asks Twitch for your stream's title, category,
 viewer count and the category's box art each time the notification's message is posted or updated
 (and your channel's title and category when a stream ends after the app was restarted during it). Held messages, unban
@@ -250,7 +261,11 @@ always as your streamer account; a blocked term you copy into Leafs Live joins t
 blocked words in its database. It snoozes or runs an ad only when you click Snooze or Run an ad, as your streamer account, and
 says an ad break is coming only when you click Tell chat: the line you set (or the default one)
 in your Twitch chat, as your bot account when you have one and choose so; your ads settings (the
-heads-up, pausing alerts during ad breaks and that line) are kept in the profile's database. When you turn on pausing rewards in alert control, it asks Twitch for the
+heads-up, pausing alerts during ad breaks and that line) are kept in the profile's database. It
+adds a stream marker at each hype moment it finds while you're live, as your streamer account,
+while hype moments' markers are on (they're on until you turn them off; Twitch shows markers only
+to you and your editors), and makes a clip of a moment only when you click Clip it, as your
+streamer account (Twitch clips are public). When you turn on pausing rewards in alert control, it asks Twitch for the
 rewards it may change, pauses those that are on when you press Pause or Stop and unpauses them when
 you press Play; the IDs of the rewards it paused are kept in the profile's database until then. It
 moderates or changes your chat only when you click Delete, Timeout, Ban or Unban, allow or deny a
@@ -268,7 +283,7 @@ Leafs Live uses YouTube API Services. You sign in with Google in your browser, u
 own Google client or, if you choose, your own.
 
 - **Permissions:** `youtube.readonly` for your streamer account. `youtube.force-ssl` only if you
-  choose *Allow sending* (it lets you send, moderate and change your broadcasts), and for a bot
+  choose *Allow sending* (it lets you send, moderate, change your broadcasts and add chapters), and for a bot
   account, which only sends.
 - **What it reads:** your channel's ID, handle, name and picture; your live and upcoming streams,
   to find their chats and when each one went live; and those chats' messages and events, including the senders' channel names,
@@ -313,13 +328,16 @@ own Google client or, if you choose, your own.
   the live or upcoming broadcast you picked (for the category, through the broadcast's video when
   the broadcast itself doesn't take it), its thumbnail when you pick a picture from the profile's
   library, and a new scheduled broadcast bound to the stream key you choose, as your streamer
-  account. It never uploads or deletes videos, changes your broadcasts only when you press
-  *Update the stream* or apply a preset, and moderates only when you do or one of your rules does.
+  account; and, when you press *Write these chapters* on a stream's recap, its hype moments as
+  chapters in that video's description (replacing the chapters it added before and keeping the
+  rest of the description), as your streamer account. It never uploads or deletes videos, changes
+  your broadcasts only when you press *Update the stream* or apply a preset, changes a video's
+  description only when you add chapters, and moderates only when you do or one of your rules does.
 - **Bans:** to be able to lift a ban later, it keeps the ID YouTube gives each ban it makes, with
   the banned channel's ID, in the profile's database (deleted with the rest of the YouTube data).
 - **How it's used:** only to show and answer your chat in the app, the dock and your overlays,
-  to show and change your broadcasts' details in the app and the dock, and for the viewer stats
-  and stream recaps the app shows you. It isn't used for
+  to show and change your broadcasts' details in the app and the dock, and for the viewer stats,
+  stream recaps and hype moments the app shows you. It isn't used for
   advertising, sold or shared with anyone else.
 - **Where it's kept:** in the profile's database on your PC, for at most 30 days, as described
   above. Your channel's name and picture are fetched again every week.
@@ -328,7 +346,7 @@ own Google client or, if you choose, your own.
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
   from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats, word game points, YouTube's
-  part of stream recaps and YouTube viewer records (for a bot account, its name on the known bots list). You can also remove the
+  part of stream recaps and hype moments and YouTube viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
   doesn't touch what YouTube itself keeps.
@@ -354,7 +372,8 @@ the stream ends it edits, deletes, leaves or replaces it, as you picked. For a n
 stream recap you turn on (off until you do), when a stream ends it posts the recap message you
 wrote once, filled with that stream's numbers (messages, chatters, new and returning viewers,
 follows, subs, bits, memberships, Super Chats per currency, raids, peak viewers) and, where you put
-them, the names of the five Twitch viewers who wrote most and the chat race's Twitch podium; the
+them, the names of the five Twitch viewers who wrote most, the chat race's Twitch podium and the
+top hype moments (their times, the names you gave them and links to the stream at that point); the
 recap page's *Post to Discord* posts it again. YouTube viewers' names never go to Discord.
 *Send a test* posts a test message, which you can delete from the app. Nothing else about your
 viewers or your chat is sent to Discord. What's posted is in your Discord server, under

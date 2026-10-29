@@ -134,6 +134,15 @@ chat of that moment, the top chatters, the regulars who came and the ones who di
 (follows, subs and gift subs by tier, bits, memberships, Super Chats per currency, Jewels, raids in
 and out, channel points), the chat race's podium, polls, giveaways, ad breaks and markers. A banner
 offers it when a stream ends; export it as CSV, JSON or a picture to share, or post it to Discord.
+Hype moments are found while you're live: both chats rising against their own pace (laughter, hype,
+shock, a message many copy), hype trains, raids, gift bursts, big cheers, Super Chats close together,
+viewers' clips and viewer count jumps, as one moment when both platforms rise together, or a moment
+you mark yourself. Each is placed a little before the chat reacted, with its time on Twitch and on
+YouTube and a link to the stream at that point, gets a private Twitch stream marker unless you turn
+that off, and waits in the app and the dock to keep or dismiss. The recap lists them with the chat
+of that moment, makes a Twitch clip of one when you press Clip it, and writes them as chapters in
+the YouTube video's description when you press Add chapters, so the moments stay findable after
+Twitch's video is gone. Nothing about them is shown on stream.
 While you're live, a strip under the header of the app and the dock shows the stream's numbers:
 viewers on both platforms added up with each one's and a trend arrow, the peak, how long you've
 been live, who's in the Twitch chat, messages per minute, chatters and new chatters, follows, subs
