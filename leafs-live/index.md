@@ -59,7 +59,7 @@ moderators out. You make and start giveaways from the app or the dock, close the
 close at their time), draw a winner weighted by those chances, reroll, copy the winner's name or
 entry (a Guild Wars 2 account name to send the prize to) with one click, and can ask the winner to answer in chat within a time; the giveaway shows
 on stream with its prize, how to enter, the time left, a shuffle of names and the winner, and,
-if you choose, lines in chat when it opens, before it closes and for the winner. Unless you turn
+if you choose, lines in chat when it opens, before it closes and for the winner once the shuffle on stream ends. Unless you turn
 it off, each viewer who enters is told in their chat that they're in, and one who tries again that
 they're in already (once), with several at a time sharing one line. Past giveaways
 keep their winners and a draw log with each draw's seed and entries, so a draw can be checked.
@@ -115,7 +115,7 @@ reaching it again; it never touches the VIPs you gave on twitch.tv, never makes 
 and permanent VIPs you choose never lose it. The month change happens by itself, with a report of
 who gained and lost VIP and why, a vacation mode where nobody loses it, an increase that starts
 next month and an optional line in chat naming the new VIPs. Each stamp shows on stream with this
-stream's icon pressing in, in the look you pick: a slim ticket with the month's stamps in a row, a
+stream's icon stamped in by a rubber stamp, in the look you pick: a slim ticket with the month's stamps in a row, a
 ticket where they're stops on a route to VIP, or the viewer's open passport, at the size each
 overlay sets. Reaching the amount plays a celebration, a VIP's first activity in a stream plays a
 welcome (on screen, or only its sound), with a sound of their own at a volume of its own when you
