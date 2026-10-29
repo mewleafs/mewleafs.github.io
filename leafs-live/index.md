@@ -48,23 +48,26 @@ while getting ready. Polls run in both chats at once: one choice, several choice
 answer, voted by typing an option's number or text (or `!vote`), one vote per account on each
 platform, with a time or until you end it, who can vote, the result live on stream or only at the
 end (Twitch and YouTube shown apart if you like) and, if you choose, a line in chat when it starts
-and ends; you make, start, end or cancel them from the app or the dock, save polls to run again
+and ends, in your language, with the answers in quotes (on Twitch only, if you'd rather not spend
+YouTube's quota); you make, start, end or cancel them from the app or the dock, save polls to run again
 and see past ones with their results in the app. Giveaways also run in both chats at once: viewers enter with a
 keyword like `!join`, a name that matches a pattern (such as a Guild Wars 2 account name, kept as
 their entry) or any message, one entry per account, and a name counts once; subscribers and
 members get more chances (×2 unless you change it), and you can limit it to some platforms, to
 subscribers or higher, to Twitch followers or Twitch accounts of a certain age, and leave
 moderators out. You make and start giveaways from the app or the dock, close the entries (or they
-close at their time), draw a winner weighted by those chances, reroll, and can ask the winner to answer in chat within a time; the giveaway shows
+close at their time), draw a winner weighted by those chances, reroll, copy the winner's name or
+entry (a Guild Wars 2 account name to send the prize to) with one click, and can ask the winner to answer in chat within a time; the giveaway shows
 on stream with its prize, how to enter, the time left, a shuffle of names and the winner, and,
 if you choose, lines in chat when it opens, before it closes and for the winner. Unless you turn
 it off, each viewer who enters is told in their chat that they're in, and one who tries again that
 they're in already (once), with several at a time sharing one line. Past giveaways
 keep their winners and a draw log with each draw's seed and entries, so a draw can be checked.
-Credits roll at the end of a stream with everyone who supported it: Twitch subscribers (not gifted
-subs), gifters with their totals, bits, the hype train's top contributors and raids, YouTube
-members, gifted memberships, Super Chats and Stickers (names only) and Jewels, and if you like your
-moderators and top chatters; each section can be turned off, renamed and reordered, with your own
+Credits roll at the end of a stream with everyone who supports you, or only who supported that
+stream: Twitch subscribers (everyone subscribed now, not gifted subs), gifters with their totals,
+bits (with Twitch's all-time leaderboard), YouTube members of the last month, gifted memberships,
+Super Chats and Stickers (names only) and Jewels, the stream's hype train top contributors and
+raids, and if you like the stream's moderators and top chatters; each section can be turned off, renamed and reordered, with your own
 title and end text, a speed or a total time, and a loop. You roll them from the app, the dock or
 the overlay editor; they never include follows.
 Stream ideas keep a list of things to do on stream (ideas, topics, things to

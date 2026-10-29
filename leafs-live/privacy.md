@@ -159,8 +159,11 @@ You sign in with Twitch's device code login. For your streamer account Leafs Liv
 - `channel:read:redemptions`, to hear when a viewer redeems one of your channel points rewards and
   to list your channel's rewards, so you can pick which ones to thank or show on stream;
 - `channel:read:hype_train`, to hear when a hype train starts, reaches a new level and ends;
-- `bits:read`, to hear the bits spent in your channel; the app uses only the bits spent on
-  Power-ups (cheers already come through the chat);
+- `bits:read`, to hear the bits spent in your channel (the app uses only the bits spent on
+  Power-ups: cheers already come through the chat) and, for credits that name everyone who
+  supports you, to read your channel's all-time bits leaderboard;
+- `channel:read:subscriptions`, to list who is subscribed to your channel now, and who gifted each
+  gifted sub, for credits that name everyone who supports you;
 - `channel:manage:redemptions`, to make, change, pause, turn off and delete the channel points
   rewards you set up in Leafs Live, to list what viewers redeemed on them and complete or refund
   those redemptions when you click Complete or Refund (Twitch lets an app change only the rewards
@@ -197,7 +200,10 @@ connects, when your stream goes live or offline, every few minutes while it's li
 break, and when you open Stream info or the dock's ads, it asks Twitch for your channel's ad
 schedule (the next ad break, its length and the snoozes left). While your stream is live, every
 few minutes, it asks Twitch for the list of who is in your chat (their names and user IDs) and
-keeps that each of them was at that stream, for the viewer stats. While your stream is live, every
+keeps that each of them was at that stream, for the viewer stats. When you open or roll credits
+for everyone who supports you, it asks Twitch for your channel's subscribers (their names, user
+IDs and who gifted a gifted sub) and its all-time bits leaderboard (the top 100 names and their
+bits), kept only in memory for ten minutes. While your stream is live, every
 minute, it asks Twitch for your stream's viewer count and keeps it with that stream, for its
 recap. Once a Discord stream
 notification that posts for Twitch is on, while your stream is live, it asks Twitch for your stream's title, category,
@@ -283,8 +289,9 @@ own Google client or, if you choose, your own.
   half of the day's quota is left, as the account each one sends as (your bot account by
   default, when you have one); once you turn the now playing line on (it's off until you do), a
   line naming each new track once it has played for the seconds you set, none once half of the
-  day's quota is left, as the account you pick; for a poll you start with its chat lines on, a line when it starts
-  and one when it ends, as your bot account when you have one; for a giveaway you start with its
+  day's quota is left, as the account you pick; for a poll you start with its chat lines on and
+  its YouTube lines left on, a line when it starts and one when it ends, as your bot account when
+  you have one; for a giveaway you start with its
   chat lines on, a line when it opens, one a minute before it closes and one for each winner
   drawn, as your bot account when you have one, and, with its entry confirmations on, a line
   telling the viewers who entered within a few seconds of each other that they're in (or in
