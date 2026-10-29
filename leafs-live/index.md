@@ -12,7 +12,7 @@ from the same feed, lets you allow or deny the messages Twitch's AutoMod holds, 
 every moderation action in your chats with an undo for timeouts and bans, runs chat commands typed in the message box (`/ban`, `/slow`, `/raid`…), shows
 each chat's modes (slow mode, followers-only, members-only…) with a switch for Twitch's and a raid
 shield button that turns on the protections you picked and back off, and drives customizable OBS
-overlays (chat, featured message, alerts, chat race, poll, giveaway, credits, now playing, Word Sprout) and an OBS dock
+overlays (chat, featured message, alerts, chat race, poll, giveaway, credits, now playing, Word Sprout, word brawl) and an OBS dock
 from a server that runs only on your PC. Simple rules can hide, dim, highlight or tag messages,
 and, once you turn them on, delete messages or time out or warn their authors (blocked words,
 links, shouting in capitals, too many emotes, the same text again), never touching you, your
@@ -73,6 +73,17 @@ missing it ends the game, or with Endless on starts again at level 1. Rounds fol
 with pause, skip, hints and a shuffle from the app or the dock, and boards of this stream's and
 all-time points (accounts you linked as one person count together). It shows on stream as its own widget, and the Chat widget can
 leave the guesses out. Nothing about it is posted to chat.
+The word brawl is a co-op typing fight for both chats at once: after a short countdown, waves of
+pixel-art enemies walk onto the stream with words over their heads, bosses last, and chat types
+the words to hit them, one hit per viewer per word, with everyone sharing their health. A word
+that changed stays hittable for a few seconds, and so do a fallen enemy's, for the stream's delay.
+When an enemy casts, enough different viewers typing its cast word interrupt it, or the fight's
+time takes a penalty. There's no losing, only a time to beat for each difficulty, and the result
+shows the time and the top three by hits; boards keep each fight's, this stream's and all-time
+hits. Raids, subs, bits, Super Chats and Power-ups can bring in more enemies if you turn that on.
+The enemies are Luiz Melo's free pixel art, and you can add your own. It shows on stream as its own
+widget, with sounds you pick from your library, and the Chat widget can leave the typed words out.
+Nothing about it is posted to chat.
 Credits roll at the end of a stream with everyone who supports you, or only who supported that
 stream: Twitch subscribers (everyone subscribed now, not gifted subs), gifters with their totals,
 the month's bits (with Twitch's leaderboard of the month), YouTube members of the last month, gifted memberships,
@@ -178,7 +189,7 @@ stream by calling a URL on your PC with a key only you have: play, pause, stop, 
 alerts; turn reader and important mode's pages and switch between the live chat, reader mode and
 important mode; take the featured message off; start and end the stream session and the chat race;
 start, end and show saved polls; open, close, draw and finish saved giveaways; start, pause,
-resume, skip, hint, shuffle and stop Word Sprout and turn its Endless on and off; roll and stop the credits; snooze or run Twitch ads; play, pause or skip what's playing; turn Twitch's slow, emote-only, followers-only, subscribers-only
+resume, skip, hint, shuffle and stop Word Sprout and turn its Endless on and off; start, pause, resume and stop a word brawl fight; roll and stop the credits; snooze or run Twitch ads; play, pause or skip what's playing; turn Twitch's slow, emote-only, followers-only, subscribers-only
 and Shield modes on and off and put a stream marker; apply saved stream info; send a line to chat;
 turn timed messages and viewer commands on and off; and play simulator presets. Settings lists
 every action with its URL ready to copy and a manual to save. The interface works in English and Spanish.

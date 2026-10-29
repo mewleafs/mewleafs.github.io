@@ -86,6 +86,12 @@ when it ran and how it ended) and the points viewers scored in it: their name, u
 found (or the round's bonus), the points and when. The boards of this stream's and all-time points
 are worked out from those, with accounts you linked as one person counted together. These are kept
 apart from the chat history, like viewer stats. The word lists come with the app.
+For the word brawl, it keeps each fight (its difficulty, language, when it ran, its time and
+penalties, and whether it was stopped or got enemies from stream events) and each viewer's hits in
+it: their name, user ID, hits, finishing blows and interrupts. Its boards are worked out from those,
+with accounts you linked as one person counted together, and kept apart from the chat history like
+viewer stats. The enemies' pictures come with the app; your own enemies' pictures stay in your
+profile's library.
 For VIP Stamps (Twitch only), it keeps each stamp a viewer got (their name, user ID, the stream,
 the month and when), each stream's stamp icon, the viewers it made VIP or you made permanent VIPs
 (name, user ID, the month they're VIP for and whether the app gave it), who was welcomed in each
@@ -122,9 +128,9 @@ them as the same person).
 
 - **Twitch:** messages, moderation log entries, alert events, chat race places, polls with their votes, giveaways with their entries and stream times are deleted after 90 days by
   default; you can change that in Settings, or keep them forever. Viewer records, viewer stats,
-  stream recaps, hype moments and word game rounds and points stay until you delete the profile,
+  stream recaps, hype moments, word game rounds and points and word brawl fights and hits stay until you delete the profile,
   and stream pack files until you delete them.
-- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps, hype moments and stream pack files 30 days after the stream they're about (a stream pack with nothing else left is deleted), word game points 30 days after they were scored, and viewer records
+- **YouTube:** messages, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered) and stream times are deleted after 30 days, viewer stats and YouTube's part of stream recaps, hype moments and stream pack files 30 days after the stream they're about (a stream pack with nothing else left is deleted), word game points 30 days after they were scored, word brawl hits 30 days after their fight, and viewer records
   30 days after they were last seen, or sooner if your Settings say so. A viewer who chats again is
   seen again.
 
@@ -358,7 +364,7 @@ own Google client or, if you choose, your own.
   the YouTube Terms of Service and this policy, with links to both and to the Google Privacy
   Policy.
 - **Disconnecting:** *Disconnect* on the Accounts screen revokes the sign-in at Google, deletes it
-  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats, word game points, YouTube's
+  from your PC, and deletes the profile's YouTube chat history, moderation log entries, alert events, chat race places, poll votes (and the polls YouTube viewers voted in), giveaway entries (and the giveaways YouTube viewers entered), stream times, viewer stats, word game points, word brawl hits, YouTube's
   part of stream recaps, hype moments and stream pack files and YouTube viewer records (for a bot account, its name on the known bots list). You can also remove the
   access at any time on Google's [third-party access page](https://myaccount.google.com/connections);
   Leafs Live then can't sign in, and the account and its YouTube data are deleted within 30 days. Deleting data in Leafs Live
