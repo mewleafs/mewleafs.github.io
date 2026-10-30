@@ -86,12 +86,12 @@ when it ran and how it ended) and the points viewers scored in it: their name, u
 found (or the round's bonus), the points and when. The boards of this stream's and all-time points
 are worked out from those, with accounts you linked as one person counted together. These are kept
 apart from the chat history, like viewer stats. The word lists come with the app.
-For the word brawl, it keeps each fight (its difficulty, language, when it ran, its time and
+For the word brawl, it keeps each fight (which saved fight it was, language, when it ran, its time and
 penalties, and whether it was stopped or got enemies from stream events) and each viewer's hits in
 it: their name, user ID, hits, finishing blows and interrupts. Its boards are worked out from those,
 with accounts you linked as one person counted together, and kept apart from the chat history like
 viewer stats. The enemies' pictures come with the app; your own enemies' pictures stay in your
-profile's library.
+profile's library, and your saved fights and their best times stay in your profile.
 For VIP Stamps (Twitch only), it keeps each stamp a viewer got (their name, user ID, the stream,
 the month and when), each stream's stamp icon, the viewers it made VIP or you made permanent VIPs
 (name, user ID, the month they're VIP for and whether the app gave it), who was welcomed in each

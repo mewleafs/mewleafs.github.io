@@ -74,15 +74,19 @@ with pause, skip, hints and a shuffle from the app or the dock, and boards of th
 all-time points (accounts you linked as one person count together). It shows on stream as its own widget, and the Chat widget can
 leave the guesses out. Nothing about it is posted to chat.
 The word brawl is a co-op typing fight for both chats at once, face to face like an old RPG: after
-a short countdown, one pixel-art enemy at a time faces the stream with a few words under it, a boss
-last, and chat types the words to hit it, one hit per viewer per word, with everyone sharing its
-health; each hit makes its word glow and the viewer's name fly into the enemy. A word that changed
+a short countdown, one pixel-art enemy at a time faces the stream with a few words under it, and
+chat types the words to hit it, one hit per viewer per word, with everyone sharing its health; each
+hit makes its word glow and the viewer's name fly into the enemy. Enemies are Common, Rare, Epic or
+Legendary, which sets how many words they show, how long the words are, how much health they have
+and how often they cast. A fight is a list of waves you pick (a rarity or a specific enemy, as many
+times as you like), with Easy, Normal and Hard ready-made and your own saved under a name, each
+keeping its best time. A word that changed
 stays hittable for a few seconds, and so do a fallen enemy's, for the stream's delay. When the
 enemy casts, enough different viewers typing its cast word interrupt it, or the fight's time takes
-a penalty that the clock shows. There's no losing, only a time to beat for each difficulty, shown
+a penalty that the clock shows. There's no losing, only a time to beat for each saved fight, shown
 by the clock, and the result shows the time, what the penalties added and the top three by hits;
 boards keep each fight's, this stream's and all-time hits. Raids, subs, bits, Super Chats and
-Power-ups can add more enemies to the end of the fight if you turn that on. The enemies are
+Power-ups can add more enemies of the rarity you pick to the end of the fight if you turn that on. The enemies are
 isaiah658's free pixel-art monsters, and you can add your own from a picture. It shows on stream as its own
 widget, with sounds you pick from your library, and the Chat widget can leave the typed words out.
 The Chat widget can also step off the stream while either game runs and come back after it.
