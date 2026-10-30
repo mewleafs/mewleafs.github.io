@@ -83,6 +83,7 @@ shows the time and the top three by hits; boards keep each fight's, this stream'
 hits. Raids, subs, bits, Super Chats and Power-ups can bring in more enemies if you turn that on.
 The enemies are Luiz Melo's free pixel art, and you can add your own. It shows on stream as its own
 widget, with sounds you pick from your library, and the Chat widget can leave the typed words out.
+The Chat widget can also step off the stream while either game runs and come back after it.
 Nothing about it is posted to chat.
 Credits roll at the end of a stream with everyone who supports you, or only who supported that
 stream: Twitch subscribers (everyone subscribed now, not gifted subs), gifters with their totals,
