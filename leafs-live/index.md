@@ -78,7 +78,11 @@ a short countdown, one pixel-art enemy at a time faces the stream with a few wor
 chat types the words to hit it, one hit per viewer per word, with everyone sharing its health; each
 hit makes its word glow and the viewer's name fly into the enemy. Enemies are Common, Rare, Epic or
 Legendary, which sets how many words they show, how long the words are, how much health they have
-and how often they cast. A fight is a list of waves you pick (a rarity or a specific enemy, as many
+and how often they cast. Many come with gimmicks, each shown on stream so chat knows what to do: a
+typo to fix or to copy as it is, words drawn backwards, scrambled, blotted out or glitching, armored
+words several viewers break together, a decoy word that heals the enemy, enemies that heal when left
+alone, words that split in two or change faster, and enemies that add a word when badly hurt; you
+can turn any of them off. A fight is a list of waves you pick (a rarity or a specific enemy, as many
 times as you like), with Easy, Normal and Hard ready-made and your own saved under a name, each
 keeping its best time. A word that changed
 stays hittable for a few seconds, and so do a fallen enemy's, for the stream's delay. When the
