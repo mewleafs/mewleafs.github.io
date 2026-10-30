@@ -9,7 +9,7 @@ permalink: /leafs-live/privacy/
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
-commands the streamer turns on, the timed messages and the now playing line the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
+commands the streamer turns on, the timed messages, the ad break lines and the now playing line the streamer turns on and the lines of the polls and giveaways the streamer runs, carries out the moderation actions the streamer clicks, the chat commands
 the streamer types and the moderation rules the streamer turns on, manages the Twitch channel points rewards the streamer makes in it, gives and takes Twitch VIP for the VIP Stamps the streamer turns on, adds Twitch stream markers at the stream's hype moments (unless the streamer turns that off) and makes the Twitch clips and YouTube chapters of them the streamer asks for, posts the stream notifications the streamer sets up in their Discord server, and shows chat and the song playing on the PC on OBS overlays. This page explains what data it handles and where that data goes.
 
 **In short:** Leafs Live has no server of its own, no Leafs account, no analytics, no ads and no
@@ -257,13 +257,14 @@ played for the seconds you set, in your live chats, as the account you pick (you
 default, when you have one); for a
 poll you start with its chat lines on, a line when it starts and one when it ends, as your bot
 account when you have one; for a giveaway you start with its chat lines on, a line when it opens,
-one a minute before it closes and one for each winner drawn, as your bot account when you have
-one; for the alert types
+one a minute before it closes and one for each winner drawn (in the chat they entered from only),
+as your bot account when you have one; for the alert types
 you turn on (every type is off until you do), a thank-you message in your chat when someone
 follows, subscribes, gifts subs, cheers, raids, redeems a reward or uses a Power-up, or when a hype
 train starts, reaches a new level or ends, as your bot account when you have one, else your
-streamer account; and once you turn VIP Stamps on, a welcome line when one of its VIPs first
-shows up in a stream (its alert type is on with VIP Stamps; you can turn it off), the thank-you
+streamer account; and once you turn VIP Stamps on, a welcome line when one of its VIPs who has a
+welcome sound first shows up in a stream (or any of its VIPs, if you choose; its alert type is on
+with VIP Stamps; you can turn it off), the thank-you
 messages for a stamp or a reached goal when you turn those on, and, if you choose, a line naming
 the new VIPs after a month change, as your bot account when you have one. At each month change
 VIP Stamps makes Twitch VIPs of the viewers who reached your amount and takes VIP away from the
@@ -277,9 +278,11 @@ doesn't (a second one in the same stream, or one with no stream) is refunded. It
 removes a blocked term, and approves or denies an unban request only when you do it in Moderation,
 always as your streamer account; a blocked term you copy into Leafs Live joins the profile's
 blocked words in its database. It snoozes or runs an ad only when you click Snooze or Run an ad, as your streamer account, and
-says an ad break is coming only when you click Tell chat: the line you set (or the default one)
-in your Twitch chat, as your bot account when you have one and choose so; your ads settings (the
-heads-up, pausing alerts during ad breaks and that line) are kept in the profile's database. It
+says an ad break is coming only when you click Tell chat, or by itself before a scheduled ad,
+when a break starts and when it ends once you turn those lines on (they're off until you do): the
+line you set (or the default one) in your Twitch chat, as your bot account when you have one and
+choose so; your ads settings (the heads-up, pausing alerts during ad breaks and those lines) are
+kept in the profile's database. It
 adds a stream marker at each hype moment it finds while you're live, as your streamer account,
 while hype moments' markers are on (they're on until you turn them off; Twitch shows markers only
 to you and your editors), and makes a clip of a moment only when you click Clip it, as your
@@ -331,7 +334,7 @@ own Google client or, if you choose, your own.
   its YouTube lines left on, a line when it starts and one when it ends, as your bot account when
   you have one; for a giveaway you start with its
   chat lines on, a line when it opens, one a minute before it closes and one for each winner
-  drawn, as your bot account when you have one, and, with its entry confirmations on, a line
+  drawn (in the chat they entered from only), as your bot account when you have one, and, with its entry confirmations on, a line
   telling the viewers who entered within a few seconds of each other that they're in (or in
   already), none once a quarter of the day's quota is left, as your bot account when you have one,
   else your streamer account; for the alert types you turn on (every

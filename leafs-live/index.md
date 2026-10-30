@@ -130,9 +130,9 @@ who gained and lost VIP and why, a vacation mode where nobody loses it, an incre
 next month and an optional line in chat naming the new VIPs. Each stamp shows on stream with this
 stream's icon stamped in by a rubber stamp, in the look you pick: a slim ticket with the month's stamps in a row, a
 ticket where they're stops on a route to VIP, or the viewer's open passport, at the size each
-overlay sets. Reaching the amount plays a celebration, a VIP's first activity in a stream plays a
-welcome (on screen, or only its sound), with a sound of their own at a volume of its own when you
-give them one, and sends a welcome line, and `!passport` (off
+overlay sets. Reaching the amount plays a celebration, the first activity in a stream of a VIP you
+gave a sound of their own plays a welcome (on screen, or only its sound) with that sound at a
+volume of its own and sends a welcome line (every VIP gets one if you choose), and `!passport` (off
 until you turn it on) tells a viewer how many stamps they have. Viewers lists everyone your chats
 have seen on Twitch and YouTube, searchable and sorted by when they last or first came, streams,
 messages or support: when each was last seen and in which stream, how many of the latest streams
@@ -176,7 +176,8 @@ to Leafs Live's own blocked words, to add, remove and copy from one list to the 
 ads show in the Stream view, the app's header and the dock: when the next ad break comes, how
 long it is and the snoozes left, with Snooze and Run an ad. A heads-up shortly before an ad and
 while one runs offers Pause alerts and Tell chat, and alerts can pause by themselves for each ad
-break and play what waited after it. One Play /
+break and play what waited after it. Lines you turn on tell the Twitch chat by themselves before a
+scheduled ad, when a break starts and when it ends. One Play /
 Pause / Stop control, in the app's header and the dock's, holds or drops
 everything that can interrupt the stream: alerts on stream, featured messages and, if you choose,
 the thank-you messages and the channel points rewards Leafs Live's Twitch app created, which it
