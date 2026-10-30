@@ -81,7 +81,8 @@ Legendary, which sets how many words they show, how long the words are, how much
 and how often they cast. Many come with gimmicks, each shown on stream so chat knows what to do: a
 typo to fix or to copy as it is, words drawn backwards, scrambled, blotted out or glitching, armored
 words several viewers break together, a decoy word that heals the enemy, enemies that heal when left
-alone, words that split in two or change faster, and enemies that add a word when badly hurt; you
+alone, words that split in two or change faster, enemies that add a word when badly hurt, and enemies
+that grab the top hitter, whose hits heal them until chat frees them with a rescue word; you
 can turn any of them off. A fight is a list of waves you pick (a rarity or a specific enemy, as many
 times as you like), with Easy, Normal and Hard ready-made and your own saved under a name, each
 keeping its best time. A word that changed
@@ -94,7 +95,12 @@ Power-ups can add more enemies of the rarity you pick to the end of the fight if
 isaiah658's free pixel-art monsters, each with its name on stream; you can remove the ones you don't want and add
 your own: a picture from your library or a Twitch viewer's profile picture, a rarity, the gimmicks you choose,
 their own words mixed in with the normal ones and lines they say in a speech bubble when they come in, cast and
-are beaten. It shows on stream as its own
+are beaten. You can also make a viewer the boss right there, from their viewer card or by name, with their
+name and profile picture: everyone else fights them as always, while only they get boss words to heal, put a
+gimmick on for a while or add time to the clock (how often and how strong is yours to set, mild by default),
+and what they write shows as the boss talking. Or you can give the monster on screen a viewer's voice: they still
+play, and their other messages show in its speech bubble. Only messages that would show on stream appear there,
+and one a moderator deletes leaves it. It shows on stream as its own
 widget, with sounds you pick from your library, and the Chat widget can leave the typed words out.
 The Chat widget can also step off the stream while either game runs and come back after it.
 Either game can take only messages starting with ! as plays (viewer commands stay commands), and
