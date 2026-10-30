@@ -5,7 +5,7 @@ permalink: /leafs-live/privacy/
 
 # Leafs Live: privacy policy
 
-*Last updated: 29 October 2026*
+*Last updated: 30 October 2026*
 
 Leafs Live is a desktop app for Windows that reads a streamer's Twitch and YouTube chats, sends the
 streamer's replies, the thank-you messages the streamer turns on, the answers to the viewer
@@ -91,7 +91,9 @@ penalties, and whether it was stopped or got enemies from stream events) and eac
 it: their name, user ID, hits, finishing blows and interrupts. Its boards are worked out from those,
 with accounts you linked as one person counted together, and kept apart from the chat history like
 viewer stats. The enemies' pictures come with the app; your own enemies' pictures stay in your
-profile's library, and your saved fights and their best times stay in your profile.
+profile's library (a Twitch viewer's profile picture you pick for one is downloaded once from
+Twitch's image server into it), their names, words and lines, the shipped enemies you removed, and
+your saved fights and their best times stay in your profile.
 For VIP Stamps (Twitch only), it keeps each stamp a viewer got (their name, user ID, the stream,
 the month and when), each stream's stamp icon, the viewers it made VIP or you made permanent VIPs
 (name, user ID, the month they're VIP for and whether the app gave it), who was welcomed in each
@@ -218,7 +220,8 @@ Twitch, as each viewer enters, when their account was made and since when they'v
 channel. Once you turn VIP Stamps on, at each month change, when you preview one and when you
 add a permanent VIP, it asks Twitch for your channel's moderators and VIPs (kept only in memory),
 and to add a permanent VIP, or a VIP's welcome sound, by a name the app hasn't seen it looks the
-name up on Twitch. When you open Channel points, it asks Twitch for your channel's rewards with their
+name up on Twitch. When you use a Twitch viewer's picture for a word brawl enemy, it looks their
+name up on Twitch (their user ID, name and picture link) and downloads their profile picture. When you open Channel points, it asks Twitch for your channel's rewards with their
 settings, and for the redemptions waiting on the rewards Leafs Live created (who redeemed them,
 when and what they typed); it hears when one of those is completed or refunded on Twitch. When you
 open Stream info, it asks Twitch for your channel's title, category, tags,

@@ -91,7 +91,10 @@ a penalty that the clock shows. There's no losing, only a time to beat for each 
 by the clock, and the result shows the time, what the penalties added and the top three by hits;
 boards keep each fight's, this stream's and all-time hits. Raids, subs, bits, Super Chats and
 Power-ups can add more enemies of the rarity you pick to the end of the fight if you turn that on. The enemies are
-isaiah658's free pixel-art monsters, and you can add your own from a picture. It shows on stream as its own
+isaiah658's free pixel-art monsters, each with its name on stream; you can remove the ones you don't want and add
+your own: a picture from your library or a Twitch viewer's profile picture, a rarity, the gimmicks you choose,
+their own words mixed in with the normal ones and lines they say in a speech bubble when they come in, cast and
+are beaten. It shows on stream as its own
 widget, with sounds you pick from your library, and the Chat widget can leave the typed words out.
 The Chat widget can also step off the stream while either game runs and come back after it.
 Either game can take only messages starting with ! as plays (viewer commands stay commands), and
