@@ -73,15 +73,17 @@ missing it ends the game, or with Endless on starts again at level 1. Rounds fol
 with pause, skip, hints and a shuffle from the app or the dock, and boards of this stream's and
 all-time points (accounts you linked as one person count together). It shows on stream as its own widget, and the Chat widget can
 leave the guesses out. Nothing about it is posted to chat.
-The word brawl is a co-op typing fight for both chats at once: after a short countdown, waves of
-pixel-art enemies walk onto the stream with words over their heads, bosses last, and chat types
-the words to hit them, one hit per viewer per word, with everyone sharing their health. A word
-that changed stays hittable for a few seconds, and so do a fallen enemy's, for the stream's delay.
-When an enemy casts, enough different viewers typing its cast word interrupt it, or the fight's
-time takes a penalty. There's no losing, only a time to beat for each difficulty, and the result
-shows the time and the top three by hits; boards keep each fight's, this stream's and all-time
-hits. Raids, subs, bits, Super Chats and Power-ups can bring in more enemies if you turn that on.
-The enemies are Luiz Melo's free pixel art, and you can add your own. It shows on stream as its own
+The word brawl is a co-op typing fight for both chats at once, face to face like an old RPG: after
+a short countdown, one pixel-art enemy at a time faces the stream with a few words under it, a boss
+last, and chat types the words to hit it, one hit per viewer per word, with everyone sharing its
+health; each hit makes its word glow and the viewer's name fly into the enemy. A word that changed
+stays hittable for a few seconds, and so do a fallen enemy's, for the stream's delay. When the
+enemy casts, enough different viewers typing its cast word interrupt it, or the fight's time takes
+a penalty that the clock shows. There's no losing, only a time to beat for each difficulty, shown
+by the clock, and the result shows the time, what the penalties added and the top three by hits;
+boards keep each fight's, this stream's and all-time hits. Raids, subs, bits, Super Chats and
+Power-ups can add more enemies to the end of the fight if you turn that on. The enemies are
+isaiah658's free pixel-art monsters, and you can add your own from a picture. It shows on stream as its own
 widget, with sounds you pick from your library, and the Chat widget can leave the typed words out.
 The Chat widget can also step off the stream while either game runs and come back after it.
 Either game can take only messages starting with ! as plays (viewer commands stay commands), and
