@@ -24,7 +24,7 @@ data from Google.
   app has fetched (see below). For a stream recording you add, it also holds the link to the stream
   you type in, the loudness and other moments the app found in the recording, the moments you
   kept or passed, with the reasons you gave and the layout picked for each, where your avatar
-  sits on your recordings if you mark it, and, if you use it, a copy of the stream data Leafs
+  and its face sit on your recordings if you mark them, and, if you use it, a copy of the stream data Leafs
   Live saved for that stream (see below). You can back it up, move it or delete it like any other folder; the
   app's own backups leave the YouTube data out.
 - **Transcription, voice cleanup, background removal, spell check and finding the loud and lively
