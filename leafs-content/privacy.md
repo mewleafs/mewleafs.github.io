@@ -123,17 +123,25 @@ they don't pass through any Leafs server.
   API). For a stream whose YouTube video you link, when you ask for it: that video's channel,
   publish time and the time the live started (YouTube Data API), and its audience retention:
   how much of the audience was watching at each point of the video, and how that compares with
-  similar videos (YouTube Analytics API), only for videos on your connected channel. It asks
+  similar videos (YouTube Analytics API), only for videos on your connected channel. Each time
+  you open *New stream*: your channel's list of uploads and, for each of its videos, its title,
+  length and, for a past live, when it went live and ended (YouTube Data API). It asks
   Google for those fields only, never uploads, edits or deletes anything on YouTube, and never
   downloads videos.
 - **How it's used:** to show those numbers in the app exactly as YouTube returns them, next to the
   video they belong to; numbers you type in yourself are marked as yours. A stream's retention is
   drawn along the stream, and the time the live started is used once to suggest how far your
-  recording is from the stream's video, which you can apply or ignore. If you turn on *Let AI
+  recording is from the stream's video, which you can apply or ignore. *New stream* lists your
+  past lives, newest first, and sets apart the ones that are already a stream in your workspace
+  (by its link, or by when its recording started); picking one fills in its title and link,
+  which you can change before adding the stream. If you turn on *Let AI
   tasks use the YouTube numbers* (off until you choose; the first task that could use them asks),
   they're also sent to the AI tool you use with the tasks that compare ideas with your past videos
   and, for a stream, with the task that finds Shorts in it (see above). YouTube data isn't used for advertising, sold, or shared with anyone else.
 - **Where it's kept:** in your workspace's database on your PC, and never in the app's backups.
+  The list of past lives in *New stream* isn't kept at all: it's read again each time the dialog
+  opens and gone when it closes; only a title and link you add a stream with stay, as that
+  stream's own.
   Every refresh checks that each linked video still exists on your channel and updates its facts;
   a video that's gone loses its YouTube data.
 - **When it's deleted:** right away when you press *Delete YouTube data* or *Disconnect* in

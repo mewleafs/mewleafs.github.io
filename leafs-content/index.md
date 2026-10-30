@@ -28,7 +28,8 @@ Everything is kept in a workspace folder on your PC. There's no Leafs account an
 Connecting YouTube is optional. If you connect it, Leafs Content asks Google for read-only access
 (`youtube.readonly` and `yt-analytics.readonly`) to show how your published videos perform (views,
 average view duration, average percentage viewed, likes, comments and subscribers gained), to show
-which parts of a stream's video viewers rewatched or skipped (audience retention) and, if you allow
+which parts of a stream's video viewers rewatched or skipped (audience retention), to list your
+past streams when you add one, with the ones already in the app set apart, and, if you allow
 it, to let the AI compare new ideas with your past videos and look for Shorts where viewers
 rewatched. It never uploads, edits or deletes anything on YouTube, and never downloads videos from
 YouTube or Twitch. Details are in the [privacy policy](privacy/).
