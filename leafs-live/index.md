@@ -84,6 +84,9 @@ hits. Raids, subs, bits, Super Chats and Power-ups can bring in more enemies if 
 The enemies are Luiz Melo's free pixel art, and you can add your own. It shows on stream as its own
 widget, with sounds you pick from your library, and the Chat widget can leave the typed words out.
 The Chat widget can also step off the stream while either game runs and come back after it.
+Either game can take only messages starting with ! as plays (viewer commands stay commands), and
+says so on stream, and the plays in the dock's and the app's chat can show, fold into one line per
+run, or stay out.
 Nothing about it is posted to chat.
 Credits roll at the end of a stream with everyone who supports you, or only who supported that
 stream: Twitch subscribers (everyone subscribed now, not gifted subs), gifters with their totals,
