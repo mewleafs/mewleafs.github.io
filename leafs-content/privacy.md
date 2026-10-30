@@ -5,7 +5,7 @@ permalink: /leafs-content/privacy/
 
 # Leafs Content: privacy policy
 
-*Last updated: 29 October 2026*
+*Last updated: 30 October 2026*
 
 Leafs Content is a desktop app for Windows for planning, writing, editing and preparing YouTube
 videos. This page explains what data it handles and where that data goes.
@@ -23,7 +23,8 @@ data from Google.
   transcripts, research notes, your channel's intro and rules, settings and the YouTube data the
   app has fetched (see below). For a stream recording you add, it also holds the link to the stream
   you type in, the loudness and other moments the app found in the recording, the moments you
-  kept or passed, with the reasons you gave, and, if you use it, a copy of the stream data Leafs
+  kept or passed, with the reasons you gave and the layout picked for each, where your avatar
+  sits on your recordings if you mark it, and, if you use it, a copy of the stream data Leafs
   Live saved for that stream (see below). You can back it up, move it or delete it like any other folder; the
   app's own backups leave the YouTube data out.
 - **Transcription, voice cleanup, background removal, spell check and finding the loud and lively
