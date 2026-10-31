@@ -36,6 +36,12 @@ data from Google.
   moments of a stream recording** run on your PC.
 - **App settings and caches** are kept in the app's data folder (`%LOCALAPPDATA%`), or next to the
   app in its portable version.
+- **The AI tools' own copies of your conversations:** so the assistant remembers a conversation,
+  including what its tools returned, Claude Code and the Codex CLI keep each conversation with the
+  assistant in their own folders in your user folder (`.claude` and `.codex`), as they do for any
+  session of theirs. Deleting the conversation in Leafs Content deletes them, and so does Leafs
+  Content when it starts a conversation over with the tool (after *Retry* or *Edit* on a message,
+  for example).
 - **The YouTube sign-in**, if you connect YouTube, is kept in Windows Credential Manager, outside
   the workspace and its backups.
 - **The OBS password**, if you connect the app to OBS Studio, is kept in Windows Credential Manager
@@ -54,10 +60,13 @@ install and sign in to yourself:
 When you use an AI feature, the tool you picked receives what that task needs, for example the
 video's idea, structure and script, transcripts, descriptions of library files, frames of your
 edit, your channel's intro and rules, and, for tasks that compare ideas with your past videos, the
-titles and numbers of those videos. A message to the assistant also carries the conversation so far
-(its latest messages with the questions and plans in them, and the summary of the older ones once it
-gets long), the plan you approved when you approve one, and where you are in the
-app, such as the video and tab, the image or the clips you have selected. To write that summary,
+titles and numbers of those videos. A message to the assistant goes on from the tool's own copy of
+that conversation (see above) with the messages since its last reply there; when there's no copy to
+go on from, it carries the conversation so far (its latest messages with the questions and plans in
+them, and the summary of the older ones once it gets long). It also carries the plan you approved
+when you approve one, where you are in the app, such as the video and tab, the image or the clips
+you have selected, and what you point at with @ in it (a video, a library file, a channel rule, a
+part of the script or an edit style, with its name and what it says or shows). To write that summary,
 the tool you used gets the older messages again in the background. To find Shorts in a stream recording, it gets the recording's
 transcript in parts of about 25 minutes, the moments the app found in each part, frames of the
 recording, the titles of the moments you kept or passed on your streams, with your reasons, and,
