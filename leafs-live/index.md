@@ -148,12 +148,14 @@ what viewers typed can be read, or not in the chat at all. VIP Stamps, off until
 is a passport on Twitch: viewers get one stamp per stream by redeeming the reward you pick, and
 those who reach your amount in a month are made Twitch VIPs for the next month, which they keep by
 reaching it again; it never touches the VIPs you gave on twitch.tv, never makes a moderator a VIP,
-and permanent VIPs you choose never lose it. The month change happens by itself, with a report of
+and permanent VIPs you choose never lose it, with nothing on stream or in chat saying who they
+are. The month change happens by itself, with a report of
 who gained and lost VIP and why, a vacation mode where nobody loses it, an increase that starts
 next month and an optional line in chat naming the new VIPs. Each stamp shows on stream with this
 stream's icon stamped in by a rubber stamp, in the look you pick: a slim ticket with the month's stamps in a row, a
 ticket where they're stops on a route to VIP, or the viewer's open passport, at the size each
-overlay sets. Reaching the amount plays a celebration, the first activity in a stream of a VIP you
+overlay sets. The stamp that reaches the amount turns into a celebration in the same animation,
+with its own sound, the first activity in a stream of a VIP you
 gave a sound of their own plays a welcome (on screen, or only its sound) with that sound at a
 volume of its own and sends a welcome line (every VIP gets one if you choose), and `!passport` (off
 until you turn it on) tells a viewer how many stamps they have. Viewers lists everyone your chats
