@@ -21,8 +21,9 @@ data from Google.
 - **Your workspace** is a folder you choose. It holds your ideas, structures, scripts, timelines,
   thumbnails and images, the footage, pictures, music and other files you add to the library, their
   transcripts, research notes, your conversations with the AI (each message with where in the app
-  you sent it from, what each reply did: the tools it used, a short form of what they returned and,
-  when the AI tool gives one, its reasoning summary, and, for a long conversation, a summary of its
+  you sent it from, what each reply did: the tools it used, a short form of what they returned, the
+  questions it asked you, the plans it showed you and whether you approved, edited or dropped them
+  and, when the AI tool gives one, its reasoning summary, and, for a long conversation, a summary of its
   older messages that the AI tool wrote), your
   channel's intro and rules, settings and the YouTube data the
   app has fetched (see below). For a stream recording you add, it also holds the link to the stream
@@ -54,7 +55,8 @@ When you use an AI feature, the tool you picked receives what that task needs, f
 video's idea, structure and script, transcripts, descriptions of library files, frames of your
 edit, your channel's intro and rules, and, for tasks that compare ideas with your past videos, the
 titles and numbers of those videos. A message to the assistant also carries the conversation so far
-(its latest messages, and the summary of the older ones once it gets long) and where you are in the
+(its latest messages with the questions and plans in them, and the summary of the older ones once it
+gets long), the plan you approved when you approve one, and where you are in the
 app, such as the video and tab, the image or the clips you have selected. To write that summary,
 the tool you used gets the older messages again in the background. To find Shorts in a stream recording, it gets the recording's
 transcript in parts of about 25 minutes, the moments the app found in each part, frames of the
