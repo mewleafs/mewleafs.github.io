@@ -96,8 +96,8 @@ isaiah658's free pixel-art monsters, each with its name on stream; you can remov
 your own: a picture from your library or a Twitch viewer's profile picture, a rarity, the gimmicks you choose,
 their own words mixed in with the normal ones and lines they say in a speech bubble when they come in, cast and
 are beaten. You can also make a viewer the boss right there, from their viewer card or by name, with their
-name and profile picture: everyone else fights them as always, while only they get boss words to heal, put a
-gimmick on for a while or add time to the clock (how often and how strong is yours to set, mild by default),
+name and profile picture: everyone else fights them as always, while only they get boss words, one after another, that charge a heal, a gimmick
+for a while or time added to the clock (how many words and how strong is yours to set, mild by default),
 and what they write shows as the boss talking. Or you can give the monster on screen a viewer's voice: they still
 play, and their other messages show in its speech bubble. Only messages that would show on stream appear there,
 and one a moderator deletes leaves it. It shows on stream as its own
