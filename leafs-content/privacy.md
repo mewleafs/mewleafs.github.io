@@ -20,7 +20,9 @@ data from Google.
 
 - **Your workspace** is a folder you choose. It holds your ideas, structures, scripts, timelines,
   thumbnails and images, the footage, pictures, music and other files you add to the library, their
-  transcripts, research notes, your channel's intro and rules, settings and the YouTube data the
+  transcripts, research notes, your chats with the AI (with what each reply did: the tools it used,
+  a short form of what they returned and, when the AI tool gives one, its reasoning summary), your
+  channel's intro and rules, settings and the YouTube data the
   app has fetched (see below). For a stream recording you add, it also holds the link to the stream
   you type in, the loudness and other moments the app found in the recording, the moments you
   kept or passed, with the reasons you gave and the layout picked for each, where your avatar
