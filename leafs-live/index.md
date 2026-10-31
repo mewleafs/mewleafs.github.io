@@ -58,7 +58,7 @@ subscribers or higher, to Twitch followers or Twitch accounts of a certain age, 
 moderators out. You make and start giveaways from the app or the dock, close the entries (or they
 close at their time), draw a winner weighted by those chances, reroll, copy the winner's name or
 entry (a Guild Wars 2 account name to send the prize to) with one click, and can ask the winner to answer in chat within a time; the giveaway shows
-on stream with its prize, how to enter, the time left, a shuffle of names and the winner, and,
+on stream with its prize (when you name one), how to enter, the time left, a shuffle of names and the winner, and,
 if you choose, lines in chat when it opens, before it closes and for the winner once the shuffle on stream ends. Unless you turn
 it off, each viewer who enters is told in their chat that they're in, and one who tries again that
 they're in already (once), with several at a time sharing one line. Past giveaways
@@ -71,7 +71,7 @@ twice. When the time runs out, guesses still count for a few seconds to make up 
 delay. Reaching the round's goal passes the level and gives everyone who found a word a bonus;
 missing it ends the game, or with Endless on starts again at level 1. Rounds follow one another,
 with pause, skip, hints and a shuffle from the app or the dock, and boards of this stream's and
-all-time points (accounts you linked as one person count together). It shows on stream as its own widget, and the Chat widget can
+all-time points (accounts you linked as one person count together). It shows on stream as its own widget, with this stream's board at the end of each round, and the Chat widget can
 leave the guesses out. Nothing about it is posted to chat.
 The word brawl is a co-op typing fight for both chats at once, face to face like an old RPG: after
 a short countdown, one pixel-art enemy at a time faces the stream with a few words under it, and
