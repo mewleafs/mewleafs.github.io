@@ -5,7 +5,8 @@ permalink: /leafs-content/
 
 # Leafs Content
 
-A desktop app for Windows that takes a YouTube video from idea to export: a board of ideas,
+A desktop app for Windows that takes a YouTube video from idea to export: a desk with the videos
+in progress and the ideas to pick up next, a searchable list of every video and a content calendar,
 structure and script writing, recording with a teleprompter, B-roll recorded in OBS Studio while
 the script's voice plays, a timeline editor, thumbnails, other
 images and animations (GIFs, emotes, stickers and short videos for social media) that can also go
