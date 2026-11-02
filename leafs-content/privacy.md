@@ -5,7 +5,7 @@ permalink: /leafs-content/privacy/
 
 # Leafs Content: privacy policy
 
-*Last updated: 1 November 2026*
+*Last updated: 2 November 2026*
 
 Leafs Content is a desktop app for Windows for planning, writing, editing and preparing YouTube
 videos. This page explains what data it handles and where that data goes.
@@ -61,7 +61,8 @@ install and sign in to yourself:
 
 When you use an AI feature, the tool you picked receives what that task needs, for example the
 video's idea, structure and script, transcripts, descriptions of library files, frames of your
-edit, an image's name, size, what you wrote it should show and its designs, your channel's intro
+edit, an image's name, size, what you wrote it should show and its designs (those of each image in a set
+you design together), your channel's intro
 and rules, and, for tasks that compare ideas with your past videos, the
 titles and numbers of those videos. A message to the assistant goes on from the tool's own copy of
 that conversation (see above) with the messages since its last reply there; when there's no copy to
