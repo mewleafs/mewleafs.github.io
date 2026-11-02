@@ -5,7 +5,7 @@ permalink: /leafs-content/privacy/
 
 # Leafs Content: privacy policy
 
-*Last updated: 31 October 2026*
+*Last updated: 1 November 2026*
 
 Leafs Content is a desktop app for Windows for planning, writing, editing and preparing YouTube
 videos. This page explains what data it handles and where that data goes.
@@ -25,7 +25,9 @@ data from Google.
   questions it asked you, the plans it showed you and whether you approved, edited or dropped them
   and, when the AI tool gives one, its reasoning summary, and, for a long conversation, a summary of its
   older messages that the AI tool wrote), your
-  channel's intro and rules, settings and the YouTube data the
+  channel's intro and rules, the edit styles and image styles you build (with small frames of the
+  reference videos you pick for an edit style, and small copies of the reference pictures you pick
+  for an image style; the files themselves stay where they are), settings and the YouTube data the
   app has fetched (see below). For a stream recording you add, it also holds the link to the stream
   you type in, the loudness and other moments the app found in the recording, the moments you
   kept or passed, with the reasons you gave and the layout picked for each, where your avatar
@@ -66,7 +68,9 @@ go on from, it carries the conversation so far (its latest messages with the que
 them, and the summary of the older ones once it gets long). It also carries the plan you approved
 when you approve one, where you are in the app, such as the video and tab, the image or the clips
 you have selected, and what you point at with @ in it (a video, a library file, a channel rule, a
-part of the script or an edit style, with its name and what it says or shows). To write that summary,
+part of the script or a style, with its name and what it says or shows). When you work on a style,
+it gets that style, what was measured in its references and, when it looks at them, the frames of
+its reference videos, its reference pictures and your own designs it's built from. To write that summary,
 the tool you used gets the older messages again in the background. To find Shorts in a stream recording, it gets the recording's
 transcript in parts of about 25 minutes, the moments the app found in each part, frames of the
 recording, the titles of the moments you kept or passed on your streams, with your reasons, and,
