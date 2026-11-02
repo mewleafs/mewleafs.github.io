@@ -61,7 +61,8 @@ install and sign in to yourself:
 
 When you use an AI feature, the tool you picked receives what that task needs, for example the
 video's idea, structure and script, transcripts, descriptions of library files, frames of your
-edit, your channel's intro and rules, and, for tasks that compare ideas with your past videos, the
+edit, an image's name, size, what you wrote it should show and its designs, your channel's intro
+and rules, and, for tasks that compare ideas with your past videos, the
 titles and numbers of those videos. A message to the assistant goes on from the tool's own copy of
 that conversation (see above) with the messages since its last reply there; when there's no copy to
 go on from, it carries the conversation so far (its latest messages with the questions and plans in
@@ -120,8 +121,9 @@ them.
 - **Media tools:** the app downloads ffmpeg, whisper.cpp, Node.js and its speech and cutout models
   from their publishers (GitHub, nodejs.org, Hugging Face) and checks each file before use. The
   first video export downloads a headless Chrome browser used for rendering.
-- **Pictures from the web:** when you paste a link, or accept pictures the AI found, the app
-  downloads them from those websites. It only connects to public internet addresses.
+- **Pictures from the web:** when you paste a link, or when the AI proposes pictures it found for a
+  video, an image or your library, the app downloads them from those websites so you review the
+  real pictures; the ones you reject are deleted. It only connects to public internet addresses.
 - **Update check:** once a day the app reads
   [`latest.json`](https://mewleafs.github.io/leafs-content/latest.json) on this site (GitHub Pages)
   to see whether a newer version is out. It downloads or installs nothing, and sends nothing with
