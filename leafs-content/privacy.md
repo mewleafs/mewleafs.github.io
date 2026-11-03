@@ -5,7 +5,7 @@ permalink: /leafs-content/privacy/
 
 # Leafs Content: privacy policy
 
-*Last updated: 2 November 2026*
+*Last updated: 3 November 2026*
 
 Leafs Content is a desktop app for Windows for planning, writing, editing and preparing YouTube
 videos. This page explains what data it handles and where that data goes.
@@ -20,7 +20,9 @@ data from Google.
 
 - **Your workspace** is a folder you choose. It holds your ideas, structures, scripts, timelines,
   thumbnails and images, the footage, pictures, music and other files you add to the library, their
-  transcripts, research notes, your conversations with the AI (each message with where in the app
+  transcripts, research notes, the AI's latest demand check for each video (its read on whether
+  viewers already want the topic in English and Spanish, with the titles, links and view counts of
+  the videos it found on the web), your conversations with the AI (each message with where in the app
   you sent it from, what each reply did: the tools it used, a short form of what they returned, the
   questions it asked you, the plans it showed you and whether you approved, edited or dropped them
   and, when the AI tool gives one, its reasoning summary, and, for a long conversation, a summary of its
@@ -83,8 +85,8 @@ tasks use the YouTube numbers* (see below); otherwise the AI sees only numbers y
 yourself. The tool sends it to its provider under your own account, and that provider's terms and
 privacy policy apply, including whether it may use your conversations to train its models: both
 let you turn that off (Claude: *Help improve Claude*; ChatGPT: *Improve the model for everyone*). The AI tools can also search the web
-and open web pages. They work only through Leafs Content's own tools: they can read and propose,
-but nothing changes until you accept it. Your scratchpad notes are never given to them.
+and open web pages. They work only through Leafs Content's own tools: they can read, propose, and
+save research notes and demand checks; nothing else changes until you accept it. Your scratchpad notes are never given to them.
 
 ## OBS Studio (optional)
 
