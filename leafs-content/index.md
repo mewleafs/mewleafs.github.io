@@ -11,7 +11,7 @@ structure and script writing, recording with a teleprompter, B-roll recorded in 
 the script's voice plays, a timeline editor, thumbnails, other
 images and animations (GIFs, emotes, stickers and short videos for social media) that can also go
 into the edit, styles the AI follows for how your videos are edited and how your thumbnails and
-images look, and the title, tags, chapters and hashtags for YouTube, each ready to copy. It also
+images look (your own, or a few thumbnail styles that come with the app), and the title, tags, chapters and hashtags for YouTube, each ready to copy. It also
 turns stream recordings into Shorts: you import a recording of a stream, the AI suggests moments
 from it, and only the ones you keep become Shorts, laid out the way you pick for each: the whole
 recording, only your avatar, the game and your avatar one above the other, or the sound over a

@@ -63,7 +63,7 @@ install and sign in to yourself:
 
 When you use an AI feature, the tool you picked receives what that task needs, for example the
 video's idea, structure and script, transcripts, descriptions of library files, frames of your
-edit, an image's name, size, what you wrote it should show and its designs (those of each image in a set
+edit, pictures of your thumbnails as they look, an image's name, size, what you wrote it should show and its designs (those of each image in a set
 you design together), your channel's intro
 and rules, and, for tasks that compare ideas with your past videos, the
 titles and numbers of those videos. A message to the assistant goes on from the tool's own copy of
