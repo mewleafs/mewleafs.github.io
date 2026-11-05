@@ -150,8 +150,8 @@ those who reach your amount in a month are made Twitch VIPs for the next month, 
 reaching it again; it never touches the VIPs you gave on twitch.tv, never makes a moderator a VIP,
 and permanent VIPs you choose never lose it, with nothing on stream or in chat saying who they
 are. The month change happens by itself, with a report of
-who gained and lost VIP and why, a vacation mode where nobody loses it, an increase that starts
-next month and an optional line in chat naming the new VIPs. Each stamp shows on stream with this
+who gained and lost VIP and why, a vacation mode where nobody loses it and stamps keep adding up
+across months until the month change after you turn it off, an increase that starts next month and an optional line in chat naming the new VIPs. Each stamp shows on stream with this
 stream's icon stamped in by a rubber stamp, in the look you pick: a slim ticket with the month's stamps in a row, a
 ticket where they're stops on a route to VIP, or the viewer's open passport, at the size each
 overlay sets. The stamp that reaches the amount turns into a celebration in the same animation,
