@@ -26,8 +26,8 @@ in the app and the dock. Alerts thank viewers in chat when they follow, subscrib
 cheer, raid, redeem a channel points reward or use a Power-up on Twitch, cheer on Twitch hype
 trains as they start, level up and end, and thank viewers who send a Super Chat, a Super Sticker,
 a Jewels gift, become a member or gift memberships on YouTube: each type is off until you turn it
-on, with your own messages and variables, amount tiers, a minimum, rewards picked from your
-channel's list with messages of their own, and one line for a burst of them, sent as your bot
+on, with your own messages and variables, amount ranges (from one amount to another, or one
+exact amount), a minimum, rewards picked from your channel's list with messages of their own, and one line for a burst of them, sent as your bot
 account when you have one. Viewer commands answer what viewers type in either chat (`!discord`,
 `!uptime`, `!followage`, `!lurk`, `!so @friend`, `!8ball`, a `!deaths` counter…) in that chat, once
 you turn them on: every command can be edited, turned off or deleted, with your own replies and
@@ -36,9 +36,10 @@ you can add your own. Timed messages post your lines (your Discord, your socials
 the commands…) in each of your live chats every few minutes, taking turns in your order, once you
 turn them on, and only after enough viewers have written since the last one, so a quiet chat isn't
 spammed. The same alerts play on stream in an Alerts widget, one at a time, with your own
-picture, GIF or video and sound from your PC, set for each type (and each amount tier or
-channel points reward) once for every overlay, in the Alerts view or the overlay editor, and each
-overlay's own text and look, and you can skip or replay them from the app or the dock. Sounds play about as loud as each other, however loud their
+picture, GIF or video and sound from your PC, set on each type's own page in the Alerts view once
+for every overlay: the type, each amount range and each channel points reward can show the alert,
+play only a sound or show nothing, each with its own picture, sound and volume or none, and a
+ruler shows which range an amount lands on; each overlay keeps its own text and look, and you can skip or replay them from the app or the dock. Sounds play about as loud as each other, however loud their
 files are: the app measures each one once and evens them out, with your volumes on top. A chat race shows who got to your stream first: each viewer's first message, follow,
 sub, redeem or other support takes the next place, gold, silver and bronze first, on stream as a
 leaderboard, a ticker or one arrival at a time, with an all-time board of who came first most
