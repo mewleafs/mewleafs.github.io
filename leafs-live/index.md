@@ -39,7 +39,13 @@ spammed. The same alerts play on stream in an Alerts widget, one at a time, with
 picture, GIF or video and sound from your PC, set on each type's own page in the Alerts view once
 for every overlay: the type, each amount range and each channel points reward can show the alert,
 play only a sound or show nothing, each with its own picture, sound and volume or none, and a
-ruler shows which range an amount lands on; each overlay keeps its own text and look, and you can skip or replay them from the app or the dock. Sounds play about as loud as each other, however loud their
+ruler shows which range an amount lands on; each overlay keeps its own text and look, and you can skip or replay them from the app or the dock.
+Alerts that come with a viewer's message (bits, subs, Super Chats, milestones, channel points with
+text, Power-ups) can also be read aloud on stream by one of Windows' own voices, right after the
+alert's sound, in the overlay's own audio: each type, amount range and reward picks whether it's
+read, the voice, its speed and pitch, and the line; emotes are left out, links are read as "link",
+a message with one of your blocked words or one deleted before it plays isn't read, and you can
+have each one wait for your OK. Sounds play about as loud as each other, however loud their
 files are: the app measures each one once and evens them out, with your volumes on top. A chat race shows who got to your stream first: each viewer's first message, follow,
 sub, redeem or other support takes the next place, gold, silver and bronze first, on stream as a
 leaderboard, a ticker or one arrival at a time, with an all-time board of who came first most
